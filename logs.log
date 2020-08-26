@@ -28875,3 +28875,2321 @@
 2020-08-25 17:11:05,756:INFO:Saving 'Prediction Error.png' in current active directory
 2020-08-25 17:11:06,354:INFO:Visual Rendered Successfully
 2020-08-25 17:11:06,354:INFO:plot_model() succesfully completed......................................
+2020-08-26 10:11:06,234:INFO:PyCaret Regression Module
+2020-08-26 10:11:06,235:INFO:version pycaret-nightly-0.44
+2020-08-26 10:11:06,235:INFO:Initializing setup()
+2020-08-26 10:11:06,235:INFO:USI: a647
+2020-08-26 10:11:06,235:INFO:setup(data=(102, 19), target=Actual Value, train_size=0.75, sampling=True, sample_estimator=None, categorical_features=None, categorical_imputation=constant, ordinal_features=None,
+                    high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=('Sunday', 'Monday', 'Saturday', 'Thursday', 'Tuesday', 'Wednesday', 'Friday', 'Total number of calls', 'CSat', 'total coaching', 'total coaching improved', 'FCR Week before'), numeric_imputation=mean, date_features=None, ignore_features=['Agent_ID'], normalize=False,
+                    normalize_method=zscore, transformation=True, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=False, pca_method=linear,
+                    pca_components=None, ignore_low_variance=False, combine_rare_levels=True, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=True, outliers_threshold=0.05,
+                    remove_multicollinearity=True, multicollinearity_threshold=0.9, remove_perfect_collinearity=False, create_clusters=False, cluster_iter=20,
+                    polynomial_features=True, polynomial_degree=2, trigonometry_features=True, polynomial_threshold=0.1, group_features=None,
+                    group_names=None, feature_selection=True, feature_selection_threshold=0.4, feature_interaction=True, feature_ratio=False, interaction_threshold=0.01, transform_target=False,
+                    transform_target_method=box-cox, data_split_shuffle=True, folds_shuffle=True, n_jobs=-1, html=True, session_id=786, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False)
+2020-08-26 10:11:06,236:INFO:Checking environment
+2020-08-26 10:11:06,236:INFO:python_version: 3.7.7
+2020-08-26 10:11:06,236:INFO:python_build: ('default', 'Mar 23 2020 17:31:31')
+2020-08-26 10:11:06,236:INFO:machine: x86_64
+2020-08-26 10:11:06,257:INFO:platform: Darwin-19.5.0-x86_64-i386-64bit
+2020-08-26 10:11:06,258:INFO:Memory: svmem(total=8589934592, available=2419728384, percent=71.8, used=4532477952, free=19918848, active=2402529280, inactive=2197610496, wired=2129948672)
+2020-08-26 10:11:06,258:INFO:Physical Core: 4
+2020-08-26 10:11:06,258:INFO:Logical Core: 8
+2020-08-26 10:11:06,258:INFO:Checking libraries
+2020-08-26 10:11:06,259:INFO:pd==1.1.0
+2020-08-26 10:11:06,259:INFO:numpy==1.19.1
+2020-08-26 10:11:06,284:INFO:sklearn==0.23.1
+2020-08-26 10:11:06,373:INFO:xgboost==0.90
+2020-08-26 10:11:06,407:INFO:lightgbm==2.3.1
+2020-08-26 10:11:06,462:INFO:catboost==0.20.2
+2020-08-26 10:11:07,786:INFO:mlflow==1.9.1
+2020-08-26 10:11:07,786:INFO:Checking Exceptions
+2020-08-26 10:11:07,786:INFO:Preloading libraries
+2020-08-26 10:11:07,786:INFO:Preparing display monitor
+2020-08-26 10:11:07,810:INFO:Importing libraries
+2020-08-26 10:11:08,360:INFO:Copying data for preprocessing
+2020-08-26 10:11:08,360:INFO:Declaring global variables
+2020-08-26 10:11:08,366:INFO:Declaring preprocessing parameters
+2020-08-26 10:11:08,366:INFO:Importing preprocessing module
+2020-08-26 10:11:09,465:INFO:Creating preprocessing pipeline
+2020-08-26 10:11:12,302:INFO:Preprocessing pipeline created successfully
+2020-08-26 10:11:12,302:INFO:No inverse transformer found
+2020-08-26 10:11:12,302:INFO:Creating grid variables
+2020-08-26 10:11:12,305:INFO:Creating global containers
+2020-08-26 10:11:12,428:INFO:create_model_container: 0
+2020-08-26 10:11:12,428:INFO:master_model_container: 0
+2020-08-26 10:11:12,428:INFO:display_container: 0
+2020-08-26 10:11:12,428:INFO:setup() succesfully completed......................................
+2020-08-26 10:11:22,534:INFO:Initializing compare_models()
+2020-08-26 10:11:22,534:INFO:compare_models(blacklist=['ransac', 'knn'], whitelist=None, fold=10, round=4, sort=RMSE, n_select=5, turbo=True, verbose=True)
+2020-08-26 10:11:22,534:INFO:Checking exceptions
+2020-08-26 10:11:22,534:INFO:Preloading libraries
+2020-08-26 10:11:22,534:INFO:Preparing display monitor
+2020-08-26 10:11:22,556:INFO:Copying training dataset
+2020-08-26 10:11:22,556:INFO:Importing libraries
+2020-08-26 10:11:22,567:INFO:Importing untrained models
+2020-08-26 10:11:22,568:INFO:Import successful
+2020-08-26 10:11:22,573:INFO:Defining folds
+2020-08-26 10:11:22,573:INFO:Declaring metric variables
+2020-08-26 10:11:22,573:INFO:Initializing Linear Regression
+2020-08-26 10:11:22,579:INFO:Initializing Fold 1
+2020-08-26 10:11:22,585:INFO:Fitting Model
+2020-08-26 10:11:22,592:INFO:Evaluating Metrics
+2020-08-26 10:11:22,596:INFO:No inverse transformer found
+2020-08-26 10:11:22,596:INFO:Compiling Metrics
+2020-08-26 10:11:22,604:INFO:Initializing Fold 2
+2020-08-26 10:11:22,612:INFO:Fitting Model
+2020-08-26 10:11:22,616:INFO:Evaluating Metrics
+2020-08-26 10:11:22,618:INFO:No inverse transformer found
+2020-08-26 10:11:22,618:INFO:Compiling Metrics
+2020-08-26 10:11:22,626:INFO:Initializing Fold 3
+2020-08-26 10:11:22,633:INFO:Fitting Model
+2020-08-26 10:11:22,636:INFO:Evaluating Metrics
+2020-08-26 10:11:22,638:INFO:No inverse transformer found
+2020-08-26 10:11:22,639:INFO:Compiling Metrics
+2020-08-26 10:11:22,646:INFO:Initializing Fold 4
+2020-08-26 10:11:22,652:INFO:Fitting Model
+2020-08-26 10:11:22,656:INFO:Evaluating Metrics
+2020-08-26 10:11:22,658:INFO:No inverse transformer found
+2020-08-26 10:11:22,658:INFO:Compiling Metrics
+2020-08-26 10:11:22,665:INFO:Initializing Fold 5
+2020-08-26 10:11:22,672:INFO:Fitting Model
+2020-08-26 10:11:22,675:INFO:Evaluating Metrics
+2020-08-26 10:11:22,677:INFO:No inverse transformer found
+2020-08-26 10:11:22,677:INFO:Compiling Metrics
+2020-08-26 10:11:22,687:INFO:Initializing Fold 6
+2020-08-26 10:11:22,694:INFO:Fitting Model
+2020-08-26 10:11:22,697:INFO:Evaluating Metrics
+2020-08-26 10:11:22,699:INFO:No inverse transformer found
+2020-08-26 10:11:22,699:INFO:Compiling Metrics
+2020-08-26 10:11:22,706:INFO:Initializing Fold 7
+2020-08-26 10:11:22,712:INFO:Fitting Model
+2020-08-26 10:11:22,715:INFO:Evaluating Metrics
+2020-08-26 10:11:22,717:INFO:No inverse transformer found
+2020-08-26 10:11:22,717:INFO:Compiling Metrics
+2020-08-26 10:11:22,725:INFO:Initializing Fold 8
+2020-08-26 10:11:22,731:INFO:Fitting Model
+2020-08-26 10:11:22,734:INFO:Evaluating Metrics
+2020-08-26 10:11:22,735:INFO:No inverse transformer found
+2020-08-26 10:11:22,736:INFO:Compiling Metrics
+2020-08-26 10:11:22,744:INFO:Initializing Fold 9
+2020-08-26 10:11:22,751:INFO:Fitting Model
+2020-08-26 10:11:22,755:INFO:Evaluating Metrics
+2020-08-26 10:11:22,759:INFO:No inverse transformer found
+2020-08-26 10:11:22,760:INFO:Compiling Metrics
+2020-08-26 10:11:22,769:INFO:Initializing Fold 10
+2020-08-26 10:11:22,776:INFO:Fitting Model
+2020-08-26 10:11:22,780:INFO:Evaluating Metrics
+2020-08-26 10:11:22,783:INFO:No inverse transformer found
+2020-08-26 10:11:22,783:INFO:Compiling Metrics
+2020-08-26 10:11:22,791:INFO:Calculating mean and std
+2020-08-26 10:11:22,792:INFO:Creating metrics dataframe
+2020-08-26 10:11:22,805:INFO:Initializing Lasso Regression
+2020-08-26 10:11:22,812:INFO:Initializing Fold 1
+2020-08-26 10:11:22,819:INFO:Fitting Model
+2020-08-26 10:11:22,826:INFO:Evaluating Metrics
+2020-08-26 10:11:22,828:INFO:No inverse transformer found
+2020-08-26 10:11:22,828:INFO:Compiling Metrics
+2020-08-26 10:11:22,839:INFO:Initializing Fold 2
+2020-08-26 10:11:22,857:INFO:Fitting Model
+2020-08-26 10:11:22,860:INFO:Evaluating Metrics
+2020-08-26 10:11:22,863:INFO:No inverse transformer found
+2020-08-26 10:11:22,863:INFO:Compiling Metrics
+2020-08-26 10:11:22,908:INFO:Initializing Fold 3
+2020-08-26 10:11:22,915:INFO:Fitting Model
+2020-08-26 10:11:22,920:INFO:Evaluating Metrics
+2020-08-26 10:11:22,922:INFO:No inverse transformer found
+2020-08-26 10:11:22,923:INFO:Compiling Metrics
+2020-08-26 10:11:22,929:INFO:Initializing Fold 4
+2020-08-26 10:11:22,936:INFO:Fitting Model
+2020-08-26 10:11:22,939:INFO:Evaluating Metrics
+2020-08-26 10:11:22,941:INFO:No inverse transformer found
+2020-08-26 10:11:22,941:INFO:Compiling Metrics
+2020-08-26 10:11:22,948:INFO:Initializing Fold 5
+2020-08-26 10:11:22,953:INFO:Fitting Model
+2020-08-26 10:11:22,956:INFO:Evaluating Metrics
+2020-08-26 10:11:22,958:INFO:No inverse transformer found
+2020-08-26 10:11:22,958:INFO:Compiling Metrics
+2020-08-26 10:11:22,964:INFO:Initializing Fold 6
+2020-08-26 10:11:22,970:INFO:Fitting Model
+2020-08-26 10:11:22,972:INFO:Evaluating Metrics
+2020-08-26 10:11:22,974:INFO:No inverse transformer found
+2020-08-26 10:11:22,974:INFO:Compiling Metrics
+2020-08-26 10:11:22,981:INFO:Initializing Fold 7
+2020-08-26 10:11:22,987:INFO:Fitting Model
+2020-08-26 10:11:22,990:INFO:Evaluating Metrics
+2020-08-26 10:11:22,993:INFO:No inverse transformer found
+2020-08-26 10:11:22,993:INFO:Compiling Metrics
+2020-08-26 10:11:23,001:INFO:Initializing Fold 8
+2020-08-26 10:11:23,008:INFO:Fitting Model
+2020-08-26 10:11:23,012:INFO:Evaluating Metrics
+2020-08-26 10:11:23,014:INFO:No inverse transformer found
+2020-08-26 10:11:23,014:INFO:Compiling Metrics
+2020-08-26 10:11:23,021:INFO:Initializing Fold 9
+2020-08-26 10:11:23,026:INFO:Fitting Model
+2020-08-26 10:11:23,032:INFO:Evaluating Metrics
+2020-08-26 10:11:23,034:INFO:No inverse transformer found
+2020-08-26 10:11:23,034:INFO:Compiling Metrics
+2020-08-26 10:11:23,041:INFO:Initializing Fold 10
+2020-08-26 10:11:23,046:INFO:Fitting Model
+2020-08-26 10:11:23,049:INFO:Evaluating Metrics
+2020-08-26 10:11:23,051:INFO:No inverse transformer found
+2020-08-26 10:11:23,051:INFO:Compiling Metrics
+2020-08-26 10:11:23,057:INFO:Calculating mean and std
+2020-08-26 10:11:23,058:INFO:Creating metrics dataframe
+2020-08-26 10:11:23,068:INFO:Initializing Ridge Regression
+2020-08-26 10:11:23,073:INFO:Initializing Fold 1
+2020-08-26 10:11:23,078:INFO:Fitting Model
+2020-08-26 10:11:23,088:INFO:Evaluating Metrics
+2020-08-26 10:11:23,090:INFO:No inverse transformer found
+2020-08-26 10:11:23,091:INFO:Compiling Metrics
+2020-08-26 10:11:23,098:INFO:Initializing Fold 2
+2020-08-26 10:11:23,105:INFO:Fitting Model
+2020-08-26 10:11:23,109:INFO:Evaluating Metrics
+2020-08-26 10:11:23,112:INFO:No inverse transformer found
+2020-08-26 10:11:23,112:INFO:Compiling Metrics
+2020-08-26 10:11:23,121:INFO:Initializing Fold 3
+2020-08-26 10:11:23,128:INFO:Fitting Model
+2020-08-26 10:11:23,130:INFO:Evaluating Metrics
+2020-08-26 10:11:23,133:INFO:No inverse transformer found
+2020-08-26 10:11:23,134:INFO:Compiling Metrics
+2020-08-26 10:11:23,142:INFO:Initializing Fold 4
+2020-08-26 10:11:23,148:INFO:Fitting Model
+2020-08-26 10:11:23,151:INFO:Evaluating Metrics
+2020-08-26 10:11:23,154:INFO:No inverse transformer found
+2020-08-26 10:11:23,154:INFO:Compiling Metrics
+2020-08-26 10:11:23,161:INFO:Initializing Fold 5
+2020-08-26 10:11:23,167:INFO:Fitting Model
+2020-08-26 10:11:23,170:INFO:Evaluating Metrics
+2020-08-26 10:11:23,172:INFO:No inverse transformer found
+2020-08-26 10:11:23,172:INFO:Compiling Metrics
+2020-08-26 10:11:23,181:INFO:Initializing Fold 6
+2020-08-26 10:11:23,188:INFO:Fitting Model
+2020-08-26 10:11:23,191:INFO:Evaluating Metrics
+2020-08-26 10:11:23,195:INFO:No inverse transformer found
+2020-08-26 10:11:23,195:INFO:Compiling Metrics
+2020-08-26 10:11:23,203:INFO:Initializing Fold 7
+2020-08-26 10:11:23,212:INFO:Fitting Model
+2020-08-26 10:11:23,216:INFO:Evaluating Metrics
+2020-08-26 10:11:23,218:INFO:No inverse transformer found
+2020-08-26 10:11:23,218:INFO:Compiling Metrics
+2020-08-26 10:11:23,227:INFO:Initializing Fold 8
+2020-08-26 10:11:23,234:INFO:Fitting Model
+2020-08-26 10:11:23,238:INFO:Evaluating Metrics
+2020-08-26 10:11:23,242:INFO:No inverse transformer found
+2020-08-26 10:11:23,242:INFO:Compiling Metrics
+2020-08-26 10:11:23,249:INFO:Initializing Fold 9
+2020-08-26 10:11:23,256:INFO:Fitting Model
+2020-08-26 10:11:23,259:INFO:Evaluating Metrics
+2020-08-26 10:11:23,261:INFO:No inverse transformer found
+2020-08-26 10:11:23,261:INFO:Compiling Metrics
+2020-08-26 10:11:23,268:INFO:Initializing Fold 10
+2020-08-26 10:11:23,279:INFO:Fitting Model
+2020-08-26 10:11:23,291:INFO:Evaluating Metrics
+2020-08-26 10:11:23,293:INFO:No inverse transformer found
+2020-08-26 10:11:23,294:INFO:Compiling Metrics
+2020-08-26 10:11:23,302:INFO:Calculating mean and std
+2020-08-26 10:11:23,303:INFO:Creating metrics dataframe
+2020-08-26 10:11:23,320:INFO:Initializing Elastic Net
+2020-08-26 10:11:23,329:INFO:Initializing Fold 1
+2020-08-26 10:11:23,336:INFO:Fitting Model
+2020-08-26 10:11:23,339:INFO:Evaluating Metrics
+2020-08-26 10:11:23,341:INFO:No inverse transformer found
+2020-08-26 10:11:23,341:INFO:Compiling Metrics
+2020-08-26 10:11:23,347:INFO:Initializing Fold 2
+2020-08-26 10:11:23,353:INFO:Fitting Model
+2020-08-26 10:11:23,356:INFO:Evaluating Metrics
+2020-08-26 10:11:23,358:INFO:No inverse transformer found
+2020-08-26 10:11:23,358:INFO:Compiling Metrics
+2020-08-26 10:11:23,364:INFO:Initializing Fold 3
+2020-08-26 10:11:23,370:INFO:Fitting Model
+2020-08-26 10:11:23,374:INFO:Evaluating Metrics
+2020-08-26 10:11:23,375:INFO:No inverse transformer found
+2020-08-26 10:11:23,376:INFO:Compiling Metrics
+2020-08-26 10:11:23,383:INFO:Initializing Fold 4
+2020-08-26 10:11:23,389:INFO:Fitting Model
+2020-08-26 10:11:23,392:INFO:Evaluating Metrics
+2020-08-26 10:11:23,394:INFO:No inverse transformer found
+2020-08-26 10:11:23,394:INFO:Compiling Metrics
+2020-08-26 10:11:23,403:INFO:Initializing Fold 5
+2020-08-26 10:11:23,412:INFO:Fitting Model
+2020-08-26 10:11:23,416:INFO:Evaluating Metrics
+2020-08-26 10:11:23,419:INFO:No inverse transformer found
+2020-08-26 10:11:23,419:INFO:Compiling Metrics
+2020-08-26 10:11:23,427:INFO:Initializing Fold 6
+2020-08-26 10:11:23,432:INFO:Fitting Model
+2020-08-26 10:11:23,435:INFO:Evaluating Metrics
+2020-08-26 10:11:23,437:INFO:No inverse transformer found
+2020-08-26 10:11:23,437:INFO:Compiling Metrics
+2020-08-26 10:11:23,444:INFO:Initializing Fold 7
+2020-08-26 10:11:23,450:INFO:Fitting Model
+2020-08-26 10:11:23,452:INFO:Evaluating Metrics
+2020-08-26 10:11:23,454:INFO:No inverse transformer found
+2020-08-26 10:11:23,455:INFO:Compiling Metrics
+2020-08-26 10:11:23,461:INFO:Initializing Fold 8
+2020-08-26 10:11:23,466:INFO:Fitting Model
+2020-08-26 10:11:23,471:INFO:Evaluating Metrics
+2020-08-26 10:11:23,474:INFO:No inverse transformer found
+2020-08-26 10:11:23,474:INFO:Compiling Metrics
+2020-08-26 10:11:23,480:INFO:Initializing Fold 9
+2020-08-26 10:11:23,488:INFO:Fitting Model
+2020-08-26 10:11:23,490:INFO:Evaluating Metrics
+2020-08-26 10:11:23,492:INFO:No inverse transformer found
+2020-08-26 10:11:23,492:INFO:Compiling Metrics
+2020-08-26 10:11:23,498:INFO:Initializing Fold 10
+2020-08-26 10:11:23,504:INFO:Fitting Model
+2020-08-26 10:11:23,509:INFO:Evaluating Metrics
+2020-08-26 10:11:23,512:INFO:No inverse transformer found
+2020-08-26 10:11:23,512:INFO:Compiling Metrics
+2020-08-26 10:11:23,542:INFO:Calculating mean and std
+2020-08-26 10:11:23,542:INFO:Creating metrics dataframe
+2020-08-26 10:11:23,566:INFO:Initializing Least Angle Regression
+2020-08-26 10:11:23,609:INFO:Initializing Fold 1
+2020-08-26 10:11:23,619:INFO:Fitting Model
+2020-08-26 10:11:23,634:INFO:Evaluating Metrics
+2020-08-26 10:11:23,636:INFO:No inverse transformer found
+2020-08-26 10:11:23,636:INFO:Compiling Metrics
+2020-08-26 10:11:23,643:INFO:Initializing Fold 2
+2020-08-26 10:11:23,649:INFO:Fitting Model
+2020-08-26 10:11:23,661:INFO:Evaluating Metrics
+2020-08-26 10:11:23,663:INFO:No inverse transformer found
+2020-08-26 10:11:23,663:INFO:Compiling Metrics
+2020-08-26 10:11:23,670:INFO:Initializing Fold 3
+2020-08-26 10:11:23,677:INFO:Fitting Model
+2020-08-26 10:11:23,688:INFO:Evaluating Metrics
+2020-08-26 10:11:23,690:INFO:No inverse transformer found
+2020-08-26 10:11:23,690:INFO:Compiling Metrics
+2020-08-26 10:11:23,697:INFO:Initializing Fold 4
+2020-08-26 10:11:23,703:INFO:Fitting Model
+2020-08-26 10:11:23,715:INFO:Evaluating Metrics
+2020-08-26 10:11:23,718:INFO:No inverse transformer found
+2020-08-26 10:11:23,718:INFO:Compiling Metrics
+2020-08-26 10:11:23,725:INFO:Initializing Fold 5
+2020-08-26 10:11:23,732:INFO:Fitting Model
+2020-08-26 10:11:23,749:INFO:Evaluating Metrics
+2020-08-26 10:11:23,751:INFO:No inverse transformer found
+2020-08-26 10:11:23,751:INFO:Compiling Metrics
+2020-08-26 10:11:23,758:INFO:Initializing Fold 6
+2020-08-26 10:11:23,767:INFO:Fitting Model
+2020-08-26 10:11:23,780:INFO:Evaluating Metrics
+2020-08-26 10:11:23,783:INFO:No inverse transformer found
+2020-08-26 10:11:23,783:INFO:Compiling Metrics
+2020-08-26 10:11:23,791:INFO:Initializing Fold 7
+2020-08-26 10:11:23,799:INFO:Fitting Model
+2020-08-26 10:11:23,811:INFO:Evaluating Metrics
+2020-08-26 10:11:23,814:INFO:No inverse transformer found
+2020-08-26 10:11:23,814:INFO:Compiling Metrics
+2020-08-26 10:11:23,827:INFO:Initializing Fold 8
+2020-08-26 10:11:23,837:INFO:Fitting Model
+2020-08-26 10:11:23,862:INFO:Evaluating Metrics
+2020-08-26 10:11:23,864:INFO:No inverse transformer found
+2020-08-26 10:11:23,864:INFO:Compiling Metrics
+2020-08-26 10:11:23,881:INFO:Initializing Fold 9
+2020-08-26 10:11:23,889:INFO:Fitting Model
+2020-08-26 10:11:23,901:INFO:Evaluating Metrics
+2020-08-26 10:11:23,936:INFO:No inverse transformer found
+2020-08-26 10:11:23,936:INFO:Compiling Metrics
+2020-08-26 10:11:23,956:INFO:Initializing Fold 10
+2020-08-26 10:11:23,966:INFO:Fitting Model
+2020-08-26 10:11:23,978:INFO:Evaluating Metrics
+2020-08-26 10:11:23,981:INFO:No inverse transformer found
+2020-08-26 10:11:23,982:INFO:Compiling Metrics
+2020-08-26 10:11:23,990:INFO:Calculating mean and std
+2020-08-26 10:11:23,990:INFO:Creating metrics dataframe
+2020-08-26 10:11:24,006:INFO:Initializing Lasso Least Angle Regression
+2020-08-26 10:11:24,014:INFO:Initializing Fold 1
+2020-08-26 10:11:24,021:INFO:Fitting Model
+2020-08-26 10:11:24,024:INFO:Evaluating Metrics
+2020-08-26 10:11:24,027:INFO:No inverse transformer found
+2020-08-26 10:11:24,027:INFO:Compiling Metrics
+2020-08-26 10:11:24,034:INFO:Initializing Fold 2
+2020-08-26 10:11:24,043:INFO:Fitting Model
+2020-08-26 10:11:24,049:INFO:Evaluating Metrics
+2020-08-26 10:11:24,051:INFO:No inverse transformer found
+2020-08-26 10:11:24,052:INFO:Compiling Metrics
+2020-08-26 10:11:24,066:INFO:Initializing Fold 3
+2020-08-26 10:11:24,077:INFO:Fitting Model
+2020-08-26 10:11:24,080:INFO:Evaluating Metrics
+2020-08-26 10:11:24,082:INFO:No inverse transformer found
+2020-08-26 10:11:24,082:INFO:Compiling Metrics
+2020-08-26 10:11:24,091:INFO:Initializing Fold 4
+2020-08-26 10:11:24,103:INFO:Fitting Model
+2020-08-26 10:11:24,107:INFO:Evaluating Metrics
+2020-08-26 10:11:24,109:INFO:No inverse transformer found
+2020-08-26 10:11:24,109:INFO:Compiling Metrics
+2020-08-26 10:11:24,118:INFO:Initializing Fold 5
+2020-08-26 10:11:24,127:INFO:Fitting Model
+2020-08-26 10:11:24,130:INFO:Evaluating Metrics
+2020-08-26 10:11:24,133:INFO:No inverse transformer found
+2020-08-26 10:11:24,133:INFO:Compiling Metrics
+2020-08-26 10:11:24,146:INFO:Initializing Fold 6
+2020-08-26 10:11:24,155:INFO:Fitting Model
+2020-08-26 10:11:24,158:INFO:Evaluating Metrics
+2020-08-26 10:11:24,160:INFO:No inverse transformer found
+2020-08-26 10:11:24,161:INFO:Compiling Metrics
+2020-08-26 10:11:24,168:INFO:Initializing Fold 7
+2020-08-26 10:11:24,174:INFO:Fitting Model
+2020-08-26 10:11:24,178:INFO:Evaluating Metrics
+2020-08-26 10:11:24,180:INFO:No inverse transformer found
+2020-08-26 10:11:24,180:INFO:Compiling Metrics
+2020-08-26 10:11:24,188:INFO:Initializing Fold 8
+2020-08-26 10:11:24,195:INFO:Fitting Model
+2020-08-26 10:11:24,198:INFO:Evaluating Metrics
+2020-08-26 10:11:24,200:INFO:No inverse transformer found
+2020-08-26 10:11:24,200:INFO:Compiling Metrics
+2020-08-26 10:11:24,207:INFO:Initializing Fold 9
+2020-08-26 10:11:24,214:INFO:Fitting Model
+2020-08-26 10:11:24,218:INFO:Evaluating Metrics
+2020-08-26 10:11:24,219:INFO:No inverse transformer found
+2020-08-26 10:11:24,220:INFO:Compiling Metrics
+2020-08-26 10:11:24,227:INFO:Initializing Fold 10
+2020-08-26 10:11:24,235:INFO:Fitting Model
+2020-08-26 10:11:24,238:INFO:Evaluating Metrics
+2020-08-26 10:11:24,241:INFO:No inverse transformer found
+2020-08-26 10:11:24,241:INFO:Compiling Metrics
+2020-08-26 10:11:24,251:INFO:Calculating mean and std
+2020-08-26 10:11:24,251:INFO:Creating metrics dataframe
+2020-08-26 10:11:24,268:INFO:Initializing Orthogonal Matching Pursuit
+2020-08-26 10:11:24,274:INFO:Initializing Fold 1
+2020-08-26 10:11:24,282:INFO:Fitting Model
+2020-08-26 10:11:24,286:INFO:Evaluating Metrics
+2020-08-26 10:11:24,288:INFO:No inverse transformer found
+2020-08-26 10:11:24,289:INFO:Compiling Metrics
+2020-08-26 10:11:24,297:INFO:Initializing Fold 2
+2020-08-26 10:11:24,306:INFO:Fitting Model
+2020-08-26 10:11:24,310:INFO:Evaluating Metrics
+2020-08-26 10:11:24,312:INFO:No inverse transformer found
+2020-08-26 10:11:24,312:INFO:Compiling Metrics
+2020-08-26 10:11:24,320:INFO:Initializing Fold 3
+2020-08-26 10:11:24,327:INFO:Fitting Model
+2020-08-26 10:11:24,331:INFO:Evaluating Metrics
+2020-08-26 10:11:24,333:INFO:No inverse transformer found
+2020-08-26 10:11:24,333:INFO:Compiling Metrics
+2020-08-26 10:11:24,345:INFO:Initializing Fold 4
+2020-08-26 10:11:24,355:INFO:Fitting Model
+2020-08-26 10:11:24,359:INFO:Evaluating Metrics
+2020-08-26 10:11:24,361:INFO:No inverse transformer found
+2020-08-26 10:11:24,361:INFO:Compiling Metrics
+2020-08-26 10:11:24,369:INFO:Initializing Fold 5
+2020-08-26 10:11:24,498:INFO:Fitting Model
+2020-08-26 10:11:24,515:INFO:Evaluating Metrics
+2020-08-26 10:11:24,518:INFO:No inverse transformer found
+2020-08-26 10:11:24,518:INFO:Compiling Metrics
+2020-08-26 10:11:24,527:INFO:Initializing Fold 6
+2020-08-26 10:11:24,535:INFO:Fitting Model
+2020-08-26 10:11:24,539:INFO:Evaluating Metrics
+2020-08-26 10:11:24,541:INFO:No inverse transformer found
+2020-08-26 10:11:24,541:INFO:Compiling Metrics
+2020-08-26 10:11:24,548:INFO:Initializing Fold 7
+2020-08-26 10:11:24,555:INFO:Fitting Model
+2020-08-26 10:11:24,559:INFO:Evaluating Metrics
+2020-08-26 10:11:24,561:INFO:No inverse transformer found
+2020-08-26 10:11:24,561:INFO:Compiling Metrics
+2020-08-26 10:11:24,568:INFO:Initializing Fold 8
+2020-08-26 10:11:24,575:INFO:Fitting Model
+2020-08-26 10:11:24,578:INFO:Evaluating Metrics
+2020-08-26 10:11:24,580:INFO:No inverse transformer found
+2020-08-26 10:11:24,581:INFO:Compiling Metrics
+2020-08-26 10:11:24,589:INFO:Initializing Fold 9
+2020-08-26 10:11:24,596:INFO:Fitting Model
+2020-08-26 10:11:24,601:INFO:Evaluating Metrics
+2020-08-26 10:11:24,603:INFO:No inverse transformer found
+2020-08-26 10:11:24,604:INFO:Compiling Metrics
+2020-08-26 10:11:24,613:INFO:Initializing Fold 10
+2020-08-26 10:11:24,622:INFO:Fitting Model
+2020-08-26 10:11:24,626:INFO:Evaluating Metrics
+2020-08-26 10:11:24,628:INFO:No inverse transformer found
+2020-08-26 10:11:24,628:INFO:Compiling Metrics
+2020-08-26 10:11:24,635:INFO:Calculating mean and std
+2020-08-26 10:11:24,636:INFO:Creating metrics dataframe
+2020-08-26 10:11:24,656:INFO:Initializing Bayesian Ridge
+2020-08-26 10:11:24,664:INFO:Initializing Fold 1
+2020-08-26 10:11:24,672:INFO:Fitting Model
+2020-08-26 10:11:24,680:INFO:Evaluating Metrics
+2020-08-26 10:11:24,684:INFO:No inverse transformer found
+2020-08-26 10:11:24,684:INFO:Compiling Metrics
+2020-08-26 10:11:24,692:INFO:Initializing Fold 2
+2020-08-26 10:11:24,700:INFO:Fitting Model
+2020-08-26 10:11:24,707:INFO:Evaluating Metrics
+2020-08-26 10:11:24,710:INFO:No inverse transformer found
+2020-08-26 10:11:24,710:INFO:Compiling Metrics
+2020-08-26 10:11:24,718:INFO:Initializing Fold 3
+2020-08-26 10:11:24,726:INFO:Fitting Model
+2020-08-26 10:11:24,732:INFO:Evaluating Metrics
+2020-08-26 10:11:24,734:INFO:No inverse transformer found
+2020-08-26 10:11:24,734:INFO:Compiling Metrics
+2020-08-26 10:11:24,743:INFO:Initializing Fold 4
+2020-08-26 10:11:24,752:INFO:Fitting Model
+2020-08-26 10:11:24,760:INFO:Evaluating Metrics
+2020-08-26 10:11:24,762:INFO:No inverse transformer found
+2020-08-26 10:11:24,762:INFO:Compiling Metrics
+2020-08-26 10:11:24,771:INFO:Initializing Fold 5
+2020-08-26 10:11:24,779:INFO:Fitting Model
+2020-08-26 10:11:24,785:INFO:Evaluating Metrics
+2020-08-26 10:11:24,789:INFO:No inverse transformer found
+2020-08-26 10:11:24,789:INFO:Compiling Metrics
+2020-08-26 10:11:24,803:INFO:Initializing Fold 6
+2020-08-26 10:11:24,812:INFO:Fitting Model
+2020-08-26 10:11:24,818:INFO:Evaluating Metrics
+2020-08-26 10:11:24,821:INFO:No inverse transformer found
+2020-08-26 10:11:24,821:INFO:Compiling Metrics
+2020-08-26 10:11:24,830:INFO:Initializing Fold 7
+2020-08-26 10:11:24,845:INFO:Fitting Model
+2020-08-26 10:11:24,869:INFO:Evaluating Metrics
+2020-08-26 10:11:24,872:INFO:No inverse transformer found
+2020-08-26 10:11:24,872:INFO:Compiling Metrics
+2020-08-26 10:11:24,883:INFO:Initializing Fold 8
+2020-08-26 10:11:24,891:INFO:Fitting Model
+2020-08-26 10:11:24,896:INFO:Evaluating Metrics
+2020-08-26 10:11:24,899:INFO:No inverse transformer found
+2020-08-26 10:11:24,899:INFO:Compiling Metrics
+2020-08-26 10:11:24,906:INFO:Initializing Fold 9
+2020-08-26 10:11:24,913:INFO:Fitting Model
+2020-08-26 10:11:24,920:INFO:Evaluating Metrics
+2020-08-26 10:11:24,923:INFO:No inverse transformer found
+2020-08-26 10:11:24,923:INFO:Compiling Metrics
+2020-08-26 10:11:24,934:INFO:Initializing Fold 10
+2020-08-26 10:11:24,941:INFO:Fitting Model
+2020-08-26 10:11:24,945:INFO:Evaluating Metrics
+2020-08-26 10:11:24,948:INFO:No inverse transformer found
+2020-08-26 10:11:24,948:INFO:Compiling Metrics
+2020-08-26 10:11:24,966:INFO:Calculating mean and std
+2020-08-26 10:11:24,967:INFO:Creating metrics dataframe
+2020-08-26 10:11:24,989:INFO:Initializing Passive Aggressive Regressor
+2020-08-26 10:11:24,999:INFO:Initializing Fold 1
+2020-08-26 10:11:25,010:INFO:Fitting Model
+2020-08-26 10:11:25,016:INFO:Evaluating Metrics
+2020-08-26 10:11:25,019:INFO:No inverse transformer found
+2020-08-26 10:11:25,019:INFO:Compiling Metrics
+2020-08-26 10:11:25,028:INFO:Initializing Fold 2
+2020-08-26 10:11:25,035:INFO:Fitting Model
+2020-08-26 10:11:25,038:INFO:Evaluating Metrics
+2020-08-26 10:11:25,040:INFO:No inverse transformer found
+2020-08-26 10:11:25,040:INFO:Compiling Metrics
+2020-08-26 10:11:25,049:INFO:Initializing Fold 3
+2020-08-26 10:11:25,055:INFO:Fitting Model
+2020-08-26 10:11:25,058:INFO:Evaluating Metrics
+2020-08-26 10:11:25,060:INFO:No inverse transformer found
+2020-08-26 10:11:25,061:INFO:Compiling Metrics
+2020-08-26 10:11:25,068:INFO:Initializing Fold 4
+2020-08-26 10:11:25,075:INFO:Fitting Model
+2020-08-26 10:11:25,078:INFO:Evaluating Metrics
+2020-08-26 10:11:25,081:INFO:No inverse transformer found
+2020-08-26 10:11:25,081:INFO:Compiling Metrics
+2020-08-26 10:11:25,088:INFO:Initializing Fold 5
+2020-08-26 10:11:25,094:INFO:Fitting Model
+2020-08-26 10:11:25,097:INFO:Evaluating Metrics
+2020-08-26 10:11:25,100:INFO:No inverse transformer found
+2020-08-26 10:11:25,100:INFO:Compiling Metrics
+2020-08-26 10:11:25,109:INFO:Initializing Fold 6
+2020-08-26 10:11:25,119:INFO:Fitting Model
+2020-08-26 10:11:25,123:INFO:Evaluating Metrics
+2020-08-26 10:11:25,125:INFO:No inverse transformer found
+2020-08-26 10:11:25,126:INFO:Compiling Metrics
+2020-08-26 10:11:25,137:INFO:Initializing Fold 7
+2020-08-26 10:11:25,147:INFO:Fitting Model
+2020-08-26 10:11:25,159:INFO:Evaluating Metrics
+2020-08-26 10:11:25,174:INFO:No inverse transformer found
+2020-08-26 10:11:25,175:INFO:Compiling Metrics
+2020-08-26 10:11:25,246:INFO:Initializing Fold 8
+2020-08-26 10:11:25,257:INFO:Fitting Model
+2020-08-26 10:11:25,260:INFO:Evaluating Metrics
+2020-08-26 10:11:25,263:INFO:No inverse transformer found
+2020-08-26 10:11:25,263:INFO:Compiling Metrics
+2020-08-26 10:11:25,273:INFO:Initializing Fold 9
+2020-08-26 10:11:25,280:INFO:Fitting Model
+2020-08-26 10:11:25,284:INFO:Evaluating Metrics
+2020-08-26 10:11:25,286:INFO:No inverse transformer found
+2020-08-26 10:11:25,286:INFO:Compiling Metrics
+2020-08-26 10:11:25,293:INFO:Initializing Fold 10
+2020-08-26 10:11:25,303:INFO:Fitting Model
+2020-08-26 10:11:25,307:INFO:Evaluating Metrics
+2020-08-26 10:11:25,309:INFO:No inverse transformer found
+2020-08-26 10:11:25,309:INFO:Compiling Metrics
+2020-08-26 10:11:25,319:INFO:Calculating mean and std
+2020-08-26 10:11:25,319:INFO:Creating metrics dataframe
+2020-08-26 10:11:25,338:INFO:Initializing TheilSen Regressor
+2020-08-26 10:11:25,349:INFO:Initializing Fold 1
+2020-08-26 10:11:25,355:INFO:Fitting Model
+2020-08-26 10:11:28,917:INFO:Evaluating Metrics
+2020-08-26 10:11:28,922:INFO:No inverse transformer found
+2020-08-26 10:11:28,923:INFO:Compiling Metrics
+2020-08-26 10:11:28,934:INFO:Initializing Fold 2
+2020-08-26 10:11:28,941:INFO:Fitting Model
+2020-08-26 10:11:30,329:INFO:Evaluating Metrics
+2020-08-26 10:11:30,332:INFO:No inverse transformer found
+2020-08-26 10:11:30,332:INFO:Compiling Metrics
+2020-08-26 10:11:30,340:INFO:Initializing Fold 3
+2020-08-26 10:11:30,346:INFO:Fitting Model
+2020-08-26 10:11:31,872:INFO:Evaluating Metrics
+2020-08-26 10:11:31,874:INFO:No inverse transformer found
+2020-08-26 10:11:31,874:INFO:Compiling Metrics
+2020-08-26 10:11:31,885:INFO:Initializing Fold 4
+2020-08-26 10:11:31,896:INFO:Fitting Model
+2020-08-26 10:11:33,622:INFO:Evaluating Metrics
+2020-08-26 10:11:33,627:INFO:No inverse transformer found
+2020-08-26 10:11:33,627:INFO:Compiling Metrics
+2020-08-26 10:11:33,648:INFO:Initializing Fold 5
+2020-08-26 10:11:33,661:INFO:Fitting Model
+2020-08-26 10:11:35,306:INFO:Evaluating Metrics
+2020-08-26 10:11:35,311:INFO:No inverse transformer found
+2020-08-26 10:11:35,311:INFO:Compiling Metrics
+2020-08-26 10:11:35,319:INFO:Initializing Fold 6
+2020-08-26 10:11:35,329:INFO:Fitting Model
+2020-08-26 10:11:37,024:INFO:Evaluating Metrics
+2020-08-26 10:11:37,027:INFO:No inverse transformer found
+2020-08-26 10:11:37,027:INFO:Compiling Metrics
+2020-08-26 10:11:37,039:INFO:Initializing Fold 7
+2020-08-26 10:11:37,050:INFO:Fitting Model
+2020-08-26 10:11:38,429:INFO:Evaluating Metrics
+2020-08-26 10:11:38,432:INFO:No inverse transformer found
+2020-08-26 10:11:38,432:INFO:Compiling Metrics
+2020-08-26 10:11:38,440:INFO:Initializing Fold 8
+2020-08-26 10:11:38,447:INFO:Fitting Model
+2020-08-26 10:11:40,115:INFO:Evaluating Metrics
+2020-08-26 10:11:40,118:INFO:No inverse transformer found
+2020-08-26 10:11:40,118:INFO:Compiling Metrics
+2020-08-26 10:11:40,127:INFO:Initializing Fold 9
+2020-08-26 10:11:40,139:INFO:Fitting Model
+2020-08-26 10:11:41,712:INFO:Evaluating Metrics
+2020-08-26 10:11:41,718:INFO:No inverse transformer found
+2020-08-26 10:11:41,718:INFO:Compiling Metrics
+2020-08-26 10:11:41,729:INFO:Initializing Fold 10
+2020-08-26 10:11:41,739:INFO:Fitting Model
+2020-08-26 10:11:43,293:INFO:Evaluating Metrics
+2020-08-26 10:11:43,296:INFO:No inverse transformer found
+2020-08-26 10:11:43,296:INFO:Compiling Metrics
+2020-08-26 10:11:43,304:INFO:Calculating mean and std
+2020-08-26 10:11:43,305:INFO:Creating metrics dataframe
+2020-08-26 10:11:43,323:INFO:Initializing Huber Regressor
+2020-08-26 10:11:43,332:INFO:Initializing Fold 1
+2020-08-26 10:11:43,339:INFO:Fitting Model
+2020-08-26 10:11:43,381:INFO:Evaluating Metrics
+2020-08-26 10:11:43,383:INFO:No inverse transformer found
+2020-08-26 10:11:43,383:INFO:Compiling Metrics
+2020-08-26 10:11:43,393:INFO:Initializing Fold 2
+2020-08-26 10:11:43,401:INFO:Fitting Model
+2020-08-26 10:11:43,451:INFO:Evaluating Metrics
+2020-08-26 10:11:43,455:INFO:No inverse transformer found
+2020-08-26 10:11:43,455:INFO:Compiling Metrics
+2020-08-26 10:11:43,466:INFO:Initializing Fold 3
+2020-08-26 10:11:43,477:INFO:Fitting Model
+2020-08-26 10:11:43,529:INFO:Evaluating Metrics
+2020-08-26 10:11:43,533:INFO:No inverse transformer found
+2020-08-26 10:11:43,533:INFO:Compiling Metrics
+2020-08-26 10:11:43,544:INFO:Initializing Fold 4
+2020-08-26 10:11:43,552:INFO:Fitting Model
+2020-08-26 10:11:43,597:INFO:Evaluating Metrics
+2020-08-26 10:11:43,599:INFO:No inverse transformer found
+2020-08-26 10:11:43,599:INFO:Compiling Metrics
+2020-08-26 10:11:43,610:INFO:Initializing Fold 5
+2020-08-26 10:11:43,620:INFO:Fitting Model
+2020-08-26 10:11:43,664:INFO:Evaluating Metrics
+2020-08-26 10:11:43,666:INFO:No inverse transformer found
+2020-08-26 10:11:43,666:INFO:Compiling Metrics
+2020-08-26 10:11:43,679:INFO:Initializing Fold 6
+2020-08-26 10:11:43,687:INFO:Fitting Model
+2020-08-26 10:11:43,727:INFO:Evaluating Metrics
+2020-08-26 10:11:43,729:INFO:No inverse transformer found
+2020-08-26 10:11:43,730:INFO:Compiling Metrics
+2020-08-26 10:11:43,739:INFO:Initializing Fold 7
+2020-08-26 10:11:43,748:INFO:Fitting Model
+2020-08-26 10:11:43,791:INFO:Evaluating Metrics
+2020-08-26 10:11:43,794:INFO:No inverse transformer found
+2020-08-26 10:11:43,794:INFO:Compiling Metrics
+2020-08-26 10:11:43,804:INFO:Initializing Fold 8
+2020-08-26 10:11:43,813:INFO:Fitting Model
+2020-08-26 10:11:43,856:INFO:Evaluating Metrics
+2020-08-26 10:11:43,859:INFO:No inverse transformer found
+2020-08-26 10:11:43,859:INFO:Compiling Metrics
+2020-08-26 10:11:43,871:INFO:Initializing Fold 9
+2020-08-26 10:11:43,881:INFO:Fitting Model
+2020-08-26 10:11:43,918:INFO:Evaluating Metrics
+2020-08-26 10:11:43,920:INFO:No inverse transformer found
+2020-08-26 10:11:43,920:INFO:Compiling Metrics
+2020-08-26 10:11:43,929:INFO:Initializing Fold 10
+2020-08-26 10:11:43,935:INFO:Fitting Model
+2020-08-26 10:11:43,977:INFO:Evaluating Metrics
+2020-08-26 10:11:43,979:INFO:No inverse transformer found
+2020-08-26 10:11:43,979:INFO:Compiling Metrics
+2020-08-26 10:11:43,987:INFO:Calculating mean and std
+2020-08-26 10:11:43,987:INFO:Creating metrics dataframe
+2020-08-26 10:11:44,008:INFO:Initializing Support Vector Machine
+2020-08-26 10:11:44,017:INFO:Initializing Fold 1
+2020-08-26 10:11:44,023:INFO:Fitting Model
+2020-08-26 10:11:44,031:INFO:Evaluating Metrics
+2020-08-26 10:11:44,034:INFO:No inverse transformer found
+2020-08-26 10:11:44,034:INFO:Compiling Metrics
+2020-08-26 10:11:44,042:INFO:Initializing Fold 2
+2020-08-26 10:11:44,049:INFO:Fitting Model
+2020-08-26 10:11:44,052:INFO:Evaluating Metrics
+2020-08-26 10:11:44,055:INFO:No inverse transformer found
+2020-08-26 10:11:44,055:INFO:Compiling Metrics
+2020-08-26 10:11:44,063:INFO:Initializing Fold 3
+2020-08-26 10:11:44,070:INFO:Fitting Model
+2020-08-26 10:11:44,074:INFO:Evaluating Metrics
+2020-08-26 10:11:44,077:INFO:No inverse transformer found
+2020-08-26 10:11:44,077:INFO:Compiling Metrics
+2020-08-26 10:11:44,086:INFO:Initializing Fold 4
+2020-08-26 10:11:44,095:INFO:Fitting Model
+2020-08-26 10:11:44,099:INFO:Evaluating Metrics
+2020-08-26 10:11:44,101:INFO:No inverse transformer found
+2020-08-26 10:11:44,102:INFO:Compiling Metrics
+2020-08-26 10:11:44,110:INFO:Initializing Fold 5
+2020-08-26 10:11:44,118:INFO:Fitting Model
+2020-08-26 10:11:44,122:INFO:Evaluating Metrics
+2020-08-26 10:11:44,126:INFO:No inverse transformer found
+2020-08-26 10:11:44,126:INFO:Compiling Metrics
+2020-08-26 10:11:44,139:INFO:Initializing Fold 6
+2020-08-26 10:11:44,152:INFO:Fitting Model
+2020-08-26 10:11:44,157:INFO:Evaluating Metrics
+2020-08-26 10:11:44,160:INFO:No inverse transformer found
+2020-08-26 10:11:44,161:INFO:Compiling Metrics
+2020-08-26 10:11:44,178:INFO:Initializing Fold 7
+2020-08-26 10:11:44,186:INFO:Fitting Model
+2020-08-26 10:11:44,190:INFO:Evaluating Metrics
+2020-08-26 10:11:44,192:INFO:No inverse transformer found
+2020-08-26 10:11:44,193:INFO:Compiling Metrics
+2020-08-26 10:11:44,205:INFO:Initializing Fold 8
+2020-08-26 10:11:44,215:INFO:Fitting Model
+2020-08-26 10:11:44,219:INFO:Evaluating Metrics
+2020-08-26 10:11:44,222:INFO:No inverse transformer found
+2020-08-26 10:11:44,222:INFO:Compiling Metrics
+2020-08-26 10:11:44,233:INFO:Initializing Fold 9
+2020-08-26 10:11:44,239:INFO:Fitting Model
+2020-08-26 10:11:44,242:INFO:Evaluating Metrics
+2020-08-26 10:11:44,246:INFO:No inverse transformer found
+2020-08-26 10:11:44,247:INFO:Compiling Metrics
+2020-08-26 10:11:44,254:INFO:Initializing Fold 10
+2020-08-26 10:11:44,262:INFO:Fitting Model
+2020-08-26 10:11:44,266:INFO:Evaluating Metrics
+2020-08-26 10:11:44,268:INFO:No inverse transformer found
+2020-08-26 10:11:44,268:INFO:Compiling Metrics
+2020-08-26 10:11:44,278:INFO:Calculating mean and std
+2020-08-26 10:11:44,279:INFO:Creating metrics dataframe
+2020-08-26 10:11:44,299:INFO:Initializing Decision Tree
+2020-08-26 10:11:44,306:INFO:Initializing Fold 1
+2020-08-26 10:11:44,316:INFO:Fitting Model
+2020-08-26 10:11:44,321:INFO:Evaluating Metrics
+2020-08-26 10:11:44,325:INFO:No inverse transformer found
+2020-08-26 10:11:44,325:INFO:Compiling Metrics
+2020-08-26 10:11:44,335:INFO:Initializing Fold 2
+2020-08-26 10:11:44,342:INFO:Fitting Model
+2020-08-26 10:11:44,347:INFO:Evaluating Metrics
+2020-08-26 10:11:44,349:INFO:No inverse transformer found
+2020-08-26 10:11:44,350:INFO:Compiling Metrics
+2020-08-26 10:11:44,358:INFO:Initializing Fold 3
+2020-08-26 10:11:44,366:INFO:Fitting Model
+2020-08-26 10:11:44,370:INFO:Evaluating Metrics
+2020-08-26 10:11:44,372:INFO:No inverse transformer found
+2020-08-26 10:11:44,372:INFO:Compiling Metrics
+2020-08-26 10:11:44,381:INFO:Initializing Fold 4
+2020-08-26 10:11:44,390:INFO:Fitting Model
+2020-08-26 10:11:44,395:INFO:Evaluating Metrics
+2020-08-26 10:11:44,398:INFO:No inverse transformer found
+2020-08-26 10:11:44,398:INFO:Compiling Metrics
+2020-08-26 10:11:44,406:INFO:Initializing Fold 5
+2020-08-26 10:11:44,413:INFO:Fitting Model
+2020-08-26 10:11:44,416:INFO:Evaluating Metrics
+2020-08-26 10:11:44,419:INFO:No inverse transformer found
+2020-08-26 10:11:44,419:INFO:Compiling Metrics
+2020-08-26 10:11:44,428:INFO:Initializing Fold 6
+2020-08-26 10:11:44,436:INFO:Fitting Model
+2020-08-26 10:11:44,443:INFO:Evaluating Metrics
+2020-08-26 10:11:44,446:INFO:No inverse transformer found
+2020-08-26 10:11:44,446:INFO:Compiling Metrics
+2020-08-26 10:11:44,457:INFO:Initializing Fold 7
+2020-08-26 10:11:44,468:INFO:Fitting Model
+2020-08-26 10:11:44,475:INFO:Evaluating Metrics
+2020-08-26 10:11:44,478:INFO:No inverse transformer found
+2020-08-26 10:11:44,478:INFO:Compiling Metrics
+2020-08-26 10:11:44,490:INFO:Initializing Fold 8
+2020-08-26 10:11:44,502:INFO:Fitting Model
+2020-08-26 10:11:44,507:INFO:Evaluating Metrics
+2020-08-26 10:11:44,511:INFO:No inverse transformer found
+2020-08-26 10:11:44,511:INFO:Compiling Metrics
+2020-08-26 10:11:44,533:INFO:Initializing Fold 9
+2020-08-26 10:11:44,546:INFO:Fitting Model
+2020-08-26 10:11:44,576:INFO:Evaluating Metrics
+2020-08-26 10:11:44,579:INFO:No inverse transformer found
+2020-08-26 10:11:44,579:INFO:Compiling Metrics
+2020-08-26 10:11:44,587:INFO:Initializing Fold 10
+2020-08-26 10:11:44,594:INFO:Fitting Model
+2020-08-26 10:11:44,599:INFO:Evaluating Metrics
+2020-08-26 10:11:44,640:INFO:No inverse transformer found
+2020-08-26 10:11:44,640:INFO:Compiling Metrics
+2020-08-26 10:11:44,652:INFO:Calculating mean and std
+2020-08-26 10:11:44,654:INFO:Creating metrics dataframe
+2020-08-26 10:11:44,680:INFO:Initializing Random Forest
+2020-08-26 10:11:44,691:INFO:Initializing Fold 1
+2020-08-26 10:11:44,702:INFO:Fitting Model
+2020-08-26 10:11:44,994:INFO:Evaluating Metrics
+2020-08-26 10:11:45,099:INFO:No inverse transformer found
+2020-08-26 10:11:45,099:INFO:Compiling Metrics
+2020-08-26 10:11:45,115:INFO:Initializing Fold 2
+2020-08-26 10:11:45,141:INFO:Fitting Model
+2020-08-26 10:11:45,462:INFO:Evaluating Metrics
+2020-08-26 10:11:45,566:INFO:No inverse transformer found
+2020-08-26 10:11:45,567:INFO:Compiling Metrics
+2020-08-26 10:11:45,575:INFO:Initializing Fold 3
+2020-08-26 10:11:45,584:INFO:Fitting Model
+2020-08-26 10:11:45,863:INFO:Evaluating Metrics
+2020-08-26 10:11:45,971:INFO:No inverse transformer found
+2020-08-26 10:11:45,971:INFO:Compiling Metrics
+2020-08-26 10:11:45,981:INFO:Initializing Fold 4
+2020-08-26 10:11:45,989:INFO:Fitting Model
+2020-08-26 10:11:46,274:INFO:Evaluating Metrics
+2020-08-26 10:11:46,380:INFO:No inverse transformer found
+2020-08-26 10:11:46,380:INFO:Compiling Metrics
+2020-08-26 10:11:46,389:INFO:Initializing Fold 5
+2020-08-26 10:11:46,395:INFO:Fitting Model
+2020-08-26 10:11:46,664:INFO:Evaluating Metrics
+2020-08-26 10:11:46,769:INFO:No inverse transformer found
+2020-08-26 10:11:46,769:INFO:Compiling Metrics
+2020-08-26 10:11:46,778:INFO:Initializing Fold 6
+2020-08-26 10:11:46,785:INFO:Fitting Model
+2020-08-26 10:11:47,058:INFO:Evaluating Metrics
+2020-08-26 10:11:47,169:INFO:No inverse transformer found
+2020-08-26 10:11:47,169:INFO:Compiling Metrics
+2020-08-26 10:11:47,177:INFO:Initializing Fold 7
+2020-08-26 10:11:47,185:INFO:Fitting Model
+2020-08-26 10:11:47,477:INFO:Evaluating Metrics
+2020-08-26 10:11:47,584:INFO:No inverse transformer found
+2020-08-26 10:11:47,585:INFO:Compiling Metrics
+2020-08-26 10:11:47,593:INFO:Initializing Fold 8
+2020-08-26 10:11:47,600:INFO:Fitting Model
+2020-08-26 10:11:47,866:INFO:Evaluating Metrics
+2020-08-26 10:11:47,970:INFO:No inverse transformer found
+2020-08-26 10:11:47,970:INFO:Compiling Metrics
+2020-08-26 10:11:47,979:INFO:Initializing Fold 9
+2020-08-26 10:11:47,987:INFO:Fitting Model
+2020-08-26 10:11:48,361:INFO:Evaluating Metrics
+2020-08-26 10:11:48,469:INFO:No inverse transformer found
+2020-08-26 10:11:48,469:INFO:Compiling Metrics
+2020-08-26 10:11:48,476:INFO:Initializing Fold 10
+2020-08-26 10:11:48,483:INFO:Fitting Model
+2020-08-26 10:11:48,748:INFO:Evaluating Metrics
+2020-08-26 10:11:48,858:INFO:No inverse transformer found
+2020-08-26 10:11:48,858:INFO:Compiling Metrics
+2020-08-26 10:11:48,868:INFO:Calculating mean and std
+2020-08-26 10:11:48,868:INFO:Creating metrics dataframe
+2020-08-26 10:11:48,885:INFO:Initializing Extra Trees Regressor
+2020-08-26 10:11:48,893:INFO:Initializing Fold 1
+2020-08-26 10:11:48,901:INFO:Fitting Model
+2020-08-26 10:11:49,162:INFO:Evaluating Metrics
+2020-08-26 10:11:49,269:INFO:No inverse transformer found
+2020-08-26 10:11:49,269:INFO:Compiling Metrics
+2020-08-26 10:11:49,278:INFO:Initializing Fold 2
+2020-08-26 10:11:49,285:INFO:Fitting Model
+2020-08-26 10:11:49,451:INFO:Evaluating Metrics
+2020-08-26 10:11:49,558:INFO:No inverse transformer found
+2020-08-26 10:11:49,558:INFO:Compiling Metrics
+2020-08-26 10:11:49,567:INFO:Initializing Fold 3
+2020-08-26 10:11:49,573:INFO:Fitting Model
+2020-08-26 10:11:49,742:INFO:Evaluating Metrics
+2020-08-26 10:11:49,846:INFO:No inverse transformer found
+2020-08-26 10:11:49,846:INFO:Compiling Metrics
+2020-08-26 10:11:49,858:INFO:Initializing Fold 4
+2020-08-26 10:11:49,866:INFO:Fitting Model
+2020-08-26 10:11:50,028:INFO:Evaluating Metrics
+2020-08-26 10:11:50,134:INFO:No inverse transformer found
+2020-08-26 10:11:50,134:INFO:Compiling Metrics
+2020-08-26 10:11:50,141:INFO:Initializing Fold 5
+2020-08-26 10:11:50,147:INFO:Fitting Model
+2020-08-26 10:11:50,411:INFO:Evaluating Metrics
+2020-08-26 10:11:50,516:INFO:No inverse transformer found
+2020-08-26 10:11:50,516:INFO:Compiling Metrics
+2020-08-26 10:11:50,526:INFO:Initializing Fold 6
+2020-08-26 10:11:50,562:INFO:Fitting Model
+2020-08-26 10:11:50,777:INFO:Evaluating Metrics
+2020-08-26 10:11:50,884:INFO:No inverse transformer found
+2020-08-26 10:11:50,884:INFO:Compiling Metrics
+2020-08-26 10:11:50,892:INFO:Initializing Fold 7
+2020-08-26 10:11:50,899:INFO:Fitting Model
+2020-08-26 10:11:51,162:INFO:Evaluating Metrics
+2020-08-26 10:11:51,267:INFO:No inverse transformer found
+2020-08-26 10:11:51,267:INFO:Compiling Metrics
+2020-08-26 10:11:51,276:INFO:Initializing Fold 8
+2020-08-26 10:11:51,285:INFO:Fitting Model
+2020-08-26 10:11:51,467:INFO:Evaluating Metrics
+2020-08-26 10:11:51,574:INFO:No inverse transformer found
+2020-08-26 10:11:51,574:INFO:Compiling Metrics
+2020-08-26 10:11:51,584:INFO:Initializing Fold 9
+2020-08-26 10:11:51,593:INFO:Fitting Model
+2020-08-26 10:11:51,772:INFO:Evaluating Metrics
+2020-08-26 10:11:51,880:INFO:No inverse transformer found
+2020-08-26 10:11:51,880:INFO:Compiling Metrics
+2020-08-26 10:11:51,890:INFO:Initializing Fold 10
+2020-08-26 10:11:51,900:INFO:Fitting Model
+2020-08-26 10:11:52,086:INFO:Evaluating Metrics
+2020-08-26 10:11:52,196:INFO:No inverse transformer found
+2020-08-26 10:11:52,197:INFO:Compiling Metrics
+2020-08-26 10:11:52,204:INFO:Calculating mean and std
+2020-08-26 10:11:52,205:INFO:Creating metrics dataframe
+2020-08-26 10:11:52,225:INFO:Initializing AdaBoost Regressor
+2020-08-26 10:11:52,233:INFO:Initializing Fold 1
+2020-08-26 10:11:52,254:INFO:Fitting Model
+2020-08-26 10:11:52,452:INFO:Evaluating Metrics
+2020-08-26 10:11:52,463:INFO:No inverse transformer found
+2020-08-26 10:11:52,464:INFO:Compiling Metrics
+2020-08-26 10:11:52,629:INFO:Initializing Fold 2
+2020-08-26 10:11:52,653:INFO:Fitting Model
+2020-08-26 10:11:52,828:INFO:Evaluating Metrics
+2020-08-26 10:11:52,851:INFO:No inverse transformer found
+2020-08-26 10:11:52,852:INFO:Compiling Metrics
+2020-08-26 10:11:52,861:INFO:Initializing Fold 3
+2020-08-26 10:11:52,870:INFO:Fitting Model
+2020-08-26 10:11:53,006:INFO:Evaluating Metrics
+2020-08-26 10:11:53,023:INFO:No inverse transformer found
+2020-08-26 10:11:53,023:INFO:Compiling Metrics
+2020-08-26 10:11:53,032:INFO:Initializing Fold 4
+2020-08-26 10:11:53,041:INFO:Fitting Model
+2020-08-26 10:11:53,162:INFO:Evaluating Metrics
+2020-08-26 10:11:53,175:INFO:No inverse transformer found
+2020-08-26 10:11:53,175:INFO:Compiling Metrics
+2020-08-26 10:11:53,302:INFO:Initializing Fold 5
+2020-08-26 10:11:53,373:INFO:Fitting Model
+2020-08-26 10:11:53,692:INFO:Evaluating Metrics
+2020-08-26 10:11:53,700:INFO:No inverse transformer found
+2020-08-26 10:11:53,700:INFO:Compiling Metrics
+2020-08-26 10:11:53,709:INFO:Initializing Fold 6
+2020-08-26 10:11:53,719:INFO:Fitting Model
+2020-08-26 10:11:53,840:INFO:Evaluating Metrics
+2020-08-26 10:11:53,851:INFO:No inverse transformer found
+2020-08-26 10:11:53,852:INFO:Compiling Metrics
+2020-08-26 10:11:53,868:INFO:Initializing Fold 7
+2020-08-26 10:11:53,883:INFO:Fitting Model
+2020-08-26 10:11:54,093:INFO:Evaluating Metrics
+2020-08-26 10:11:54,103:INFO:No inverse transformer found
+2020-08-26 10:11:54,104:INFO:Compiling Metrics
+2020-08-26 10:11:54,120:INFO:Initializing Fold 8
+2020-08-26 10:11:54,136:INFO:Fitting Model
+2020-08-26 10:11:54,267:INFO:Evaluating Metrics
+2020-08-26 10:11:54,281:INFO:No inverse transformer found
+2020-08-26 10:11:54,281:INFO:Compiling Metrics
+2020-08-26 10:11:54,289:INFO:Initializing Fold 9
+2020-08-26 10:11:54,298:INFO:Fitting Model
+2020-08-26 10:11:54,406:INFO:Evaluating Metrics
+2020-08-26 10:11:54,419:INFO:No inverse transformer found
+2020-08-26 10:11:54,419:INFO:Compiling Metrics
+2020-08-26 10:11:54,434:INFO:Initializing Fold 10
+2020-08-26 10:11:54,469:INFO:Fitting Model
+2020-08-26 10:11:54,607:INFO:Evaluating Metrics
+2020-08-26 10:11:54,624:INFO:No inverse transformer found
+2020-08-26 10:11:54,624:INFO:Compiling Metrics
+2020-08-26 10:11:54,637:INFO:Calculating mean and std
+2020-08-26 10:11:54,638:INFO:Creating metrics dataframe
+2020-08-26 10:11:54,715:INFO:Initializing Gradient Boosting Regressor
+2020-08-26 10:11:54,734:INFO:Initializing Fold 1
+2020-08-26 10:11:54,746:INFO:Fitting Model
+2020-08-26 10:11:54,942:INFO:Evaluating Metrics
+2020-08-26 10:11:54,945:INFO:No inverse transformer found
+2020-08-26 10:11:54,945:INFO:Compiling Metrics
+2020-08-26 10:11:54,953:INFO:Initializing Fold 2
+2020-08-26 10:11:54,962:INFO:Fitting Model
+2020-08-26 10:11:55,066:INFO:Evaluating Metrics
+2020-08-26 10:11:55,069:INFO:No inverse transformer found
+2020-08-26 10:11:55,069:INFO:Compiling Metrics
+2020-08-26 10:11:55,080:INFO:Initializing Fold 3
+2020-08-26 10:11:55,085:INFO:Fitting Model
+2020-08-26 10:11:55,184:INFO:Evaluating Metrics
+2020-08-26 10:11:55,188:INFO:No inverse transformer found
+2020-08-26 10:11:55,189:INFO:Compiling Metrics
+2020-08-26 10:11:55,199:INFO:Initializing Fold 4
+2020-08-26 10:11:55,209:INFO:Fitting Model
+2020-08-26 10:11:55,310:INFO:Evaluating Metrics
+2020-08-26 10:11:55,313:INFO:No inverse transformer found
+2020-08-26 10:11:55,313:INFO:Compiling Metrics
+2020-08-26 10:11:55,320:INFO:Initializing Fold 5
+2020-08-26 10:11:55,328:INFO:Fitting Model
+2020-08-26 10:11:55,430:INFO:Evaluating Metrics
+2020-08-26 10:11:55,433:INFO:No inverse transformer found
+2020-08-26 10:11:55,433:INFO:Compiling Metrics
+2020-08-26 10:11:55,441:INFO:Initializing Fold 6
+2020-08-26 10:11:55,449:INFO:Fitting Model
+2020-08-26 10:11:55,617:INFO:Evaluating Metrics
+2020-08-26 10:11:55,621:INFO:No inverse transformer found
+2020-08-26 10:11:55,621:INFO:Compiling Metrics
+2020-08-26 10:11:55,631:INFO:Initializing Fold 7
+2020-08-26 10:11:55,640:INFO:Fitting Model
+2020-08-26 10:11:55,739:INFO:Evaluating Metrics
+2020-08-26 10:11:55,742:INFO:No inverse transformer found
+2020-08-26 10:11:55,742:INFO:Compiling Metrics
+2020-08-26 10:11:55,753:INFO:Initializing Fold 8
+2020-08-26 10:11:55,763:INFO:Fitting Model
+2020-08-26 10:11:55,905:INFO:Evaluating Metrics
+2020-08-26 10:11:55,909:INFO:No inverse transformer found
+2020-08-26 10:11:55,909:INFO:Compiling Metrics
+2020-08-26 10:11:55,933:INFO:Initializing Fold 9
+2020-08-26 10:11:55,942:INFO:Fitting Model
+2020-08-26 10:11:56,070:INFO:Evaluating Metrics
+2020-08-26 10:11:56,073:INFO:No inverse transformer found
+2020-08-26 10:11:56,073:INFO:Compiling Metrics
+2020-08-26 10:11:56,090:INFO:Initializing Fold 10
+2020-08-26 10:11:56,115:INFO:Fitting Model
+2020-08-26 10:11:56,224:INFO:Evaluating Metrics
+2020-08-26 10:11:56,226:INFO:No inverse transformer found
+2020-08-26 10:11:56,227:INFO:Compiling Metrics
+2020-08-26 10:11:56,236:INFO:Calculating mean and std
+2020-08-26 10:11:56,237:INFO:Creating metrics dataframe
+2020-08-26 10:11:56,257:INFO:Initializing Extreme Gradient Boosting
+2020-08-26 10:11:56,265:INFO:Initializing Fold 1
+2020-08-26 10:11:56,272:INFO:Fitting Model
+2020-08-26 10:11:56,334:INFO:Evaluating Metrics
+2020-08-26 10:11:56,336:INFO:No inverse transformer found
+2020-08-26 10:11:56,336:INFO:Compiling Metrics
+2020-08-26 10:11:56,344:INFO:Initializing Fold 2
+2020-08-26 10:11:56,352:INFO:Fitting Model
+2020-08-26 10:11:56,396:INFO:Evaluating Metrics
+2020-08-26 10:11:56,399:INFO:No inverse transformer found
+2020-08-26 10:11:56,400:INFO:Compiling Metrics
+2020-08-26 10:11:56,410:INFO:Initializing Fold 3
+2020-08-26 10:11:56,418:INFO:Fitting Model
+2020-08-26 10:11:56,456:INFO:Evaluating Metrics
+2020-08-26 10:11:56,457:INFO:No inverse transformer found
+2020-08-26 10:11:56,457:INFO:Compiling Metrics
+2020-08-26 10:11:56,466:INFO:Initializing Fold 4
+2020-08-26 10:11:56,473:INFO:Fitting Model
+2020-08-26 10:11:56,520:INFO:Evaluating Metrics
+2020-08-26 10:11:56,521:INFO:No inverse transformer found
+2020-08-26 10:11:56,522:INFO:Compiling Metrics
+2020-08-26 10:11:56,532:INFO:Initializing Fold 5
+2020-08-26 10:11:56,541:INFO:Fitting Model
+2020-08-26 10:11:56,596:INFO:Evaluating Metrics
+2020-08-26 10:11:56,600:INFO:No inverse transformer found
+2020-08-26 10:11:56,600:INFO:Compiling Metrics
+2020-08-26 10:11:56,632:INFO:Initializing Fold 6
+2020-08-26 10:11:56,653:INFO:Fitting Model
+2020-08-26 10:11:56,780:INFO:Evaluating Metrics
+2020-08-26 10:11:56,789:INFO:No inverse transformer found
+2020-08-26 10:11:56,790:INFO:Compiling Metrics
+2020-08-26 10:11:56,833:INFO:Initializing Fold 7
+2020-08-26 10:11:56,847:INFO:Fitting Model
+2020-08-26 10:11:56,943:INFO:Evaluating Metrics
+2020-08-26 10:11:56,944:INFO:No inverse transformer found
+2020-08-26 10:11:56,944:INFO:Compiling Metrics
+2020-08-26 10:11:56,953:INFO:Initializing Fold 8
+2020-08-26 10:11:56,961:INFO:Fitting Model
+2020-08-26 10:11:57,022:INFO:Evaluating Metrics
+2020-08-26 10:11:57,026:INFO:No inverse transformer found
+2020-08-26 10:11:57,026:INFO:Compiling Metrics
+2020-08-26 10:11:57,111:INFO:Initializing Fold 9
+2020-08-26 10:11:57,127:INFO:Fitting Model
+2020-08-26 10:11:57,199:INFO:Evaluating Metrics
+2020-08-26 10:11:57,203:INFO:No inverse transformer found
+2020-08-26 10:11:57,204:INFO:Compiling Metrics
+2020-08-26 10:11:57,223:INFO:Initializing Fold 10
+2020-08-26 10:11:57,260:INFO:Fitting Model
+2020-08-26 10:11:57,341:INFO:Evaluating Metrics
+2020-08-26 10:11:57,343:INFO:No inverse transformer found
+2020-08-26 10:11:57,343:INFO:Compiling Metrics
+2020-08-26 10:11:57,358:INFO:Calculating mean and std
+2020-08-26 10:11:57,359:INFO:Creating metrics dataframe
+2020-08-26 10:11:57,389:INFO:Initializing Light Gradient Boosting Machine
+2020-08-26 10:11:57,412:INFO:Initializing Fold 1
+2020-08-26 10:11:57,423:INFO:Fitting Model
+2020-08-26 10:11:57,656:INFO:Evaluating Metrics
+2020-08-26 10:11:57,659:INFO:No inverse transformer found
+2020-08-26 10:11:57,660:INFO:Compiling Metrics
+2020-08-26 10:11:57,670:INFO:Initializing Fold 2
+2020-08-26 10:11:57,678:INFO:Fitting Model
+2020-08-26 10:11:57,912:INFO:Evaluating Metrics
+2020-08-26 10:11:57,915:INFO:No inverse transformer found
+2020-08-26 10:11:57,915:INFO:Compiling Metrics
+2020-08-26 10:11:57,926:INFO:Initializing Fold 3
+2020-08-26 10:11:57,934:INFO:Fitting Model
+2020-08-26 10:11:58,302:INFO:Evaluating Metrics
+2020-08-26 10:11:58,305:INFO:No inverse transformer found
+2020-08-26 10:11:58,305:INFO:Compiling Metrics
+2020-08-26 10:11:58,314:INFO:Initializing Fold 4
+2020-08-26 10:11:58,323:INFO:Fitting Model
+2020-08-26 10:11:58,533:INFO:Evaluating Metrics
+2020-08-26 10:11:58,536:INFO:No inverse transformer found
+2020-08-26 10:11:58,536:INFO:Compiling Metrics
+2020-08-26 10:11:58,545:INFO:Initializing Fold 5
+2020-08-26 10:11:58,553:INFO:Fitting Model
+2020-08-26 10:11:58,725:INFO:Evaluating Metrics
+2020-08-26 10:11:58,728:INFO:No inverse transformer found
+2020-08-26 10:11:58,728:INFO:Compiling Metrics
+2020-08-26 10:11:58,737:INFO:Initializing Fold 6
+2020-08-26 10:11:58,744:INFO:Fitting Model
+2020-08-26 10:11:58,881:INFO:Evaluating Metrics
+2020-08-26 10:11:58,884:INFO:No inverse transformer found
+2020-08-26 10:11:58,884:INFO:Compiling Metrics
+2020-08-26 10:11:58,893:INFO:Initializing Fold 7
+2020-08-26 10:11:58,902:INFO:Fitting Model
+2020-08-26 10:11:59,140:INFO:Evaluating Metrics
+2020-08-26 10:11:59,143:INFO:No inverse transformer found
+2020-08-26 10:11:59,143:INFO:Compiling Metrics
+2020-08-26 10:11:59,153:INFO:Initializing Fold 8
+2020-08-26 10:11:59,161:INFO:Fitting Model
+2020-08-26 10:11:59,371:INFO:Evaluating Metrics
+2020-08-26 10:11:59,387:INFO:No inverse transformer found
+2020-08-26 10:11:59,388:INFO:Compiling Metrics
+2020-08-26 10:11:59,398:INFO:Initializing Fold 9
+2020-08-26 10:11:59,409:INFO:Fitting Model
+2020-08-26 10:11:59,566:INFO:Evaluating Metrics
+2020-08-26 10:11:59,568:INFO:No inverse transformer found
+2020-08-26 10:11:59,569:INFO:Compiling Metrics
+2020-08-26 10:11:59,578:INFO:Initializing Fold 10
+2020-08-26 10:11:59,587:INFO:Fitting Model
+2020-08-26 10:11:59,795:INFO:Evaluating Metrics
+2020-08-26 10:11:59,799:INFO:No inverse transformer found
+2020-08-26 10:11:59,799:INFO:Compiling Metrics
+2020-08-26 10:11:59,807:INFO:Calculating mean and std
+2020-08-26 10:11:59,808:INFO:Creating metrics dataframe
+2020-08-26 10:11:59,830:INFO:Initializing CatBoost Regressor
+2020-08-26 10:11:59,838:INFO:Initializing Fold 1
+2020-08-26 10:11:59,846:INFO:Fitting Model
+2020-08-26 10:12:03,840:INFO:Evaluating Metrics
+2020-08-26 10:12:03,847:INFO:No inverse transformer found
+2020-08-26 10:12:03,848:INFO:Compiling Metrics
+2020-08-26 10:12:03,857:INFO:Initializing Fold 2
+2020-08-26 10:12:03,865:INFO:Fitting Model
+2020-08-26 10:12:08,111:INFO:Evaluating Metrics
+2020-08-26 10:12:08,116:INFO:No inverse transformer found
+2020-08-26 10:12:08,116:INFO:Compiling Metrics
+2020-08-26 10:12:08,125:INFO:Initializing Fold 3
+2020-08-26 10:12:08,131:INFO:Fitting Model
+2020-08-26 10:12:12,483:INFO:Evaluating Metrics
+2020-08-26 10:12:12,487:INFO:No inverse transformer found
+2020-08-26 10:12:12,487:INFO:Compiling Metrics
+2020-08-26 10:12:12,494:INFO:Initializing Fold 4
+2020-08-26 10:12:12,501:INFO:Fitting Model
+2020-08-26 10:12:16,801:INFO:Evaluating Metrics
+2020-08-26 10:12:16,805:INFO:No inverse transformer found
+2020-08-26 10:12:16,805:INFO:Compiling Metrics
+2020-08-26 10:12:16,814:INFO:Initializing Fold 5
+2020-08-26 10:12:16,823:INFO:Fitting Model
+2020-08-26 10:12:20,342:INFO:Evaluating Metrics
+2020-08-26 10:12:20,347:INFO:No inverse transformer found
+2020-08-26 10:12:20,347:INFO:Compiling Metrics
+2020-08-26 10:12:20,356:INFO:Initializing Fold 6
+2020-08-26 10:12:20,365:INFO:Fitting Model
+2020-08-26 10:12:24,829:INFO:Evaluating Metrics
+2020-08-26 10:12:24,833:INFO:No inverse transformer found
+2020-08-26 10:12:24,833:INFO:Compiling Metrics
+2020-08-26 10:12:24,841:INFO:Initializing Fold 7
+2020-08-26 10:12:24,848:INFO:Fitting Model
+2020-08-26 10:12:28,238:INFO:Evaluating Metrics
+2020-08-26 10:12:28,242:INFO:No inverse transformer found
+2020-08-26 10:12:28,242:INFO:Compiling Metrics
+2020-08-26 10:12:28,251:INFO:Initializing Fold 8
+2020-08-26 10:12:28,259:INFO:Fitting Model
+2020-08-26 10:12:31,077:INFO:Evaluating Metrics
+2020-08-26 10:12:31,080:INFO:No inverse transformer found
+2020-08-26 10:12:31,080:INFO:Compiling Metrics
+2020-08-26 10:12:31,088:INFO:Initializing Fold 9
+2020-08-26 10:12:31,094:INFO:Fitting Model
+2020-08-26 10:12:33,899:INFO:Evaluating Metrics
+2020-08-26 10:12:33,904:INFO:No inverse transformer found
+2020-08-26 10:12:33,904:INFO:Compiling Metrics
+2020-08-26 10:12:33,911:INFO:Initializing Fold 10
+2020-08-26 10:12:33,919:INFO:Fitting Model
+2020-08-26 10:12:36,957:INFO:Evaluating Metrics
+2020-08-26 10:12:36,964:INFO:No inverse transformer found
+2020-08-26 10:12:36,964:INFO:Compiling Metrics
+2020-08-26 10:12:36,971:INFO:Calculating mean and std
+2020-08-26 10:12:36,971:INFO:Creating metrics dataframe
+2020-08-26 10:12:37,003:INFO:Finalizing top_n models
+2020-08-26 10:12:37,003:INFO:SubProcess create_model() called ==================================
+2020-08-26 10:12:37,016:INFO:Initializing create_model()
+2020-08-26 10:12:37,016:INFO:create_model(estimator=ada, ensemble=False, method=None, fold=10, round=4, cross_validation=True, verbose=False, system=False)
+2020-08-26 10:12:37,016:INFO:Checking exceptions
+2020-08-26 10:12:37,016:INFO:Preloading libraries
+2020-08-26 10:12:37,017:INFO:Preparing display monitor
+2020-08-26 10:12:37,029:INFO:Copying training dataset
+2020-08-26 10:12:37,030:INFO:Importing libraries
+2020-08-26 10:12:37,031:INFO:Defining folds
+2020-08-26 10:12:37,031:INFO:Declaring metric variables
+2020-08-26 10:12:37,032:INFO:AdaBoost Regressor Imported succesfully
+2020-08-26 10:12:37,033:INFO:Checking ensemble method
+2020-08-26 10:12:37,034:INFO:Initializing Fold 1
+2020-08-26 10:12:37,035:INFO:Fitting Model
+2020-08-26 10:12:37,149:INFO:Evaluating Metrics
+2020-08-26 10:12:37,161:INFO:No inverse transformation
+2020-08-26 10:12:37,162:INFO:Compiling Metrics
+2020-08-26 10:12:37,169:INFO:Initializing Fold 2
+2020-08-26 10:12:37,170:INFO:Fitting Model
+2020-08-26 10:12:37,259:INFO:Evaluating Metrics
+2020-08-26 10:12:37,267:INFO:No inverse transformation
+2020-08-26 10:12:37,267:INFO:Compiling Metrics
+2020-08-26 10:12:37,273:INFO:Initializing Fold 3
+2020-08-26 10:12:37,274:INFO:Fitting Model
+2020-08-26 10:12:37,356:INFO:Evaluating Metrics
+2020-08-26 10:12:37,369:INFO:No inverse transformation
+2020-08-26 10:12:37,369:INFO:Compiling Metrics
+2020-08-26 10:12:37,375:INFO:Initializing Fold 4
+2020-08-26 10:12:37,376:INFO:Fitting Model
+2020-08-26 10:12:37,500:INFO:Evaluating Metrics
+2020-08-26 10:12:37,509:INFO:No inverse transformation
+2020-08-26 10:12:37,509:INFO:Compiling Metrics
+2020-08-26 10:12:37,516:INFO:Initializing Fold 5
+2020-08-26 10:12:37,518:INFO:Fitting Model
+2020-08-26 10:12:37,619:INFO:Evaluating Metrics
+2020-08-26 10:12:37,625:INFO:No inverse transformation
+2020-08-26 10:12:37,625:INFO:Compiling Metrics
+2020-08-26 10:12:37,631:INFO:Initializing Fold 6
+2020-08-26 10:12:37,632:INFO:Fitting Model
+2020-08-26 10:12:37,712:INFO:Evaluating Metrics
+2020-08-26 10:12:37,717:INFO:No inverse transformation
+2020-08-26 10:12:37,717:INFO:Compiling Metrics
+2020-08-26 10:12:37,725:INFO:Initializing Fold 7
+2020-08-26 10:12:37,726:INFO:Fitting Model
+2020-08-26 10:12:37,820:INFO:Evaluating Metrics
+2020-08-26 10:12:37,826:INFO:No inverse transformation
+2020-08-26 10:12:37,826:INFO:Compiling Metrics
+2020-08-26 10:12:37,836:INFO:Initializing Fold 8
+2020-08-26 10:12:37,836:INFO:Fitting Model
+2020-08-26 10:12:37,926:INFO:Evaluating Metrics
+2020-08-26 10:12:37,940:INFO:No inverse transformation
+2020-08-26 10:12:37,941:INFO:Compiling Metrics
+2020-08-26 10:12:37,949:INFO:Initializing Fold 9
+2020-08-26 10:12:37,950:INFO:Fitting Model
+2020-08-26 10:12:38,051:INFO:Evaluating Metrics
+2020-08-26 10:12:38,056:INFO:No inverse transformation
+2020-08-26 10:12:38,056:INFO:Compiling Metrics
+2020-08-26 10:12:38,063:INFO:Initializing Fold 10
+2020-08-26 10:12:38,064:INFO:Fitting Model
+2020-08-26 10:12:38,147:INFO:Evaluating Metrics
+2020-08-26 10:12:38,153:INFO:No inverse transformation
+2020-08-26 10:12:38,153:INFO:Compiling Metrics
+2020-08-26 10:12:38,159:INFO:Calculating mean and std
+2020-08-26 10:12:38,161:INFO:Creating metrics dataframe
+2020-08-26 10:12:38,165:INFO:Finalizing model
+2020-08-26 10:12:38,259:INFO:Uploading results into container
+2020-08-26 10:12:38,259:INFO:Uploading model into container
+2020-08-26 10:12:38,259:INFO:create_model_container: 1
+2020-08-26 10:12:38,259:INFO:master_model_container: 1
+2020-08-26 10:12:38,259:INFO:display_container: 1
+2020-08-26 10:12:38,260:INFO:AdaBoostRegressor(base_estimator=None, learning_rate=1.0, loss='linear',
+                  n_estimators=50, random_state=786)
+2020-08-26 10:12:38,260:INFO:create_model() succesfully completed......................................
+2020-08-26 10:12:38,267:INFO:Initializing create_model()
+2020-08-26 10:12:38,267:INFO:create_model(estimator=catboost, ensemble=False, method=None, fold=10, round=4, cross_validation=True, verbose=False, system=False)
+2020-08-26 10:12:38,267:INFO:Checking exceptions
+2020-08-26 10:12:38,267:INFO:Preloading libraries
+2020-08-26 10:12:38,267:INFO:Preparing display monitor
+2020-08-26 10:12:38,277:INFO:Copying training dataset
+2020-08-26 10:12:38,277:INFO:Importing libraries
+2020-08-26 10:12:38,279:INFO:Defining folds
+2020-08-26 10:12:38,279:INFO:Declaring metric variables
+2020-08-26 10:12:38,280:INFO:CatBoost Regressor Imported succesfully
+2020-08-26 10:12:38,281:INFO:Checking ensemble method
+2020-08-26 10:12:38,283:INFO:Initializing Fold 1
+2020-08-26 10:12:38,284:INFO:Fitting Model
+2020-08-26 10:12:41,005:INFO:Evaluating Metrics
+2020-08-26 10:12:41,009:INFO:No inverse transformation
+2020-08-26 10:12:41,009:INFO:Compiling Metrics
+2020-08-26 10:12:41,014:INFO:Initializing Fold 2
+2020-08-26 10:12:41,016:INFO:Fitting Model
+2020-08-26 10:12:43,879:INFO:Evaluating Metrics
+2020-08-26 10:12:43,884:INFO:No inverse transformation
+2020-08-26 10:12:43,884:INFO:Compiling Metrics
+2020-08-26 10:12:43,891:INFO:Initializing Fold 3
+2020-08-26 10:12:43,892:INFO:Fitting Model
+2020-08-26 10:12:45,684:INFO:Evaluating Metrics
+2020-08-26 10:12:45,687:INFO:No inverse transformation
+2020-08-26 10:12:45,687:INFO:Compiling Metrics
+2020-08-26 10:12:45,693:INFO:Initializing Fold 4
+2020-08-26 10:12:45,694:INFO:Fitting Model
+2020-08-26 10:12:46,894:INFO:Evaluating Metrics
+2020-08-26 10:12:46,897:INFO:No inverse transformation
+2020-08-26 10:12:46,897:INFO:Compiling Metrics
+2020-08-26 10:12:46,903:INFO:Initializing Fold 5
+2020-08-26 10:12:46,904:INFO:Fitting Model
+2020-08-26 10:12:48,215:INFO:Evaluating Metrics
+2020-08-26 10:12:48,218:INFO:No inverse transformation
+2020-08-26 10:12:48,218:INFO:Compiling Metrics
+2020-08-26 10:12:48,224:INFO:Initializing Fold 6
+2020-08-26 10:12:48,225:INFO:Fitting Model
+2020-08-26 10:12:49,435:INFO:Evaluating Metrics
+2020-08-26 10:12:49,438:INFO:No inverse transformation
+2020-08-26 10:12:49,438:INFO:Compiling Metrics
+2020-08-26 10:12:49,443:INFO:Initializing Fold 7
+2020-08-26 10:12:49,444:INFO:Fitting Model
+2020-08-26 10:12:50,640:INFO:Evaluating Metrics
+2020-08-26 10:12:50,643:INFO:No inverse transformation
+2020-08-26 10:12:50,643:INFO:Compiling Metrics
+2020-08-26 10:12:50,649:INFO:Initializing Fold 8
+2020-08-26 10:12:50,650:INFO:Fitting Model
+2020-08-26 10:12:51,791:INFO:Evaluating Metrics
+2020-08-26 10:12:51,794:INFO:No inverse transformation
+2020-08-26 10:12:51,795:INFO:Compiling Metrics
+2020-08-26 10:12:51,801:INFO:Initializing Fold 9
+2020-08-26 10:12:51,802:INFO:Fitting Model
+2020-08-26 10:12:52,991:INFO:Evaluating Metrics
+2020-08-26 10:12:52,994:INFO:No inverse transformation
+2020-08-26 10:12:52,994:INFO:Compiling Metrics
+2020-08-26 10:12:52,999:INFO:Initializing Fold 10
+2020-08-26 10:12:53,000:INFO:Fitting Model
+2020-08-26 10:12:54,309:INFO:Evaluating Metrics
+2020-08-26 10:12:54,312:INFO:No inverse transformation
+2020-08-26 10:12:54,312:INFO:Compiling Metrics
+2020-08-26 10:12:54,318:INFO:Calculating mean and std
+2020-08-26 10:12:54,319:INFO:Creating metrics dataframe
+2020-08-26 10:12:54,323:INFO:Finalizing model
+2020-08-26 10:12:55,603:INFO:Uploading results into container
+2020-08-26 10:12:55,603:INFO:Uploading model into container
+2020-08-26 10:12:55,603:INFO:create_model_container: 2
+2020-08-26 10:12:55,603:INFO:master_model_container: 2
+2020-08-26 10:12:55,603:INFO:display_container: 2
+2020-08-26 10:12:55,603:INFO:<catboost.core.CatBoostRegressor object at 0x7fe89b0a5f90>
+2020-08-26 10:12:55,603:INFO:create_model() succesfully completed......................................
+2020-08-26 10:12:55,610:INFO:Initializing create_model()
+2020-08-26 10:12:55,610:INFO:create_model(estimator=en, ensemble=False, method=None, fold=10, round=4, cross_validation=True, verbose=False, system=False)
+2020-08-26 10:12:55,610:INFO:Checking exceptions
+2020-08-26 10:12:55,610:INFO:Preloading libraries
+2020-08-26 10:12:55,610:INFO:Preparing display monitor
+2020-08-26 10:12:55,619:INFO:Copying training dataset
+2020-08-26 10:12:55,619:INFO:Importing libraries
+2020-08-26 10:12:55,620:INFO:Defining folds
+2020-08-26 10:12:55,620:INFO:Declaring metric variables
+2020-08-26 10:12:55,620:INFO:Elastic Net Imported succesfully
+2020-08-26 10:12:55,621:INFO:Checking ensemble method
+2020-08-26 10:12:55,622:INFO:Initializing Fold 1
+2020-08-26 10:12:55,622:INFO:Fitting Model
+2020-08-26 10:12:55,626:INFO:Evaluating Metrics
+2020-08-26 10:12:55,628:INFO:No inverse transformation
+2020-08-26 10:12:55,628:INFO:Compiling Metrics
+2020-08-26 10:12:55,635:INFO:Initializing Fold 2
+2020-08-26 10:12:55,635:INFO:Fitting Model
+2020-08-26 10:12:55,638:INFO:Evaluating Metrics
+2020-08-26 10:12:55,640:INFO:No inverse transformation
+2020-08-26 10:12:55,640:INFO:Compiling Metrics
+2020-08-26 10:12:55,646:INFO:Initializing Fold 3
+2020-08-26 10:12:55,646:INFO:Fitting Model
+2020-08-26 10:12:55,650:INFO:Evaluating Metrics
+2020-08-26 10:12:55,653:INFO:No inverse transformation
+2020-08-26 10:12:55,653:INFO:Compiling Metrics
+2020-08-26 10:12:55,660:INFO:Initializing Fold 4
+2020-08-26 10:12:55,661:INFO:Fitting Model
+2020-08-26 10:12:55,665:INFO:Evaluating Metrics
+2020-08-26 10:12:55,667:INFO:No inverse transformation
+2020-08-26 10:12:55,667:INFO:Compiling Metrics
+2020-08-26 10:12:55,673:INFO:Initializing Fold 5
+2020-08-26 10:12:55,673:INFO:Fitting Model
+2020-08-26 10:12:55,677:INFO:Evaluating Metrics
+2020-08-26 10:12:55,678:INFO:No inverse transformation
+2020-08-26 10:12:55,679:INFO:Compiling Metrics
+2020-08-26 10:12:55,684:INFO:Initializing Fold 6
+2020-08-26 10:12:55,685:INFO:Fitting Model
+2020-08-26 10:12:55,688:INFO:Evaluating Metrics
+2020-08-26 10:12:55,691:INFO:No inverse transformation
+2020-08-26 10:12:55,691:INFO:Compiling Metrics
+2020-08-26 10:12:55,697:INFO:Initializing Fold 7
+2020-08-26 10:12:55,698:INFO:Fitting Model
+2020-08-26 10:12:55,700:INFO:Evaluating Metrics
+2020-08-26 10:12:55,702:INFO:No inverse transformation
+2020-08-26 10:12:55,702:INFO:Compiling Metrics
+2020-08-26 10:12:55,709:INFO:Initializing Fold 8
+2020-08-26 10:12:55,710:INFO:Fitting Model
+2020-08-26 10:12:55,714:INFO:Evaluating Metrics
+2020-08-26 10:12:55,716:INFO:No inverse transformation
+2020-08-26 10:12:55,716:INFO:Compiling Metrics
+2020-08-26 10:12:55,724:INFO:Initializing Fold 9
+2020-08-26 10:12:55,725:INFO:Fitting Model
+2020-08-26 10:12:55,728:INFO:Evaluating Metrics
+2020-08-26 10:12:55,730:INFO:No inverse transformation
+2020-08-26 10:12:55,731:INFO:Compiling Metrics
+2020-08-26 10:12:55,738:INFO:Initializing Fold 10
+2020-08-26 10:12:55,739:INFO:Fitting Model
+2020-08-26 10:12:55,742:INFO:Evaluating Metrics
+2020-08-26 10:12:55,744:INFO:No inverse transformation
+2020-08-26 10:12:55,745:INFO:Compiling Metrics
+2020-08-26 10:12:55,751:INFO:Calculating mean and std
+2020-08-26 10:12:55,755:INFO:Creating metrics dataframe
+2020-08-26 10:12:55,760:INFO:Finalizing model
+2020-08-26 10:12:55,765:INFO:Uploading results into container
+2020-08-26 10:12:55,765:INFO:Uploading model into container
+2020-08-26 10:12:55,765:INFO:create_model_container: 3
+2020-08-26 10:12:55,765:INFO:master_model_container: 3
+2020-08-26 10:12:55,765:INFO:display_container: 3
+2020-08-26 10:12:55,766:INFO:ElasticNet(alpha=1.0, copy_X=True, fit_intercept=True, l1_ratio=0.5,
+           max_iter=1000, normalize=False, positive=False, precompute=False,
+           random_state=786, selection='cyclic', tol=0.0001, warm_start=False)
+2020-08-26 10:12:55,766:INFO:create_model() succesfully completed......................................
+2020-08-26 10:12:55,772:INFO:Initializing create_model()
+2020-08-26 10:12:55,772:INFO:create_model(estimator=et, ensemble=False, method=None, fold=10, round=4, cross_validation=True, verbose=False, system=False)
+2020-08-26 10:12:55,772:INFO:Checking exceptions
+2020-08-26 10:12:55,772:INFO:Preloading libraries
+2020-08-26 10:12:55,772:INFO:Preparing display monitor
+2020-08-26 10:12:55,782:INFO:Copying training dataset
+2020-08-26 10:12:55,782:INFO:Importing libraries
+2020-08-26 10:12:55,783:INFO:Defining folds
+2020-08-26 10:12:55,783:INFO:Declaring metric variables
+2020-08-26 10:12:55,784:INFO:Extra Trees Regressor Imported succesfully
+2020-08-26 10:12:55,784:INFO:Checking ensemble method
+2020-08-26 10:12:55,785:INFO:Initializing Fold 1
+2020-08-26 10:12:55,785:INFO:Fitting Model
+2020-08-26 10:12:55,933:INFO:Evaluating Metrics
+2020-08-26 10:12:56,044:INFO:No inverse transformation
+2020-08-26 10:12:56,044:INFO:Compiling Metrics
+2020-08-26 10:12:56,050:INFO:Initializing Fold 2
+2020-08-26 10:12:56,051:INFO:Fitting Model
+2020-08-26 10:12:56,194:INFO:Evaluating Metrics
+2020-08-26 10:12:56,303:INFO:No inverse transformation
+2020-08-26 10:12:56,303:INFO:Compiling Metrics
+2020-08-26 10:12:56,309:INFO:Initializing Fold 3
+2020-08-26 10:12:56,310:INFO:Fitting Model
+2020-08-26 10:12:56,457:INFO:Evaluating Metrics
+2020-08-26 10:12:56,564:INFO:No inverse transformation
+2020-08-26 10:12:56,564:INFO:Compiling Metrics
+2020-08-26 10:12:56,571:INFO:Initializing Fold 4
+2020-08-26 10:12:56,571:INFO:Fitting Model
+2020-08-26 10:12:56,714:INFO:Evaluating Metrics
+2020-08-26 10:12:56,820:INFO:No inverse transformation
+2020-08-26 10:12:56,821:INFO:Compiling Metrics
+2020-08-26 10:12:56,830:INFO:Initializing Fold 5
+2020-08-26 10:12:56,831:INFO:Fitting Model
+2020-08-26 10:12:56,973:INFO:Evaluating Metrics
+2020-08-26 10:12:57,082:INFO:No inverse transformation
+2020-08-26 10:12:57,082:INFO:Compiling Metrics
+2020-08-26 10:12:57,089:INFO:Initializing Fold 6
+2020-08-26 10:12:57,090:INFO:Fitting Model
+2020-08-26 10:12:57,231:INFO:Evaluating Metrics
+2020-08-26 10:12:57,336:INFO:No inverse transformation
+2020-08-26 10:12:57,336:INFO:Compiling Metrics
+2020-08-26 10:12:57,341:INFO:Initializing Fold 7
+2020-08-26 10:12:57,342:INFO:Fitting Model
+2020-08-26 10:12:57,484:INFO:Evaluating Metrics
+2020-08-26 10:12:57,594:INFO:No inverse transformation
+2020-08-26 10:12:57,594:INFO:Compiling Metrics
+2020-08-26 10:12:57,602:INFO:Initializing Fold 8
+2020-08-26 10:12:57,603:INFO:Fitting Model
+2020-08-26 10:12:57,744:INFO:Evaluating Metrics
+2020-08-26 10:12:57,853:INFO:No inverse transformation
+2020-08-26 10:12:57,853:INFO:Compiling Metrics
+2020-08-26 10:12:57,863:INFO:Initializing Fold 9
+2020-08-26 10:12:57,864:INFO:Fitting Model
+2020-08-26 10:12:58,002:INFO:Evaluating Metrics
+2020-08-26 10:12:58,113:INFO:No inverse transformation
+2020-08-26 10:12:58,113:INFO:Compiling Metrics
+2020-08-26 10:12:58,121:INFO:Initializing Fold 10
+2020-08-26 10:12:58,122:INFO:Fitting Model
+2020-08-26 10:12:58,262:INFO:Evaluating Metrics
+2020-08-26 10:12:58,371:INFO:No inverse transformation
+2020-08-26 10:12:58,371:INFO:Compiling Metrics
+2020-08-26 10:12:58,375:INFO:Calculating mean and std
+2020-08-26 10:12:58,376:INFO:Creating metrics dataframe
+2020-08-26 10:12:58,379:INFO:Finalizing model
+2020-08-26 10:12:58,516:INFO:Uploading results into container
+2020-08-26 10:12:58,516:INFO:Uploading model into container
+2020-08-26 10:12:58,516:INFO:create_model_container: 4
+2020-08-26 10:12:58,517:INFO:master_model_container: 4
+2020-08-26 10:12:58,517:INFO:display_container: 4
+2020-08-26 10:12:58,517:INFO:ExtraTreesRegressor(bootstrap=False, ccp_alpha=0.0, criterion='mse',
+                    max_depth=None, max_features='auto', max_leaf_nodes=None,
+                    max_samples=None, min_impurity_decrease=0.0,
+                    min_impurity_split=None, min_samples_leaf=1,
+                    min_samples_split=2, min_weight_fraction_leaf=0.0,
+                    n_estimators=100, n_jobs=-1, oob_score=False,
+                    random_state=786, verbose=0, warm_start=False)
+2020-08-26 10:12:58,517:INFO:create_model() succesfully completed......................................
+2020-08-26 10:12:58,524:INFO:Initializing create_model()
+2020-08-26 10:12:58,525:INFO:create_model(estimator=rf, ensemble=False, method=None, fold=10, round=4, cross_validation=True, verbose=False, system=False)
+2020-08-26 10:12:58,525:INFO:Checking exceptions
+2020-08-26 10:12:58,525:INFO:Preloading libraries
+2020-08-26 10:12:58,525:INFO:Preparing display monitor
+2020-08-26 10:12:58,533:INFO:Copying training dataset
+2020-08-26 10:12:58,534:INFO:Importing libraries
+2020-08-26 10:12:58,534:INFO:Defining folds
+2020-08-26 10:12:58,534:INFO:Declaring metric variables
+2020-08-26 10:12:58,535:INFO:Random Forest Regressor Imported succesfully
+2020-08-26 10:12:58,535:INFO:Checking ensemble method
+2020-08-26 10:12:58,536:INFO:Initializing Fold 1
+2020-08-26 10:12:58,537:INFO:Fitting Model
+2020-08-26 10:12:58,781:INFO:Evaluating Metrics
+2020-08-26 10:12:58,889:INFO:No inverse transformation
+2020-08-26 10:12:58,889:INFO:Compiling Metrics
+2020-08-26 10:12:58,896:INFO:Initializing Fold 2
+2020-08-26 10:12:58,897:INFO:Fitting Model
+2020-08-26 10:12:59,039:INFO:Evaluating Metrics
+2020-08-26 10:12:59,148:INFO:No inverse transformation
+2020-08-26 10:12:59,149:INFO:Compiling Metrics
+2020-08-26 10:12:59,155:INFO:Initializing Fold 3
+2020-08-26 10:12:59,155:INFO:Fitting Model
+2020-08-26 10:12:59,297:INFO:Evaluating Metrics
+2020-08-26 10:12:59,405:INFO:No inverse transformation
+2020-08-26 10:12:59,405:INFO:Compiling Metrics
+2020-08-26 10:12:59,413:INFO:Initializing Fold 4
+2020-08-26 10:12:59,414:INFO:Fitting Model
+2020-08-26 10:12:59,555:INFO:Evaluating Metrics
+2020-08-26 10:12:59,660:INFO:No inverse transformation
+2020-08-26 10:12:59,661:INFO:Compiling Metrics
+2020-08-26 10:12:59,668:INFO:Initializing Fold 5
+2020-08-26 10:12:59,669:INFO:Fitting Model
+2020-08-26 10:12:59,812:INFO:Evaluating Metrics
+2020-08-26 10:12:59,923:INFO:No inverse transformation
+2020-08-26 10:12:59,923:INFO:Compiling Metrics
+2020-08-26 10:12:59,930:INFO:Initializing Fold 6
+2020-08-26 10:12:59,931:INFO:Fitting Model
+2020-08-26 10:13:00,074:INFO:Evaluating Metrics
+2020-08-26 10:13:00,181:INFO:No inverse transformation
+2020-08-26 10:13:00,181:INFO:Compiling Metrics
+2020-08-26 10:13:00,187:INFO:Initializing Fold 7
+2020-08-26 10:13:00,188:INFO:Fitting Model
+2020-08-26 10:13:00,331:INFO:Evaluating Metrics
+2020-08-26 10:13:00,439:INFO:No inverse transformation
+2020-08-26 10:13:00,440:INFO:Compiling Metrics
+2020-08-26 10:13:00,447:INFO:Initializing Fold 8
+2020-08-26 10:13:00,448:INFO:Fitting Model
+2020-08-26 10:13:00,589:INFO:Evaluating Metrics
+2020-08-26 10:13:00,697:INFO:No inverse transformation
+2020-08-26 10:13:00,698:INFO:Compiling Metrics
+2020-08-26 10:13:00,706:INFO:Initializing Fold 9
+2020-08-26 10:13:00,707:INFO:Fitting Model
+2020-08-26 10:13:00,849:INFO:Evaluating Metrics
+2020-08-26 10:13:00,956:INFO:No inverse transformation
+2020-08-26 10:13:00,956:INFO:Compiling Metrics
+2020-08-26 10:13:00,966:INFO:Initializing Fold 10
+2020-08-26 10:13:00,967:INFO:Fitting Model
+2020-08-26 10:13:01,110:INFO:Evaluating Metrics
+2020-08-26 10:13:01,217:INFO:No inverse transformation
+2020-08-26 10:13:01,217:INFO:Compiling Metrics
+2020-08-26 10:13:01,224:INFO:Calculating mean and std
+2020-08-26 10:13:01,226:INFO:Creating metrics dataframe
+2020-08-26 10:13:01,229:INFO:Finalizing model
+2020-08-26 10:13:01,374:INFO:Uploading results into container
+2020-08-26 10:13:01,374:INFO:Uploading model into container
+2020-08-26 10:13:01,374:INFO:create_model_container: 5
+2020-08-26 10:13:01,375:INFO:master_model_container: 5
+2020-08-26 10:13:01,375:INFO:display_container: 5
+2020-08-26 10:13:01,376:INFO:RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='auto', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=-1, oob_score=False,
+                      random_state=786, verbose=0, warm_start=False)
+2020-08-26 10:13:01,376:INFO:create_model() succesfully completed......................................
+2020-08-26 10:13:01,376:INFO:SubProcess create_model() end ==================================
+2020-08-26 10:13:01,414:INFO:create_model_container: 5
+2020-08-26 10:13:01,414:INFO:master_model_container: 5
+2020-08-26 10:13:01,414:INFO:display_container: 6
+2020-08-26 10:13:01,415:INFO:[AdaBoostRegressor(base_estimator=None, learning_rate=1.0, loss='linear',
+                  n_estimators=50, random_state=786), <catboost.core.CatBoostRegressor object at 0x7fe89b0a5f90>, ElasticNet(alpha=1.0, copy_X=True, fit_intercept=True, l1_ratio=0.5,
+           max_iter=1000, normalize=False, positive=False, precompute=False,
+           random_state=786, selection='cyclic', tol=0.0001, warm_start=False), ExtraTreesRegressor(bootstrap=False, ccp_alpha=0.0, criterion='mse',
+                    max_depth=None, max_features='auto', max_leaf_nodes=None,
+                    max_samples=None, min_impurity_decrease=0.0,
+                    min_impurity_split=None, min_samples_leaf=1,
+                    min_samples_split=2, min_weight_fraction_leaf=0.0,
+                    n_estimators=100, n_jobs=-1, oob_score=False,
+                    random_state=786, verbose=0, warm_start=False), RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='auto', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=-1, oob_score=False,
+                      random_state=786, verbose=0, warm_start=False)]
+2020-08-26 10:13:01,416:INFO:compare_models() succesfully completed......................................
+2020-08-26 10:13:01,447:INFO:Initializing tune_model()
+2020-08-26 10:13:01,447:INFO:tune_model(estimator=AdaBoostRegressor(base_estimator=None, learning_rate=1.0, loss='linear',
+                  n_estimators=50, random_state=786), fold=10, round=4, n_iter=20, custom_grid=None, optimize=RMSE, choose_better=False, verbose=True)
+2020-08-26 10:13:01,447:INFO:Checking exceptions
+2020-08-26 10:13:01,447:INFO:Preloading libraries
+2020-08-26 10:13:01,447:INFO:Preparing display monitor
+2020-08-26 10:13:01,463:INFO:Copying training dataset
+2020-08-26 10:13:01,464:INFO:Importing libraries
+2020-08-26 10:13:01,465:INFO:Checking base model
+2020-08-26 10:13:01,465:INFO:Base model : AdaBoost Regressor
+2020-08-26 10:13:01,465:INFO:Defining folds
+2020-08-26 10:13:01,465:INFO:Declaring metric variables
+2020-08-26 10:13:01,469:INFO:Defining Hyperparameters
+2020-08-26 10:13:01,469:INFO:Initializing RandomizedSearchCV
+2020-08-26 10:13:03,895:INFO:Random search completed
+2020-08-26 10:13:03,900:INFO:Initializing Fold 1
+2020-08-26 10:13:03,904:INFO:Fitting Model
+2020-08-26 10:13:04,015:INFO:Evaluating Metrics
+2020-08-26 10:13:04,023:INFO:Compiling Metrics
+2020-08-26 10:13:04,039:INFO:Initializing Fold 2
+2020-08-26 10:13:04,043:INFO:Fitting Model
+2020-08-26 10:13:04,139:INFO:Evaluating Metrics
+2020-08-26 10:13:04,145:INFO:Compiling Metrics
+2020-08-26 10:13:04,162:INFO:Initializing Fold 3
+2020-08-26 10:13:04,169:INFO:Fitting Model
+2020-08-26 10:13:04,295:INFO:Evaluating Metrics
+2020-08-26 10:13:04,305:INFO:Compiling Metrics
+2020-08-26 10:13:04,326:INFO:Initializing Fold 4
+2020-08-26 10:13:04,330:INFO:Fitting Model
+2020-08-26 10:13:04,426:INFO:Evaluating Metrics
+2020-08-26 10:13:04,432:INFO:Compiling Metrics
+2020-08-26 10:13:04,448:INFO:Initializing Fold 5
+2020-08-26 10:13:04,452:INFO:Fitting Model
+2020-08-26 10:13:04,568:INFO:Evaluating Metrics
+2020-08-26 10:13:04,577:INFO:Compiling Metrics
+2020-08-26 10:13:04,602:INFO:Initializing Fold 6
+2020-08-26 10:13:04,607:INFO:Fitting Model
+2020-08-26 10:13:04,733:INFO:Evaluating Metrics
+2020-08-26 10:13:04,741:INFO:Compiling Metrics
+2020-08-26 10:13:04,755:INFO:Initializing Fold 7
+2020-08-26 10:13:04,761:INFO:Fitting Model
+2020-08-26 10:13:04,889:INFO:Evaluating Metrics
+2020-08-26 10:13:04,904:INFO:Compiling Metrics
+2020-08-26 10:13:04,925:INFO:Initializing Fold 8
+2020-08-26 10:13:04,931:INFO:Fitting Model
+2020-08-26 10:13:05,042:INFO:Evaluating Metrics
+2020-08-26 10:13:05,049:INFO:Compiling Metrics
+2020-08-26 10:13:05,069:INFO:Initializing Fold 9
+2020-08-26 10:13:05,074:INFO:Fitting Model
+2020-08-26 10:13:05,236:INFO:Evaluating Metrics
+2020-08-26 10:13:05,243:INFO:Compiling Metrics
+2020-08-26 10:13:05,260:INFO:Initializing Fold 10
+2020-08-26 10:13:05,264:INFO:Fitting Model
+2020-08-26 10:13:05,393:INFO:Evaluating Metrics
+2020-08-26 10:13:05,400:INFO:Compiling Metrics
+2020-08-26 10:13:05,424:INFO:Calculating mean and std
+2020-08-26 10:13:05,429:INFO:Creating metrics dataframe
+2020-08-26 10:13:05,438:INFO:Finalizing model
+2020-08-26 10:13:05,562:INFO:Uploading results into container
+2020-08-26 10:13:05,562:INFO:Uploading model into container
+2020-08-26 10:13:05,584:INFO:create_model_container: 6
+2020-08-26 10:13:05,584:INFO:master_model_container: 6
+2020-08-26 10:13:05,585:INFO:display_container: 7
+2020-08-26 10:13:05,585:INFO:AdaBoostRegressor(base_estimator=None, learning_rate=0.8799999999999996,
+                  loss='square', n_estimators=80, random_state=786)
+2020-08-26 10:13:05,585:INFO:tune_model() succesfully completed......................................
+2020-08-26 10:13:05,586:INFO:Initializing tune_model()
+2020-08-26 10:13:05,586:INFO:tune_model(estimator=<catboost.core.CatBoostRegressor object at 0x7fe89b0a5f90>, fold=10, round=4, n_iter=20, custom_grid=None, optimize=RMSE, choose_better=False, verbose=True)
+2020-08-26 10:13:05,586:INFO:Checking exceptions
+2020-08-26 10:13:05,586:INFO:Preloading libraries
+2020-08-26 10:13:05,586:INFO:Preparing display monitor
+2020-08-26 10:13:05,605:INFO:Copying training dataset
+2020-08-26 10:13:05,605:INFO:Importing libraries
+2020-08-26 10:13:05,606:INFO:Checking base model
+2020-08-26 10:13:05,607:INFO:Base model : CatBoost Regressor
+2020-08-26 10:13:05,608:INFO:Defining folds
+2020-08-26 10:13:05,608:INFO:Declaring metric variables
+2020-08-26 10:13:05,613:INFO:Defining Hyperparameters
+2020-08-26 10:13:05,613:INFO:Initializing RandomizedSearchCV
+2020-08-26 10:13:46,271:INFO:Random search completed
+2020-08-26 10:13:46,277:INFO:Initializing Fold 1
+2020-08-26 10:13:46,282:INFO:Fitting Model
+2020-08-26 10:13:47,366:INFO:Evaluating Metrics
+2020-08-26 10:13:47,369:INFO:Compiling Metrics
+2020-08-26 10:13:47,389:INFO:Initializing Fold 2
+2020-08-26 10:13:47,394:INFO:Fitting Model
+2020-08-26 10:13:48,410:INFO:Evaluating Metrics
+2020-08-26 10:13:48,414:INFO:Compiling Metrics
+2020-08-26 10:13:48,433:INFO:Initializing Fold 3
+2020-08-26 10:13:48,441:INFO:Fitting Model
+2020-08-26 10:13:49,369:INFO:Evaluating Metrics
+2020-08-26 10:13:49,372:INFO:Compiling Metrics
+2020-08-26 10:13:49,389:INFO:Initializing Fold 4
+2020-08-26 10:13:49,395:INFO:Fitting Model
+2020-08-26 10:13:50,279:INFO:Evaluating Metrics
+2020-08-26 10:13:50,282:INFO:Compiling Metrics
+2020-08-26 10:13:50,298:INFO:Initializing Fold 5
+2020-08-26 10:13:50,305:INFO:Fitting Model
+2020-08-26 10:13:51,154:INFO:Evaluating Metrics
+2020-08-26 10:13:51,157:INFO:Compiling Metrics
+2020-08-26 10:13:51,174:INFO:Initializing Fold 6
+2020-08-26 10:13:51,178:INFO:Fitting Model
+2020-08-26 10:13:52,048:INFO:Evaluating Metrics
+2020-08-26 10:13:52,051:INFO:Compiling Metrics
+2020-08-26 10:13:52,072:INFO:Initializing Fold 7
+2020-08-26 10:13:52,080:INFO:Fitting Model
+2020-08-26 10:13:52,965:INFO:Evaluating Metrics
+2020-08-26 10:13:52,968:INFO:Compiling Metrics
+2020-08-26 10:13:52,986:INFO:Initializing Fold 8
+2020-08-26 10:13:52,993:INFO:Fitting Model
+2020-08-26 10:13:53,849:INFO:Evaluating Metrics
+2020-08-26 10:13:53,852:INFO:Compiling Metrics
+2020-08-26 10:13:53,870:INFO:Initializing Fold 9
+2020-08-26 10:13:53,880:INFO:Fitting Model
+2020-08-26 10:13:54,806:INFO:Evaluating Metrics
+2020-08-26 10:13:54,809:INFO:Compiling Metrics
+2020-08-26 10:13:54,827:INFO:Initializing Fold 10
+2020-08-26 10:13:54,832:INFO:Fitting Model
+2020-08-26 10:13:55,668:INFO:Evaluating Metrics
+2020-08-26 10:13:55,671:INFO:Compiling Metrics
+2020-08-26 10:13:55,692:INFO:Calculating mean and std
+2020-08-26 10:13:55,694:INFO:Creating metrics dataframe
+2020-08-26 10:13:55,707:INFO:Finalizing model
+2020-08-26 10:13:56,610:INFO:Uploading results into container
+2020-08-26 10:13:56,610:INFO:Uploading model into container
+2020-08-26 10:13:56,624:INFO:create_model_container: 7
+2020-08-26 10:13:56,624:INFO:master_model_container: 7
+2020-08-26 10:13:56,625:INFO:display_container: 8
+2020-08-26 10:13:56,625:INFO:<catboost.core.CatBoostRegressor object at 0x7fe89b0b7190>
+2020-08-26 10:13:56,625:INFO:tune_model() succesfully completed......................................
+2020-08-26 10:13:56,626:INFO:Initializing tune_model()
+2020-08-26 10:13:56,627:INFO:tune_model(estimator=ElasticNet(alpha=1.0, copy_X=True, fit_intercept=True, l1_ratio=0.5,
+           max_iter=1000, normalize=False, positive=False, precompute=False,
+           random_state=786, selection='cyclic', tol=0.0001, warm_start=False), fold=10, round=4, n_iter=20, custom_grid=None, optimize=RMSE, choose_better=False, verbose=True)
+2020-08-26 10:13:56,627:INFO:Checking exceptions
+2020-08-26 10:13:56,627:INFO:Preloading libraries
+2020-08-26 10:13:56,627:INFO:Preparing display monitor
+2020-08-26 10:13:56,646:INFO:Copying training dataset
+2020-08-26 10:13:56,646:INFO:Importing libraries
+2020-08-26 10:13:56,647:INFO:Checking base model
+2020-08-26 10:13:56,648:INFO:Base model : Elastic Net
+2020-08-26 10:13:56,648:INFO:Defining folds
+2020-08-26 10:13:56,648:INFO:Declaring metric variables
+2020-08-26 10:13:56,652:INFO:Defining Hyperparameters
+2020-08-26 10:13:56,652:INFO:Initializing RandomizedSearchCV
+2020-08-26 10:13:56,807:INFO:Random search completed
+2020-08-26 10:13:56,812:INFO:Initializing Fold 1
+2020-08-26 10:13:56,818:INFO:Fitting Model
+2020-08-26 10:13:56,822:INFO:Evaluating Metrics
+2020-08-26 10:13:56,825:INFO:Compiling Metrics
+2020-08-26 10:13:56,843:INFO:Initializing Fold 2
+2020-08-26 10:13:56,848:INFO:Fitting Model
+2020-08-26 10:13:56,850:INFO:Evaluating Metrics
+2020-08-26 10:13:56,852:INFO:Compiling Metrics
+2020-08-26 10:13:56,867:INFO:Initializing Fold 3
+2020-08-26 10:13:56,872:INFO:Fitting Model
+2020-08-26 10:13:56,875:INFO:Evaluating Metrics
+2020-08-26 10:13:56,877:INFO:Compiling Metrics
+2020-08-26 10:13:56,892:INFO:Initializing Fold 4
+2020-08-26 10:13:56,896:INFO:Fitting Model
+2020-08-26 10:13:56,899:INFO:Evaluating Metrics
+2020-08-26 10:13:56,900:INFO:Compiling Metrics
+2020-08-26 10:13:56,919:INFO:Initializing Fold 5
+2020-08-26 10:13:56,924:INFO:Fitting Model
+2020-08-26 10:13:56,926:INFO:Evaluating Metrics
+2020-08-26 10:13:56,928:INFO:Compiling Metrics
+2020-08-26 10:13:56,945:INFO:Initializing Fold 6
+2020-08-26 10:13:56,950:INFO:Fitting Model
+2020-08-26 10:13:56,953:INFO:Evaluating Metrics
+2020-08-26 10:13:56,955:INFO:Compiling Metrics
+2020-08-26 10:13:56,973:INFO:Initializing Fold 7
+2020-08-26 10:13:56,980:INFO:Fitting Model
+2020-08-26 10:13:56,984:INFO:Evaluating Metrics
+2020-08-26 10:13:56,985:INFO:Compiling Metrics
+2020-08-26 10:13:57,004:INFO:Initializing Fold 8
+2020-08-26 10:13:57,009:INFO:Fitting Model
+2020-08-26 10:13:57,011:INFO:Evaluating Metrics
+2020-08-26 10:13:57,013:INFO:Compiling Metrics
+2020-08-26 10:13:57,032:INFO:Initializing Fold 9
+2020-08-26 10:13:57,040:INFO:Fitting Model
+2020-08-26 10:13:57,044:INFO:Evaluating Metrics
+2020-08-26 10:13:57,046:INFO:Compiling Metrics
+2020-08-26 10:13:57,067:INFO:Initializing Fold 10
+2020-08-26 10:13:57,073:INFO:Fitting Model
+2020-08-26 10:13:57,077:INFO:Evaluating Metrics
+2020-08-26 10:13:57,078:INFO:Compiling Metrics
+2020-08-26 10:13:57,104:INFO:Calculating mean and std
+2020-08-26 10:13:57,105:INFO:Creating metrics dataframe
+2020-08-26 10:13:57,113:INFO:Finalizing model
+2020-08-26 10:13:57,116:INFO:Uploading results into container
+2020-08-26 10:13:57,116:INFO:Uploading model into container
+2020-08-26 10:13:57,140:INFO:create_model_container: 8
+2020-08-26 10:13:57,140:INFO:master_model_container: 8
+2020-08-26 10:13:57,140:INFO:display_container: 9
+2020-08-26 10:13:57,141:INFO:ElasticNet(alpha=0.76, copy_X=True, fit_intercept=True, l1_ratio=0.85,
+           max_iter=1000, normalize=False, positive=False, precompute=False,
+           random_state=786, selection='cyclic', tol=0.0001, warm_start=False)
+2020-08-26 10:13:57,141:INFO:tune_model() succesfully completed......................................
+2020-08-26 10:13:57,142:INFO:Initializing tune_model()
+2020-08-26 10:13:57,142:INFO:tune_model(estimator=ExtraTreesRegressor(bootstrap=False, ccp_alpha=0.0, criterion='mse',
+                    max_depth=None, max_features='auto', max_leaf_nodes=None,
+                    max_samples=None, min_impurity_decrease=0.0,
+                    min_impurity_split=None, min_samples_leaf=1,
+                    min_samples_split=2, min_weight_fraction_leaf=0.0,
+                    n_estimators=100, n_jobs=-1, oob_score=False,
+                    random_state=786, verbose=0, warm_start=False), fold=10, round=4, n_iter=20, custom_grid=None, optimize=RMSE, choose_better=False, verbose=True)
+2020-08-26 10:13:57,142:INFO:Checking exceptions
+2020-08-26 10:13:57,143:INFO:Preloading libraries
+2020-08-26 10:13:57,143:INFO:Preparing display monitor
+2020-08-26 10:13:57,162:INFO:Copying training dataset
+2020-08-26 10:13:57,162:INFO:Importing libraries
+2020-08-26 10:13:57,164:INFO:Checking base model
+2020-08-26 10:13:57,165:INFO:Base model : Extra Trees Regressor
+2020-08-26 10:13:57,166:INFO:Defining folds
+2020-08-26 10:13:57,166:INFO:Declaring metric variables
+2020-08-26 10:13:57,175:INFO:Defining Hyperparameters
+2020-08-26 10:13:57,175:INFO:Initializing RandomizedSearchCV
+2020-08-26 10:14:01,427:INFO:Random search completed
+2020-08-26 10:14:01,433:INFO:Initializing Fold 1
+2020-08-26 10:14:01,438:INFO:Fitting Model
+2020-08-26 10:14:01,859:INFO:Evaluating Metrics
+2020-08-26 10:14:01,963:INFO:Compiling Metrics
+2020-08-26 10:14:01,983:INFO:Initializing Fold 2
+2020-08-26 10:14:01,989:INFO:Fitting Model
+2020-08-26 10:14:02,412:INFO:Evaluating Metrics
+2020-08-26 10:14:02,517:INFO:Compiling Metrics
+2020-08-26 10:14:02,535:INFO:Initializing Fold 3
+2020-08-26 10:14:02,539:INFO:Fitting Model
+2020-08-26 10:14:02,992:INFO:Evaluating Metrics
+2020-08-26 10:14:03,101:INFO:Compiling Metrics
+2020-08-26 10:14:03,120:INFO:Initializing Fold 4
+2020-08-26 10:14:03,125:INFO:Fitting Model
+2020-08-26 10:14:03,551:INFO:Evaluating Metrics
+2020-08-26 10:14:03,659:INFO:Compiling Metrics
+2020-08-26 10:14:03,676:INFO:Initializing Fold 5
+2020-08-26 10:14:03,681:INFO:Fitting Model
+2020-08-26 10:14:04,130:INFO:Evaluating Metrics
+2020-08-26 10:14:04,239:INFO:Compiling Metrics
+2020-08-26 10:14:04,258:INFO:Initializing Fold 6
+2020-08-26 10:14:04,263:INFO:Fitting Model
+2020-08-26 10:14:04,784:INFO:Evaluating Metrics
+2020-08-26 10:14:04,893:INFO:Compiling Metrics
+2020-08-26 10:14:04,913:INFO:Initializing Fold 7
+2020-08-26 10:14:04,918:INFO:Fitting Model
+2020-08-26 10:14:05,349:INFO:Evaluating Metrics
+2020-08-26 10:14:05,465:INFO:Compiling Metrics
+2020-08-26 10:14:05,531:INFO:Initializing Fold 8
+2020-08-26 10:14:05,536:INFO:Fitting Model
+2020-08-26 10:14:05,954:INFO:Evaluating Metrics
+2020-08-26 10:14:06,062:INFO:Compiling Metrics
+2020-08-26 10:14:06,083:INFO:Initializing Fold 9
+2020-08-26 10:14:06,089:INFO:Fitting Model
+2020-08-26 10:14:06,521:INFO:Evaluating Metrics
+2020-08-26 10:14:06,629:INFO:Compiling Metrics
+2020-08-26 10:14:06,647:INFO:Initializing Fold 10
+2020-08-26 10:14:06,652:INFO:Fitting Model
+2020-08-26 10:14:07,086:INFO:Evaluating Metrics
+2020-08-26 10:14:07,189:INFO:Compiling Metrics
+2020-08-26 10:14:07,211:INFO:Calculating mean and std
+2020-08-26 10:14:07,212:INFO:Creating metrics dataframe
+2020-08-26 10:14:07,221:INFO:Finalizing model
+2020-08-26 10:14:07,642:INFO:Uploading results into container
+2020-08-26 10:14:07,642:INFO:Uploading model into container
+2020-08-26 10:14:07,656:INFO:create_model_container: 9
+2020-08-26 10:14:07,656:INFO:master_model_container: 9
+2020-08-26 10:14:07,656:INFO:display_container: 10
+2020-08-26 10:14:07,656:INFO:ExtraTreesRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                    max_depth=30, max_features='log2', max_leaf_nodes=None,
+                    max_samples=None, min_impurity_decrease=0.0,
+                    min_impurity_split=None, min_samples_leaf=2,
+                    min_samples_split=5, min_weight_fraction_leaf=0.0,
+                    n_estimators=250, n_jobs=-1, oob_score=False,
+                    random_state=786, verbose=0, warm_start=False)
+2020-08-26 10:14:07,656:INFO:tune_model() succesfully completed......................................
+2020-08-26 10:14:07,658:INFO:Initializing tune_model()
+2020-08-26 10:14:07,658:INFO:tune_model(estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='auto', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=-1, oob_score=False,
+                      random_state=786, verbose=0, warm_start=False), fold=10, round=4, n_iter=20, custom_grid=None, optimize=RMSE, choose_better=False, verbose=True)
+2020-08-26 10:14:07,658:INFO:Checking exceptions
+2020-08-26 10:14:07,658:INFO:Preloading libraries
+2020-08-26 10:14:07,658:INFO:Preparing display monitor
+2020-08-26 10:14:07,675:INFO:Copying training dataset
+2020-08-26 10:14:07,675:INFO:Importing libraries
+2020-08-26 10:14:07,676:INFO:Checking base model
+2020-08-26 10:14:07,677:INFO:Base model : Random Forest
+2020-08-26 10:14:07,677:INFO:Defining folds
+2020-08-26 10:14:07,678:INFO:Declaring metric variables
+2020-08-26 10:14:07,682:INFO:Defining Hyperparameters
+2020-08-26 10:14:07,682:INFO:Initializing RandomizedSearchCV
+2020-08-26 10:14:12,036:INFO:Random search completed
+2020-08-26 10:14:12,043:INFO:Initializing Fold 1
+2020-08-26 10:14:12,049:INFO:Fitting Model
+2020-08-26 10:14:12,186:INFO:Evaluating Metrics
+2020-08-26 10:14:12,291:INFO:Compiling Metrics
+2020-08-26 10:14:12,307:INFO:Initializing Fold 2
+2020-08-26 10:14:12,312:INFO:Fitting Model
+2020-08-26 10:14:12,442:INFO:Evaluating Metrics
+2020-08-26 10:14:12,549:INFO:Compiling Metrics
+2020-08-26 10:14:12,567:INFO:Initializing Fold 3
+2020-08-26 10:14:12,572:INFO:Fitting Model
+2020-08-26 10:14:12,703:INFO:Evaluating Metrics
+2020-08-26 10:14:12,812:INFO:Compiling Metrics
+2020-08-26 10:14:12,831:INFO:Initializing Fold 4
+2020-08-26 10:14:12,837:INFO:Fitting Model
+2020-08-26 10:14:12,969:INFO:Evaluating Metrics
+2020-08-26 10:14:13,075:INFO:Compiling Metrics
+2020-08-26 10:14:13,093:INFO:Initializing Fold 5
+2020-08-26 10:14:13,097:INFO:Fitting Model
+2020-08-26 10:14:13,234:INFO:Evaluating Metrics
+2020-08-26 10:14:13,342:INFO:Compiling Metrics
+2020-08-26 10:14:13,359:INFO:Initializing Fold 6
+2020-08-26 10:14:13,364:INFO:Fitting Model
+2020-08-26 10:14:13,496:INFO:Evaluating Metrics
+2020-08-26 10:14:13,600:INFO:Compiling Metrics
+2020-08-26 10:14:13,619:INFO:Initializing Fold 7
+2020-08-26 10:14:13,625:INFO:Fitting Model
+2020-08-26 10:14:13,759:INFO:Evaluating Metrics
+2020-08-26 10:14:13,865:INFO:Compiling Metrics
+2020-08-26 10:14:13,883:INFO:Initializing Fold 8
+2020-08-26 10:14:13,888:INFO:Fitting Model
+2020-08-26 10:14:14,022:INFO:Evaluating Metrics
+2020-08-26 10:14:14,127:INFO:Compiling Metrics
+2020-08-26 10:14:14,147:INFO:Initializing Fold 9
+2020-08-26 10:14:14,152:INFO:Fitting Model
+2020-08-26 10:14:14,286:INFO:Evaluating Metrics
+2020-08-26 10:14:14,392:INFO:Compiling Metrics
+2020-08-26 10:14:14,411:INFO:Initializing Fold 10
+2020-08-26 10:14:14,417:INFO:Fitting Model
+2020-08-26 10:14:14,572:INFO:Evaluating Metrics
+2020-08-26 10:14:14,679:INFO:Compiling Metrics
+2020-08-26 10:14:14,703:INFO:Calculating mean and std
+2020-08-26 10:14:14,704:INFO:Creating metrics dataframe
+2020-08-26 10:14:14,715:INFO:Finalizing model
+2020-08-26 10:14:14,852:INFO:Uploading results into container
+2020-08-26 10:14:14,852:INFO:Uploading model into container
+2020-08-26 10:14:14,867:INFO:create_model_container: 10
+2020-08-26 10:14:14,867:INFO:master_model_container: 10
+2020-08-26 10:14:14,867:INFO:display_container: 11
+2020-08-26 10:14:14,868:INFO:RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=10, max_features='auto', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=60, n_jobs=-1, oob_score=False,
+                      random_state=786, verbose=0, warm_start=False)
+2020-08-26 10:14:14,868:INFO:tune_model() succesfully completed......................................
+2020-08-26 10:14:14,875:INFO:Initializing blend_models()
+2020-08-26 10:14:14,877:INFO:blend_models(estimator_list=[AdaBoostRegressor(base_estimator=None, learning_rate=0.8799999999999996,
+                  loss='square', n_estimators=80, random_state=786), <catboost.core.CatBoostRegressor object at 0x7fe89b0b7190>, ElasticNet(alpha=0.76, copy_X=True, fit_intercept=True, l1_ratio=0.85,
+           max_iter=1000, normalize=False, positive=False, precompute=False,
+           random_state=786, selection='cyclic', tol=0.0001, warm_start=False), ExtraTreesRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                    max_depth=30, max_features='log2', max_leaf_nodes=None,
+                    max_samples=None, min_impurity_decrease=0.0,
+                    min_impurity_split=None, min_samples_leaf=2,
+                    min_samples_split=5, min_weight_fraction_leaf=0.0,
+                    n_estimators=250, n_jobs=-1, oob_score=False,
+                    random_state=786, verbose=0, warm_start=False), RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=10, max_features='auto', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=60, n_jobs=-1, oob_score=False,
+                      random_state=786, verbose=0, warm_start=False)], fold=10, round=4, choose_better=False, optimize=RMSE, turbo=True, verbose=True)
+2020-08-26 10:14:14,877:INFO:Checking exceptions
+2020-08-26 10:14:14,877:INFO:Preloading libraries
+2020-08-26 10:14:14,877:INFO:Preparing display monitor
+2020-08-26 10:14:14,896:INFO:Importing libraries
+2020-08-26 10:14:14,896:INFO:Copying training dataset
+2020-08-26 10:14:14,897:INFO:Declaring metric variables
+2020-08-26 10:14:14,897:INFO:Defining folds
+2020-08-26 10:14:14,902:INFO:Defining model names in estimator_list
+2020-08-26 10:14:16,288:INFO:n_jobs multiple passed
+2020-08-26 10:14:16,294:INFO:Initializing Fold 1
+2020-08-26 10:14:16,299:INFO:Fitting Model
+2020-08-26 10:14:17,707:INFO:Evaluating Metrics
+2020-08-26 10:14:17,932:INFO:Compiling Metrics
+2020-08-26 10:14:17,946:INFO:Initializing Fold 2
+2020-08-26 10:14:17,952:INFO:Fitting Model
+2020-08-26 10:14:19,399:INFO:Evaluating Metrics
+2020-08-26 10:14:19,621:INFO:Compiling Metrics
+2020-08-26 10:14:19,637:INFO:Initializing Fold 3
+2020-08-26 10:14:19,642:INFO:Fitting Model
+2020-08-26 10:14:20,904:INFO:Evaluating Metrics
+2020-08-26 10:14:21,124:INFO:Compiling Metrics
+2020-08-26 10:14:21,141:INFO:Initializing Fold 4
+2020-08-26 10:14:21,147:INFO:Fitting Model
+2020-08-26 10:14:23,256:INFO:Evaluating Metrics
+2020-08-26 10:14:23,483:INFO:Compiling Metrics
+2020-08-26 10:14:23,502:INFO:Initializing Fold 5
+2020-08-26 10:14:23,511:INFO:Fitting Model
+2020-08-26 10:14:25,042:INFO:Evaluating Metrics
+2020-08-26 10:14:25,273:INFO:Compiling Metrics
+2020-08-26 10:14:25,289:INFO:Initializing Fold 6
+2020-08-26 10:14:25,296:INFO:Fitting Model
+2020-08-26 10:14:26,966:INFO:Evaluating Metrics
+2020-08-26 10:14:27,197:INFO:Compiling Metrics
+2020-08-26 10:14:27,220:INFO:Initializing Fold 7
+2020-08-26 10:14:27,230:INFO:Fitting Model
+2020-08-26 10:14:28,921:INFO:Evaluating Metrics
+2020-08-26 10:14:29,152:INFO:Compiling Metrics
+2020-08-26 10:14:29,170:INFO:Initializing Fold 8
+2020-08-26 10:14:29,181:INFO:Fitting Model
+2020-08-26 10:14:30,653:INFO:Evaluating Metrics
+2020-08-26 10:14:30,873:INFO:Compiling Metrics
+2020-08-26 10:14:30,889:INFO:Initializing Fold 9
+2020-08-26 10:14:30,895:INFO:Fitting Model
+2020-08-26 10:14:32,156:INFO:Evaluating Metrics
+2020-08-26 10:14:32,384:INFO:Compiling Metrics
+2020-08-26 10:14:32,405:INFO:Initializing Fold 10
+2020-08-26 10:14:32,411:INFO:Fitting Model
+2020-08-26 10:14:33,648:INFO:Evaluating Metrics
+2020-08-26 10:14:33,875:INFO:Compiling Metrics
+2020-08-26 10:14:33,897:INFO:Calculating mean and std
+2020-08-26 10:14:33,899:INFO:Creating metrics dataframe
+2020-08-26 10:14:33,910:INFO:Finalizing model
+2020-08-26 10:14:35,035:INFO:Uploading results into container
+2020-08-26 10:14:35,035:INFO:Uploading model into container
+2020-08-26 10:14:35,051:INFO:create_model_container: 11
+2020-08-26 10:14:35,052:INFO:master_model_container: 11
+2020-08-26 10:14:35,052:INFO:display_container: 12
+2020-08-26 10:14:35,060:INFO:VotingRegressor(estimators=[('Ada Boost Regressor_0',
+                             AdaBoostRegressor(base_estimator=None,
+                                               learning_rate=0.8799999999999996,
+                                               loss='square', n_estimators=80,
+                                               random_state=786)),
+                            ('CatBoost Regressor_1',
+                             <catboost.core.CatBoostRegressor object at 0x7fe89b0b7190>),
+                            ('Elastic Net_2',
+                             ElasticNet(alpha=0.76, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.85,
+                                        max_iter=1000, no...
+                             RandomForestRegressor(bootstrap=True,
+                                                   ccp_alpha=0.0,
+                                                   criterion='mse',
+                                                   max_depth=10,
+                                                   max_features='auto',
+                                                   max_leaf_nodes=None,
+                                                   max_samples=None,
+                                                   min_impurity_decrease=0.0,
+                                                   min_impurity_split=None,
+                                                   min_samples_leaf=1,
+                                                   min_samples_split=2,
+                                                   min_weight_fraction_leaf=0.0,
+                                                   n_estimators=60, n_jobs=-1,
+                                                   oob_score=False,
+                                                   random_state=786, verbose=0,
+                                                   warm_start=False))],
+                n_jobs=-1, verbose=False, weights=None)
+2020-08-26 10:14:35,060:INFO:blend_models() succesfully completed......................................
+2020-08-26 10:14:35,112:INFO:Initializing plot_model()
+2020-08-26 10:14:35,117:INFO:plot_model(estimator=VotingRegressor(estimators=[('Ada Boost Regressor_0',
+                             AdaBoostRegressor(base_estimator=None,
+                                               learning_rate=0.8799999999999996,
+                                               loss='square', n_estimators=80,
+                                               random_state=786)),
+                            ('CatBoost Regressor_1',
+                             <catboost.core.CatBoostRegressor object at 0x7fe89b0b7190>),
+                            ('Elastic Net_2',
+                             ElasticNet(alpha=0.76, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.85,
+                                        max_iter=1000, no...
+                             RandomForestRegressor(bootstrap=True,
+                                                   ccp_alpha=0.0,
+                                                   criterion='mse',
+                                                   max_depth=10,
+                                                   max_features='auto',
+                                                   max_leaf_nodes=None,
+                                                   max_samples=None,
+                                                   min_impurity_decrease=0.0,
+                                                   min_impurity_split=None,
+                                                   min_samples_leaf=1,
+                                                   min_samples_split=2,
+                                                   min_weight_fraction_leaf=0.0,
+                                                   n_estimators=60, n_jobs=-1,
+                                                   oob_score=False,
+                                                   random_state=786, verbose=0,
+                                                   warm_start=False))],
+                n_jobs=-1, verbose=False, weights=None), plot=residuals, save=True, verbose=False, system=True)
+2020-08-26 10:14:35,117:INFO:Checking exceptions
+2020-08-26 10:14:35,117:INFO:Preloading libraries
+2020-08-26 10:14:35,117:INFO:Preparing display monitor
+2020-08-26 10:14:35,123:INFO:Importing libraries
+2020-08-26 10:14:35,124:INFO:plot type: residuals
+2020-08-26 10:14:35,187:INFO:Fitting Model
+2020-08-26 10:14:35,687:INFO:Scoring test/hold-out set
+2020-08-26 10:14:36,172:INFO:Saving 'Residuals.png' in current active directory
+2020-08-26 10:14:36,918:INFO:Visual Rendered Successfully
+2020-08-26 10:14:36,918:INFO:plot_model() succesfully completed......................................
+2020-08-26 10:14:36,927:INFO:Initializing plot_model()
+2020-08-26 10:14:36,931:INFO:plot_model(estimator=VotingRegressor(estimators=[('Ada Boost Regressor_0',
+                             AdaBoostRegressor(base_estimator=None,
+                                               learning_rate=0.8799999999999996,
+                                               loss='square', n_estimators=80,
+                                               random_state=786)),
+                            ('CatBoost Regressor_1',
+                             <catboost.core.CatBoostRegressor object at 0x7fe89b0b7190>),
+                            ('Elastic Net_2',
+                             ElasticNet(alpha=0.76, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.85,
+                                        max_iter=1000, no...
+                             RandomForestRegressor(bootstrap=True,
+                                                   ccp_alpha=0.0,
+                                                   criterion='mse',
+                                                   max_depth=10,
+                                                   max_features='auto',
+                                                   max_leaf_nodes=None,
+                                                   max_samples=None,
+                                                   min_impurity_decrease=0.0,
+                                                   min_impurity_split=None,
+                                                   min_samples_leaf=1,
+                                                   min_samples_split=2,
+                                                   min_weight_fraction_leaf=0.0,
+                                                   n_estimators=60, n_jobs=-1,
+                                                   oob_score=False,
+                                                   random_state=786, verbose=0,
+                                                   warm_start=False))],
+                n_jobs=-1, verbose=False, weights=None), plot=error, save=True, verbose=False, system=True)
+2020-08-26 10:14:36,931:INFO:Checking exceptions
+2020-08-26 10:14:36,932:INFO:Preloading libraries
+2020-08-26 10:14:36,932:INFO:Preparing display monitor
+2020-08-26 10:14:36,936:INFO:Importing libraries
+2020-08-26 10:14:36,936:INFO:plot type: error
+2020-08-26 10:14:36,936:INFO:Fitting Model
+2020-08-26 10:14:36,937:INFO:Scoring test/hold-out set
+2020-08-26 10:14:37,403:INFO:Saving 'Prediction Error.png' in current active directory
+2020-08-26 10:14:37,677:INFO:Visual Rendered Successfully
+2020-08-26 10:14:37,677:INFO:plot_model() succesfully completed......................................
+2020-08-26 10:14:37,688:INFO:Initializing plot_model()
+2020-08-26 10:14:37,692:INFO:plot_model(estimator=VotingRegressor(estimators=[('Ada Boost Regressor_0',
+                             AdaBoostRegressor(base_estimator=None,
+                                               learning_rate=0.8799999999999996,
+                                               loss='square', n_estimators=80,
+                                               random_state=786)),
+                            ('CatBoost Regressor_1',
+                             <catboost.core.CatBoostRegressor object at 0x7fe89b0b7190>),
+                            ('Elastic Net_2',
+                             ElasticNet(alpha=0.76, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.85,
+                                        max_iter=1000, no...
+                             RandomForestRegressor(bootstrap=True,
+                                                   ccp_alpha=0.0,
+                                                   criterion='mse',
+                                                   max_depth=10,
+                                                   max_features='auto',
+                                                   max_leaf_nodes=None,
+                                                   max_samples=None,
+                                                   min_impurity_decrease=0.0,
+                                                   min_impurity_split=None,
+                                                   min_samples_leaf=1,
+                                                   min_samples_split=2,
+                                                   min_weight_fraction_leaf=0.0,
+                                                   n_estimators=60, n_jobs=-1,
+                                                   oob_score=False,
+                                                   random_state=786, verbose=0,
+                                                   warm_start=False))],
+                n_jobs=-1, verbose=False, weights=None), plot=cooks, save=True, verbose=False, system=True)
+2020-08-26 10:14:37,692:INFO:Checking exceptions
+2020-08-26 10:14:37,692:INFO:Preloading libraries
+2020-08-26 10:14:37,692:INFO:Preparing display monitor
+2020-08-26 10:14:37,696:INFO:Importing libraries
+2020-08-26 10:14:37,697:INFO:plot type: cooks
+2020-08-26 10:14:37,698:INFO:Fitting Model
+2020-08-26 10:14:37,750:INFO:Saving 'Cooks Distance.png' in current active directory
+2020-08-26 10:14:38,100:INFO:Visual Rendered Successfully
+2020-08-26 10:14:38,100:INFO:plot_model() succesfully completed......................................
+2020-08-26 10:14:38,109:INFO:Initializing plot_model()
+2020-08-26 10:14:38,113:INFO:plot_model(estimator=VotingRegressor(estimators=[('Ada Boost Regressor_0',
+                             AdaBoostRegressor(base_estimator=None,
+                                               learning_rate=0.8799999999999996,
+                                               loss='square', n_estimators=80,
+                                               random_state=786)),
+                            ('CatBoost Regressor_1',
+                             <catboost.core.CatBoostRegressor object at 0x7fe89b0b7190>),
+                            ('Elastic Net_2',
+                             ElasticNet(alpha=0.76, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.85,
+                                        max_iter=1000, no...
+                             RandomForestRegressor(bootstrap=True,
+                                                   ccp_alpha=0.0,
+                                                   criterion='mse',
+                                                   max_depth=10,
+                                                   max_features='auto',
+                                                   max_leaf_nodes=None,
+                                                   max_samples=None,
+                                                   min_impurity_decrease=0.0,
+                                                   min_impurity_split=None,
+                                                   min_samples_leaf=1,
+                                                   min_samples_split=2,
+                                                   min_weight_fraction_leaf=0.0,
+                                                   n_estimators=60, n_jobs=-1,
+                                                   oob_score=False,
+                                                   random_state=786, verbose=0,
+                                                   warm_start=False))],
+                n_jobs=-1, verbose=False, weights=None), plot=learning, save=True, verbose=False, system=True)
+2020-08-26 10:14:38,113:INFO:Checking exceptions
+2020-08-26 10:14:38,113:INFO:Preloading libraries
+2020-08-26 10:14:38,113:INFO:Preparing display monitor
+2020-08-26 10:14:38,118:INFO:Importing libraries
+2020-08-26 10:14:38,119:INFO:plot type: learning
+2020-08-26 10:14:38,125:INFO:Fitting Model
+2020-08-26 10:16:36,478:INFO:Saving 'Learning Curve.png' in current active directory
+2020-08-26 10:16:36,899:INFO:Visual Rendered Successfully
+2020-08-26 10:16:36,899:INFO:plot_model() succesfully completed......................................
+2020-08-26 10:16:36,908:INFO:Initializing plot_model()
+2020-08-26 10:16:36,912:INFO:plot_model(estimator=VotingRegressor(estimators=[('Ada Boost Regressor_0',
+                             AdaBoostRegressor(base_estimator=None,
+                                               learning_rate=0.8799999999999996,
+                                               loss='square', n_estimators=80,
+                                               random_state=786)),
+                            ('CatBoost Regressor_1',
+                             <catboost.core.CatBoostRegressor object at 0x7fe89b0b7190>),
+                            ('Elastic Net_2',
+                             ElasticNet(alpha=0.76, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.85,
+                                        max_iter=1000, no...
+                             RandomForestRegressor(bootstrap=True,
+                                                   ccp_alpha=0.0,
+                                                   criterion='mse',
+                                                   max_depth=10,
+                                                   max_features='auto',
+                                                   max_leaf_nodes=None,
+                                                   max_samples=None,
+                                                   min_impurity_decrease=0.0,
+                                                   min_impurity_split=None,
+                                                   min_samples_leaf=1,
+                                                   min_samples_split=2,
+                                                   min_weight_fraction_leaf=0.0,
+                                                   n_estimators=60, n_jobs=-1,
+                                                   oob_score=False,
+                                                   random_state=786, verbose=0,
+                                                   warm_start=False))],
+                n_jobs=-1, verbose=False, weights=None), plot=manifold, save=True, verbose=False, system=True)
+2020-08-26 10:16:36,912:INFO:Checking exceptions
+2020-08-26 10:16:36,912:INFO:Preloading libraries
+2020-08-26 10:16:36,912:INFO:Preparing display monitor
+2020-08-26 10:16:36,917:INFO:Importing libraries
+2020-08-26 10:16:36,917:INFO:plot type: manifold
+2020-08-26 10:16:36,932:INFO:Fitting Model
+2020-08-26 10:16:37,291:INFO:Saving 'Manifold.png' in current active directory
+2020-08-26 10:16:37,802:INFO:Visual Rendered Successfully
+2020-08-26 10:16:37,803:INFO:plot_model() succesfully completed......................................
+2020-08-26 10:16:39,820:INFO:Initializing finalize_model()
+2020-08-26 10:16:39,825:INFO:finalize_model(estimator=VotingRegressor(estimators=[('Ada Boost Regressor_0',
+                             AdaBoostRegressor(base_estimator=None,
+                                               learning_rate=0.8799999999999996,
+                                               loss='square', n_estimators=80,
+                                               random_state=786)),
+                            ('CatBoost Regressor_1',
+                             <catboost.core.CatBoostRegressor object at 0x7fe89b0b7190>),
+                            ('Elastic Net_2',
+                             ElasticNet(alpha=0.76, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.85,
+                                        max_iter=1000, no...
+                             RandomForestRegressor(bootstrap=True,
+                                                   ccp_alpha=0.0,
+                                                   criterion='mse',
+                                                   max_depth=10,
+                                                   max_features='auto',
+                                                   max_leaf_nodes=None,
+                                                   max_samples=None,
+                                                   min_impurity_decrease=0.0,
+                                                   min_impurity_split=None,
+                                                   min_samples_leaf=1,
+                                                   min_samples_split=2,
+                                                   min_weight_fraction_leaf=0.0,
+                                                   n_estimators=60, n_jobs=-1,
+                                                   oob_score=False,
+                                                   random_state=786, verbose=0,
+                                                   warm_start=False))],
+                n_jobs=-1, verbose=False, weights=None))
+2020-08-26 10:16:39,825:INFO:Importing libraries
+2020-08-26 10:16:39,826:INFO:Getting model name
+2020-08-26 10:16:39,831:INFO:Finalizing Voting Regressor
+2020-08-26 10:16:40,633:INFO:create_model_container: 11
+2020-08-26 10:16:40,633:INFO:master_model_container: 11
+2020-08-26 10:16:40,633:INFO:display_container: 13
+2020-08-26 10:16:40,637:INFO:VotingRegressor(estimators=[('Ada Boost Regressor_0',
+                             AdaBoostRegressor(base_estimator=None,
+                                               learning_rate=0.8799999999999996,
+                                               loss='square', n_estimators=80,
+                                               random_state=786)),
+                            ('CatBoost Regressor_1',
+                             <catboost.core.CatBoostRegressor object at 0x7fe8b978c9d0>),
+                            ('Elastic Net_2',
+                             ElasticNet(alpha=0.76, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.85,
+                                        max_iter=1000, no...
+                             RandomForestRegressor(bootstrap=True,
+                                                   ccp_alpha=0.0,
+                                                   criterion='mse',
+                                                   max_depth=10,
+                                                   max_features='auto',
+                                                   max_leaf_nodes=None,
+                                                   max_samples=None,
+                                                   min_impurity_decrease=0.0,
+                                                   min_impurity_split=None,
+                                                   min_samples_leaf=1,
+                                                   min_samples_split=2,
+                                                   min_weight_fraction_leaf=0.0,
+                                                   n_estimators=60, n_jobs=-1,
+                                                   oob_score=False,
+                                                   random_state=786, verbose=0,
+                                                   warm_start=False))],
+                n_jobs=-1, verbose=False, weights=None)
+2020-08-26 10:16:40,637:INFO:finalize_model() succesfully completed......................................
+2020-08-26 10:17:51,812:INFO:Initializing plot_model()
+2020-08-26 10:17:51,820:INFO:plot_model(estimator=VotingRegressor(estimators=[('Ada Boost Regressor_0',
+                             AdaBoostRegressor(base_estimator=None,
+                                               learning_rate=0.8799999999999996,
+                                               loss='square', n_estimators=80,
+                                               random_state=786)),
+                            ('CatBoost Regressor_1',
+                             <catboost.core.CatBoostRegressor object at 0x7fe89b0b7190>),
+                            ('Elastic Net_2',
+                             ElasticNet(alpha=0.76, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.85,
+                                        max_iter=1000, no...
+                             RandomForestRegressor(bootstrap=True,
+                                                   ccp_alpha=0.0,
+                                                   criterion='mse',
+                                                   max_depth=10,
+                                                   max_features='auto',
+                                                   max_leaf_nodes=None,
+                                                   max_samples=None,
+                                                   min_impurity_decrease=0.0,
+                                                   min_impurity_split=None,
+                                                   min_samples_leaf=1,
+                                                   min_samples_split=2,
+                                                   min_weight_fraction_leaf=0.0,
+                                                   n_estimators=60, n_jobs=-1,
+                                                   oob_score=False,
+                                                   random_state=786, verbose=0,
+                                                   warm_start=False))],
+                n_jobs=-1, verbose=False, weights=None), plot=feature, save=True, verbose=False, system=True)
+2020-08-26 10:17:51,820:INFO:Checking exceptions
+2020-08-26 10:17:58,117:INFO:Initializing plot_model()
+2020-08-26 10:17:58,123:INFO:plot_model(estimator=VotingRegressor(estimators=[('Ada Boost Regressor_0',
+                             AdaBoostRegressor(base_estimator=None,
+                                               learning_rate=0.8799999999999996,
+                                               loss='square', n_estimators=80,
+                                               random_state=786)),
+                            ('CatBoost Regressor_1',
+                             <catboost.core.CatBoostRegressor object at 0x7fe89b0b7190>),
+                            ('Elastic Net_2',
+                             ElasticNet(alpha=0.76, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.85,
+                                        max_iter=1000, no...
+                             RandomForestRegressor(bootstrap=True,
+                                                   ccp_alpha=0.0,
+                                                   criterion='mse',
+                                                   max_depth=10,
+                                                   max_features='auto',
+                                                   max_leaf_nodes=None,
+                                                   max_samples=None,
+                                                   min_impurity_decrease=0.0,
+                                                   min_impurity_split=None,
+                                                   min_samples_leaf=1,
+                                                   min_samples_split=2,
+                                                   min_weight_fraction_leaf=0.0,
+                                                   n_estimators=60, n_jobs=-1,
+                                                   oob_score=False,
+                                                   random_state=786, verbose=0,
+                                                   warm_start=False))],
+                n_jobs=-1, verbose=False, weights=None), plot=parameter, save=True, verbose=False, system=True)
+2020-08-26 10:17:58,123:INFO:Checking exceptions
+2020-08-26 10:17:58,123:INFO:Preloading libraries
+2020-08-26 10:17:58,123:INFO:Preparing display monitor
+2020-08-26 10:17:58,128:INFO:Importing libraries
+2020-08-26 10:17:58,129:INFO:plot type: parameter
+2020-08-26 10:18:05,533:INFO:Initializing plot_model()
+2020-08-26 10:18:05,540:INFO:plot_model(estimator=VotingRegressor(estimators=[('Ada Boost Regressor_0',
+                             AdaBoostRegressor(base_estimator=None,
+                                               learning_rate=0.8799999999999996,
+                                               loss='square', n_estimators=80,
+                                               random_state=786)),
+                            ('CatBoost Regressor_1',
+                             <catboost.core.CatBoostRegressor object at 0x7fe89b0b7190>),
+                            ('Elastic Net_2',
+                             ElasticNet(alpha=0.76, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.85,
+                                        max_iter=1000, no...
+                             RandomForestRegressor(bootstrap=True,
+                                                   ccp_alpha=0.0,
+                                                   criterion='mse',
+                                                   max_depth=10,
+                                                   max_features='auto',
+                                                   max_leaf_nodes=None,
+                                                   max_samples=None,
+                                                   min_impurity_decrease=0.0,
+                                                   min_impurity_split=None,
+                                                   min_samples_leaf=1,
+                                                   min_samples_split=2,
+                                                   min_weight_fraction_leaf=0.0,
+                                                   n_estimators=60, n_jobs=-1,
+                                                   oob_score=False,
+                                                   random_state=786, verbose=0,
+                                                   warm_start=False))],
+                n_jobs=-1, verbose=False, weights=None), plot=vc, save=True, verbose=False, system=True)
+2020-08-26 10:18:05,540:INFO:Checking exceptions
+2020-08-26 10:18:05,541:INFO:Preloading libraries
+2020-08-26 10:18:05,541:INFO:Preparing display monitor
+2020-08-26 10:18:05,546:INFO:Importing libraries
+2020-08-26 10:18:05,547:INFO:plot type: vc
+2020-08-26 10:18:05,552:INFO:Determining param_name
