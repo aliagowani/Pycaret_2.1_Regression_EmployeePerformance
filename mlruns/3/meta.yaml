@@ -1,0 +1,4 @@
+artifact_location: file:///Users/aliagowani/Documents/GitHub/Pycaret_2.1_Regression_and_Classification_EmployeePerformance/mlruns/3
+experiment_id: '3'
+lifecycle_stage: active
+name: reg_fcr_experiments
