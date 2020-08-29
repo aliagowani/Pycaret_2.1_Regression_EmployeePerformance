@@ -67440,3 +67440,161 @@
                                                random_state=786))],
                 n_jobs=-1, verbose=False, weights=None)
 2020-08-28 23:59:11,288:INFO:automl() succesfully completed......................................
+2020-08-29 00:23:18,744:INFO:Initializing plot_model()
+2020-08-29 00:23:18,753:INFO:plot_model(estimator=VotingRegressor(estimators=[('Bayesian Ridge_0',
+                             BayesianRidge(alpha_1=0.001, alpha_2=0.2,
+                                           alpha_init=None, compute_score=True,
+                                           copy_X=True, fit_intercept=True,
+                                           lambda_1=1e-06, lambda_2=0.3,
+                                           lambda_init=None, n_iter=300,
+                                           normalize=False, tol=0.001,
+                                           verbose=False)),
+                            ('CatBoost Regressor_1',
+                             <catboost.core.CatBoostRegressor object at 0x7fa714f98390>),
+                            ('Elastic Net_2',
+                             Ela...
+                                           min_split_gain=0.4, n_estimators=10,
+                                           n_jobs=-1, num_leaves=90,
+                                           objective=None, random_state=786,
+                                           reg_alpha=0.7, reg_lambda=0.8,
+                                           silent=True, subsample=1.0,
+                                           subsample_for_bin=200000,
+                                           subsample_freq=0)),
+                            ('Ada Boost Regressor_4',
+                             AdaBoostRegressor(base_estimator=None,
+                                               learning_rate=0.6899999999999997,
+                                               loss='exponential',
+                                               n_estimators=135,
+                                               random_state=786))],
+                n_jobs=-1, verbose=False, weights=None), plot=residuals, save=True, verbose=False, system=True)
+2020-08-29 00:23:18,753:INFO:Checking exceptions
+2020-08-29 00:23:18,753:INFO:Preloading libraries
+2020-08-29 00:23:18,753:INFO:Preparing display monitor
+2020-08-29 00:23:18,761:INFO:Importing libraries
+2020-08-29 00:23:18,762:INFO:plot type: residuals
+2020-08-29 00:23:18,779:INFO:Fitting Model
+2020-08-29 00:23:18,898:INFO:Scoring test/hold-out set
+2020-08-29 00:23:18,986:INFO:Saving 'Residuals.png' in current active directory
+2020-08-29 00:23:19,815:INFO:Visual Rendered Successfully
+2020-08-29 00:23:19,815:INFO:plot_model() succesfully completed......................................
+2020-08-29 00:23:19,837:INFO:Initializing plot_model()
+2020-08-29 00:23:19,844:INFO:plot_model(estimator=StackingRegressor(cv=10,
+                  estimators=[('CatBoostRegressor_0',
+                               <catboost.core.CatBoostRegressor object at 0x7fa714f98390>),
+                              ('ElasticNet_1',
+                               ElasticNet(alpha=0.05, copy_X=True,
+                                          fit_intercept=True, l1_ratio=0.48,
+                                          max_iter=1000, normalize=True,
+                                          positive=False, precompute=False,
+                                          random_state=786, selection='cyclic',
+                                          tol=0.0001, warm_start=False)),
+                              ('LGBMRegressor_2',
+                               LGBMR...
+                               AdaBoostRegressor(base_estimator=None,
+                                                 learning_rate=0.6899999999999997,
+                                                 loss='exponential',
+                                                 n_estimators=135,
+                                                 random_state=786))],
+                  final_estimator=BayesianRidge(alpha_1=0.001, alpha_2=0.2,
+                                                alpha_init=None,
+                                                compute_score=True, copy_X=True,
+                                                fit_intercept=True,
+                                                lambda_1=1e-06, lambda_2=0.3,
+                                                lambda_init=None, n_iter=300,
+                                                normalize=False, tol=0.001,
+                                                verbose=False),
+                  n_jobs=-1, passthrough=True, verbose=0), plot=residuals, save=True, verbose=False, system=True)
+2020-08-29 00:23:19,844:INFO:Checking exceptions
+2020-08-29 00:23:19,844:INFO:Preloading libraries
+2020-08-29 00:23:19,844:INFO:Preparing display monitor
+2020-08-29 00:23:19,850:INFO:Importing libraries
+2020-08-29 00:23:19,851:INFO:plot type: residuals
+2020-08-29 00:23:19,869:INFO:Fitting Model
+2020-08-29 00:23:19,967:INFO:Scoring test/hold-out set
+2020-08-29 00:23:20,059:INFO:Saving 'Residuals.png' in current active directory
+2020-08-29 00:23:41,503:INFO:PyCaret Regression Module
+2020-08-29 00:23:41,504:INFO:version 2.1
+2020-08-29 00:23:41,504:INFO:Initializing setup()
+2020-08-29 00:23:41,504:INFO:USI: e07b
+2020-08-29 00:23:41,504:INFO:setup(data=(102, 19), target=Actual Value, train_size=0.75, sampling=True, sample_estimator=None, categorical_features=None, categorical_imputation=constant, ordinal_features=None,
+                    high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=('Sunday', 'Monday', 'Saturday', 'Thursday', 'Tuesday', 'Wednesday', 'Friday', 'Total number of calls', 'CSat', 'total coaching', 'total coaching improved', 'FCR Week before'), numeric_imputation=mean, date_features=None, ignore_features=['Agent_ID'], normalize=False,
+                    normalize_method=zscore, transformation=True, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=False, pca_method=linear,
+                    pca_components=None, ignore_low_variance=False, combine_rare_levels=True, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=True, outliers_threshold=0.05,
+                    remove_multicollinearity=True, multicollinearity_threshold=0.9, remove_perfect_collinearity=False, create_clusters=False, cluster_iter=20,
+                    polynomial_features=True, polynomial_degree=2, trigonometry_features=True, polynomial_threshold=0.1, group_features=None,
+                    group_names=None, feature_selection=True, feature_selection_threshold=0.4, feature_interaction=True, feature_ratio=False, interaction_threshold=0.01, transform_target=False,
+                    transform_target_method=box-cox, data_split_shuffle=True, folds_shuffle=False, n_jobs=-1, html=True, session_id=786, log_experiment=True,
+                    experiment_name=reg_fcr_experiments, log_plots=True, log_profile=False, log_data=False, silent=False, verbose=True, profile=False)
+2020-08-29 00:23:41,505:INFO:Checking environment
+2020-08-29 00:23:41,505:INFO:python_version: 3.7.7
+2020-08-29 00:23:41,505:INFO:python_build: ('default', 'Mar 23 2020 17:31:31')
+2020-08-29 00:23:41,505:INFO:machine: x86_64
+2020-08-29 00:23:41,520:INFO:platform: Darwin-19.5.0-x86_64-i386-64bit
+2020-08-29 00:23:41,520:INFO:Memory: svmem(total=8589934592, available=2620399616, percent=69.5, used=4667371520, free=28106752, active=2594979840, inactive=2465275904, wired=2072391680)
+2020-08-29 00:23:41,520:INFO:Physical Core: 4
+2020-08-29 00:23:41,520:INFO:Logical Core: 8
+2020-08-29 00:23:41,520:INFO:Checking libraries
+2020-08-29 00:23:41,520:INFO:pd==1.1.0
+2020-08-29 00:23:41,520:INFO:numpy==1.19.1
+2020-08-29 00:23:41,543:INFO:sklearn==0.23.1
+2020-08-29 00:23:41,613:INFO:xgboost==0.90
+2020-08-29 00:23:41,644:INFO:lightgbm==2.3.1
+2020-08-29 00:23:41,671:INFO:catboost==0.24.1
+2020-08-29 00:23:42,736:INFO:mlflow==1.9.1
+2020-08-29 00:23:42,737:INFO:Checking Exceptions
+2020-08-29 00:23:42,737:INFO:Preloading libraries
+2020-08-29 00:23:42,737:INFO:Preparing display monitor
+2020-08-29 00:23:42,751:INFO:Importing libraries
+2020-08-29 00:23:43,174:INFO:Declaring global variables
+2020-08-29 00:23:43,174:INFO:Copying data for preprocessing
+2020-08-29 00:23:43,178:INFO:Declaring preprocessing parameters
+2020-08-29 00:23:43,178:INFO:Importing preprocessing module
+2020-08-29 00:23:44,009:INFO:Creating preprocessing pipeline
+2020-08-29 00:23:46,014:INFO:Preprocessing pipeline created successfully
+2020-08-29 00:23:46,014:INFO:No inverse transformer found
+2020-08-29 00:23:46,014:INFO:Creating grid variables
+2020-08-29 00:23:46,017:INFO:Creating global containers
+2020-08-29 00:23:46,094:INFO:Logging experiment in MLFlow
+2020-08-29 00:24:09,567:INFO:PyCaret Regression Module
+2020-08-29 00:24:09,567:INFO:version 2.1
+2020-08-29 00:24:09,567:INFO:Initializing setup()
+2020-08-29 00:24:09,567:INFO:USI: 89b6
+2020-08-29 00:24:09,568:INFO:setup(data=(102, 19), target=Actual Value, train_size=0.75, sampling=True, sample_estimator=None, categorical_features=None, categorical_imputation=constant, ordinal_features=None,
+                    high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=('Sunday', 'Monday', 'Saturday', 'Thursday', 'Tuesday', 'Wednesday', 'Friday', 'Total number of calls', 'CSat', 'total coaching', 'total coaching improved', 'FCR Week before'), numeric_imputation=mean, date_features=None, ignore_features=['Agent_ID'], normalize=False,
+                    normalize_method=zscore, transformation=True, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=False, pca_method=linear,
+                    pca_components=None, ignore_low_variance=False, combine_rare_levels=True, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=True, outliers_threshold=0.05,
+                    remove_multicollinearity=True, multicollinearity_threshold=0.9, remove_perfect_collinearity=False, create_clusters=False, cluster_iter=20,
+                    polynomial_features=True, polynomial_degree=2, trigonometry_features=True, polynomial_threshold=0.1, group_features=None,
+                    group_names=None, feature_selection=True, feature_selection_threshold=0.4, feature_interaction=True, feature_ratio=False, interaction_threshold=0.01, transform_target=False,
+                    transform_target_method=box-cox, data_split_shuffle=True, folds_shuffle=False, n_jobs=-1, html=True, session_id=786, log_experiment=True,
+                    experiment_name=reg_fcr_experiments, log_plots=True, log_profile=False, log_data=False, silent=False, verbose=True, profile=False)
+2020-08-29 00:24:09,568:INFO:Checking environment
+2020-08-29 00:24:09,568:INFO:python_version: 3.7.7
+2020-08-29 00:24:09,568:INFO:python_build: ('default', 'Mar 23 2020 17:31:31')
+2020-08-29 00:24:09,568:INFO:machine: x86_64
+2020-08-29 00:24:09,568:INFO:platform: Darwin-19.5.0-x86_64-i386-64bit
+2020-08-29 00:24:09,568:INFO:Memory: svmem(total=8589934592, available=2522406912, percent=70.6, used=4752732160, free=24043520, active=2514767872, inactive=2477547520, wired=2237964288)
+2020-08-29 00:24:09,568:INFO:Physical Core: 4
+2020-08-29 00:24:09,568:INFO:Logical Core: 8
+2020-08-29 00:24:09,568:INFO:Checking libraries
+2020-08-29 00:24:09,568:INFO:pd==1.1.0
+2020-08-29 00:24:09,568:INFO:numpy==1.19.1
+2020-08-29 00:24:09,568:INFO:sklearn==0.23.1
+2020-08-29 00:24:09,568:INFO:xgboost==0.90
+2020-08-29 00:24:09,568:INFO:lightgbm==2.3.1
+2020-08-29 00:24:09,568:INFO:catboost==0.24.1
+2020-08-29 00:24:09,568:INFO:mlflow==1.9.1
+2020-08-29 00:24:09,568:INFO:Checking Exceptions
+2020-08-29 00:24:09,568:INFO:Preloading libraries
+2020-08-29 00:24:09,569:INFO:Preparing display monitor
+2020-08-29 00:24:09,581:INFO:Importing libraries
+2020-08-29 00:24:09,585:INFO:Declaring global variables
+2020-08-29 00:24:09,585:INFO:Copying data for preprocessing
+2020-08-29 00:24:09,588:INFO:Declaring preprocessing parameters
+2020-08-29 00:24:09,588:INFO:Importing preprocessing module
+2020-08-29 00:24:09,588:INFO:Creating preprocessing pipeline
+2020-08-29 00:24:11,978:INFO:Preprocessing pipeline created successfully
+2020-08-29 00:24:11,978:INFO:No inverse transformer found
+2020-08-29 00:24:11,978:INFO:Creating grid variables
+2020-08-29 00:24:11,980:INFO:Creating global containers
+2020-08-29 00:24:12,003:INFO:Logging experiment in MLFlow
