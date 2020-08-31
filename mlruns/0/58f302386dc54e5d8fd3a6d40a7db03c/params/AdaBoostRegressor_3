@@ -1,0 +1,2 @@
+AdaBoostRegressor(base_estimator=None, learning_rate=0.7799999999999997,
+                  loss='linear', n_estimators=55, random_state=786)

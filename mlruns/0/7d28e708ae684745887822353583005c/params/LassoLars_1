@@ -1,0 +1,3 @@
+LassoLars(alpha=0.1, copy_X=True, eps=0.001, fit_intercept=True, fit_path=True,
+          jitter=None, max_iter=500, normalize=True, positive=False,
+          precompute='auto', random_state=None, verbose=False)

@@ -1,0 +1,29 @@
+artifact_path: model
+flavors:
+  python_function:
+    data: model.pkl
+    env: conda.yaml
+    loader_module: mlflow.sklearn
+    python_version: 3.7.7
+  sklearn:
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 0.23.1
+run_id: 598680013f994bcd8110cd9c4ec7a67f
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  type: dataframe
+signature:
+  inputs: '[{"name": "Agent_ID", "type": "long"}, {"name": "Friday", "type": "double"},
+    {"name": "Monday", "type": "double"}, {"name": "Saturday", "type": "double"},
+    {"name": "Sunday", "type": "double"}, {"name": "Thursday", "type": "double"},
+    {"name": "Tuesday", "type": "double"}, {"name": "Wednesday", "type": "double"},
+    {"name": "Site", "type": "string"}, {"name": "Function_Field", "type": "string"},
+    {"name": "tenure", "type": "long"}, {"name": "Total number of calls", "type":
+    "long"}, {"name": "Assistance", "type": "double"}, {"name": "Recommend", "type":
+    "double"}, {"name": "CSat", "type": "double"}, {"name": "total coaching", "type":
+    "long"}, {"name": "total coaching improved", "type": "long"}, {"name": "FCR Week
+    before", "type": "double"}]'
+  outputs: null
+utc_time_created: '2020-08-30 02:16:46.005764'
