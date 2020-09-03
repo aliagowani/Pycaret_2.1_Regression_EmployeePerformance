@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/aliagowani/Documents/GitHub/Pycaret_2.1_Regression_and_Classification_EmployeePerformance/mlruns/0/582ffd8114494d8a80474f7575b6330b/artifacts
+end_time: 1599104563782
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 582ffd8114494d8a80474f7575b6330b
+run_uuid: 582ffd8114494d8a80474f7575b6330b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1599104563621
+status: 3
+tags: []
+user_id: aliagowani
