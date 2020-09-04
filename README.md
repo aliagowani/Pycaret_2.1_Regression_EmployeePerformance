@@ -1,9 +1,8 @@
 Name: Ali Gowani <br>
-Contact: https://www.linkedin.com/in/aliagowani/<br><br>
+Contact: https://www.linkedin.com/in/aliagowani/<br>
 
 Title: Regression Experiment for Intelligent Contact Center Employee performance<br>
 
-<br>
 
 ## Overview: Real-Life Employee Performance Case in Machine Learning (Regression) using Pycaret 2.1
 
