@@ -1,10 +1,8 @@
 Name: Ali Gowani <br>
 Contact: https://www.linkedin.com/in/aliagowani/<br><br>
 
-Title: Part 1: Regression Experiment for Intelligent Contact Center Employee performance<br>
-Pycaret Version: 2.1<br><br>
-Created: Monday, August 24, 2020 <br>
-Updated: Thursday, September 3, 2020 <br>
+Title: Regression Experiment for Intelligent Contact Center Employee performance<br>
+
 <br>
 
 # 0. Overview: Real-Life Employee Performance Case in Machine Learning (Regression) using Pycaret 2.1
