@@ -1,2 +1,0 @@
-HuberRegressor(alpha=0.4661, epsilon=1.9, fit_intercept=True, max_iter=100,
-               tol=1e-05, warm_start=False)

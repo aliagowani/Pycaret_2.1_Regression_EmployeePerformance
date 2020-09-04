@@ -1,3 +1,0 @@
-Lars(copy_X=True, eps=1e-05, fit_intercept=True, fit_path=True, jitter=None,
-     n_nonzero_coefs=500, normalize=False, precompute='auto', random_state=None,
-     verbose=False)
