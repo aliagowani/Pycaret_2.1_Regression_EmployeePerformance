@@ -7,7 +7,7 @@ Created: Monday, August 24, 2020 <br>
 Updated: Thursday, September 3, 2020 <br>
 <br>
 
-Use Jupyter Notebook Viewer to view this notebook properly: https://nbviewer.jupyter.org/github/aliagowani/Pycaret_2.1_Regression_EmployeePerformance/blob/master/Pycaret2.1_Regression_EmployeePerformance.ipynb
+Use Jupyter Notebook Viewer to view this notebook properly: https://nbviewer.jupyter.org/github/aliagowani/Pycaret_2.1_Regression_EmployeePerformance/blob/master/Pycaret_2.1_Regression_EmployeePerformance.ipynb
 
 # 0. Overview: Real-Life Employee Performance Case in Machine Learning (Regression) using Pycaret 2.1
 
