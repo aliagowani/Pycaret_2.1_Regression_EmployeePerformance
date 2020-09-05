@@ -1,0 +1,2559 @@
+2020-09-04 11:48:26,737:INFO:PyCaret Regression Module
+2020-09-04 11:48:26,737:INFO:version 2.1.2
+2020-09-04 11:48:26,737:INFO:Initializing setup()
+2020-09-04 11:48:26,737:INFO:USI: 4077
+2020-09-04 11:48:26,737:INFO:setup(data=(102, 19), target=Actual Value, train_size=0.75, sampling=True, sample_estimator=None, categorical_features=None, categorical_imputation=constant, ordinal_features=None,
+                    high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=('Sunday', 'Monday', 'Saturday', 'Thursday', 'Tuesday', 'Wednesday', 'Friday', 'Total number of calls', 'CSat', 'total coaching', 'total coaching improved', 'FCR Week before'), numeric_imputation=mean, date_features=None, ignore_features=['Agent_ID'], normalize=False,
+                    normalize_method=zscore, transformation=True, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=True, pca_method=linear,
+                    pca_components=None, ignore_low_variance=False, combine_rare_levels=True, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=True, outliers_threshold=0.05,
+                    remove_multicollinearity=True, multicollinearity_threshold=0.9, remove_perfect_collinearity=False, create_clusters=False, cluster_iter=20,
+                    polynomial_features=True, polynomial_degree=2, trigonometry_features=True, polynomial_threshold=0.1, group_features=None,
+                    group_names=None, feature_selection=True, feature_selection_threshold=0.4, feature_interaction=True, feature_ratio=False, interaction_threshold=0.01, transform_target=False,
+                    transform_target_method=box-cox, data_split_shuffle=True, folds_shuffle=True, n_jobs=-1, html=True, session_id=786, log_experiment=True,
+                    experiment_name=reg_fcr_experiments, log_plots=True, log_profile=False, log_data=False, silent=False, verbose=True, profile=False)
+2020-09-04 11:48:26,737:INFO:Checking environment
+2020-09-04 11:48:26,737:INFO:python_version: 3.8.3
+2020-09-04 11:48:26,737:INFO:python_build: ('default', 'Jul  2 2020 11:26:31')
+2020-09-04 11:48:26,737:INFO:machine: x86_64
+2020-09-04 11:48:26,753:INFO:platform: macOS-10.15.6-x86_64-i386-64bit
+2020-09-04 11:48:26,754:INFO:Memory: svmem(total=8589934592, available=2306822144, percent=73.1, used=4602482688, free=84926464, active=2223820800, inactive=2065104896, wired=2378661888)
+2020-09-04 11:48:26,754:INFO:Physical Core: 4
+2020-09-04 11:48:26,754:INFO:Logical Core: 8
+2020-09-04 11:48:26,754:INFO:Checking libraries
+2020-09-04 11:48:26,754:INFO:pd==1.0.5
+2020-09-04 11:48:26,754:INFO:numpy==1.18.5
+2020-09-04 11:48:26,755:INFO:sklearn==0.23.1
+2020-09-04 11:48:27,355:INFO:xgboost==1.2.0
+2020-09-04 11:48:27,372:INFO:lightgbm==2.3.1
+2020-09-04 11:48:27,398:INFO:catboost==0.24.1
+2020-09-04 11:48:28,136:INFO:mlflow==1.11.0
+2020-09-04 11:48:28,136:INFO:Checking Exceptions
+2020-09-04 11:48:28,136:INFO:Preloading libraries
+2020-09-04 11:48:28,136:INFO:Preparing display monitor
+2020-09-04 11:48:28,147:INFO:Importing libraries
+2020-09-04 11:48:28,589:INFO:Declaring global variables
+2020-09-04 11:48:28,589:INFO:Copying data for preprocessing
+2020-09-04 11:48:28,593:INFO:Declaring preprocessing parameters
+2020-09-04 11:48:28,593:INFO:Importing preprocessing module
+2020-09-04 11:48:29,252:INFO:Creating preprocessing pipeline
+2020-09-04 11:48:30,447:INFO:Preprocessing pipeline created successfully
+2020-09-04 11:48:30,447:INFO:No inverse transformer found
+2020-09-04 11:48:30,447:INFO:Creating grid variables
+2020-09-04 11:48:30,449:INFO:Creating global containers
+2020-09-04 11:48:30,540:INFO:Logging experiment in MLFlow
+2020-09-04 11:48:30,687:INFO:SubProcess save_model() called ==================================
+2020-09-04 11:48:30,688:INFO:Initializing save_model()
+2020-09-04 11:48:30,695:INFO:save_model(model=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True,
+                                      features_todrop=['Agent_ID'],
+                                      ml_usecase='regression',
+                                      numerical_features=('Sunday', 'Monday',
+                                                          'Saturday',
+                                                          'Thursday', 'Tuesday',
+                                                          'Wednesday', 'Friday',
+                                                          'Total number of '
+                                                          'calls',
+                                                          'CSat',
+                                                          'total coaching',
+                                                          'total coaching '
+                                                          'improved',
+                                                          'FCR Week before'),
+                                      target='Actual V...
+                                       target_variable='Actual Value',
+                                       threshold=0.9)),
+                ('dfs',
+                 DFS_Classic(interactions=['multiply'], ml_usecase='regression',
+                             random_state=786, subclass='binary',
+                             target='Actual Value',
+                             top_features_to_pick_percentage=None)),
+                ('pca',
+                 Reduce_Dimensions_For_Supervised_Path(method='pca_liner',
+                                                       random_state=786,
+                                                       target='Actual Value',
+                                                       variance_retained_or_number_of_components=None))],
+         verbose=False), model_name=Transformation Pipeline, model_only=False, verbose=False)
+2020-09-04 11:48:30,738:INFO:Transformation Pipeline.pkl saved in current working directory
+2020-09-04 11:48:30,763:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True,
+                                      features_todrop=['Agent_ID'],
+                                      ml_usecase='regression',
+                                      numerical_features=('Sunday', 'Monday',
+                                                          'Saturday',
+                                                          'Thursday', 'Tuesday',
+                                                          'Wednesday', 'Friday',
+                                                          'Total number of '
+                                                          'calls',
+                                                          'CSat',
+                                                          'total coaching',
+                                                          'total coaching '
+                                                          'improved',
+                                                          'FCR Week before'),
+                                      target='Actual V...
+                                                        threshold=0.9)),
+                                 ('dfs',
+                                  DFS_Classic(interactions=['multiply'],
+                                              ml_usecase='regression',
+                                              random_state=786,
+                                              subclass='binary',
+                                              target='Actual Value',
+                                              top_features_to_pick_percentage=None)),
+                                 ('pca',
+                                  Reduce_Dimensions_For_Supervised_Path(method='pca_liner',
+                                                                        random_state=786,
+                                                                        target='Actual '
+                                                                               'Value',
+                                                                        variance_retained_or_number_of_components=None))],
+                          verbose=False)]],
+         verbose=False)
+2020-09-04 11:48:30,763:INFO:save_model() succesfully completed......................................
+2020-09-04 11:48:30,763:INFO:SubProcess save_model() end ==================================
+2020-09-04 11:48:30,771:INFO:create_model_container: 0
+2020-09-04 11:48:30,771:INFO:master_model_container: 0
+2020-09-04 11:48:30,771:INFO:display_container: 0
+2020-09-04 11:48:30,771:INFO:setup() succesfully completed......................................
+2020-09-04 11:48:30,793:INFO:Initializing compare_models()
+2020-09-04 11:48:30,793:INFO:compare_models(exclude=['ransac', 'knn'], include=None, fold=5, round=4, sort=RMSE, n_select=5, turbo=True, verbose=True)
+2020-09-04 11:48:30,793:INFO:Checking exceptions
+2020-09-04 11:48:30,793:INFO:Preloading libraries
+2020-09-04 11:48:30,793:INFO:Preparing display monitor
+2020-09-04 11:48:30,820:INFO:Copying training dataset
+2020-09-04 11:48:30,821:INFO:Importing libraries
+2020-09-04 11:48:30,831:INFO:Importing untrained models
+2020-09-04 11:48:30,833:INFO:Import successful
+2020-09-04 11:48:30,841:INFO:Defining folds
+2020-09-04 11:48:30,841:INFO:Declaring metric variables
+2020-09-04 11:48:30,841:INFO:Initializing Linear Regression
+2020-09-04 11:48:30,851:INFO:Initializing Fold 1
+2020-09-04 11:48:30,852:INFO:Total runtime is 0.00017151435216267903 minutes
+2020-09-04 11:48:30,859:INFO:Fitting Model
+2020-09-04 11:48:30,867:INFO:Evaluating Metrics
+2020-09-04 11:48:30,870:INFO:No inverse transformer found
+2020-09-04 11:48:30,870:INFO:Compiling Metrics
+2020-09-04 11:48:30,877:INFO:Initializing Fold 2
+2020-09-04 11:48:30,878:INFO:Total runtime is 0.0006056030591328939 minutes
+2020-09-04 11:48:30,884:INFO:Fitting Model
+2020-09-04 11:48:30,887:INFO:Evaluating Metrics
+2020-09-04 11:48:30,889:INFO:No inverse transformer found
+2020-09-04 11:48:30,889:INFO:Compiling Metrics
+2020-09-04 11:48:30,896:INFO:Initializing Fold 3
+2020-09-04 11:48:30,897:INFO:Total runtime is 0.0009195009867350261 minutes
+2020-09-04 11:48:30,905:INFO:Fitting Model
+2020-09-04 11:48:30,908:INFO:Evaluating Metrics
+2020-09-04 11:48:30,910:INFO:No inverse transformer found
+2020-09-04 11:48:30,910:INFO:Compiling Metrics
+2020-09-04 11:48:30,916:INFO:Initializing Fold 4
+2020-09-04 11:48:30,917:INFO:Total runtime is 0.0012576858202616374 minutes
+2020-09-04 11:48:30,924:INFO:Fitting Model
+2020-09-04 11:48:30,927:INFO:Evaluating Metrics
+2020-09-04 11:48:30,929:INFO:No inverse transformer found
+2020-09-04 11:48:30,929:INFO:Compiling Metrics
+2020-09-04 11:48:30,935:INFO:Initializing Fold 5
+2020-09-04 11:48:30,936:INFO:Total runtime is 0.0015756646792093913 minutes
+2020-09-04 11:48:30,943:INFO:Fitting Model
+2020-09-04 11:48:30,945:INFO:Evaluating Metrics
+2020-09-04 11:48:30,947:INFO:No inverse transformer found
+2020-09-04 11:48:30,947:INFO:Compiling Metrics
+2020-09-04 11:48:30,953:INFO:Calculating mean and std
+2020-09-04 11:48:30,954:INFO:Creating metrics dataframe
+2020-09-04 11:48:30,966:INFO:Creating MLFlow logs
+2020-09-04 11:48:31,018:INFO:Initializing Lasso Regression
+2020-09-04 11:48:31,024:INFO:Initializing Fold 1
+2020-09-04 11:48:31,025:INFO:Total runtime is 0.003055902322133382 minutes
+2020-09-04 11:48:31,031:INFO:Fitting Model
+2020-09-04 11:48:31,034:INFO:Evaluating Metrics
+2020-09-04 11:48:31,036:INFO:No inverse transformer found
+2020-09-04 11:48:31,036:INFO:Compiling Metrics
+2020-09-04 11:48:31,042:INFO:Initializing Fold 2
+2020-09-04 11:48:31,043:INFO:Total runtime is 0.0033606290817260742 minutes
+2020-09-04 11:48:31,049:INFO:Fitting Model
+2020-09-04 11:48:31,053:INFO:Evaluating Metrics
+2020-09-04 11:48:31,054:INFO:No inverse transformer found
+2020-09-04 11:48:31,055:INFO:Compiling Metrics
+2020-09-04 11:48:31,061:INFO:Initializing Fold 3
+2020-09-04 11:48:31,062:INFO:Total runtime is 0.0036706010500590007 minutes
+2020-09-04 11:48:31,068:INFO:Fitting Model
+2020-09-04 11:48:31,072:INFO:Evaluating Metrics
+2020-09-04 11:48:31,074:INFO:No inverse transformer found
+2020-09-04 11:48:31,074:INFO:Compiling Metrics
+2020-09-04 11:48:31,080:INFO:Initializing Fold 4
+2020-09-04 11:48:31,081:INFO:Total runtime is 0.0039836684862772625 minutes
+2020-09-04 11:48:31,087:INFO:Fitting Model
+2020-09-04 11:48:31,090:INFO:Evaluating Metrics
+2020-09-04 11:48:31,092:INFO:No inverse transformer found
+2020-09-04 11:48:31,092:INFO:Compiling Metrics
+2020-09-04 11:48:31,098:INFO:Initializing Fold 5
+2020-09-04 11:48:31,099:INFO:Total runtime is 0.004289615154266358 minutes
+2020-09-04 11:48:31,105:INFO:Fitting Model
+2020-09-04 11:48:31,108:INFO:Evaluating Metrics
+2020-09-04 11:48:31,110:INFO:No inverse transformer found
+2020-09-04 11:48:31,110:INFO:Compiling Metrics
+2020-09-04 11:48:31,116:INFO:Calculating mean and std
+2020-09-04 11:48:31,117:INFO:Creating metrics dataframe
+2020-09-04 11:48:31,130:INFO:Creating MLFlow logs
+2020-09-04 11:48:31,186:INFO:Initializing Ridge Regression
+2020-09-04 11:48:31,191:INFO:Initializing Fold 1
+2020-09-04 11:48:31,192:INFO:Total runtime is 0.00584023396174113 minutes
+2020-09-04 11:48:31,197:INFO:Fitting Model
+2020-09-04 11:48:31,205:INFO:Evaluating Metrics
+2020-09-04 11:48:31,206:INFO:No inverse transformer found
+2020-09-04 11:48:31,206:INFO:Compiling Metrics
+2020-09-04 11:48:31,212:INFO:Initializing Fold 2
+2020-09-04 11:48:31,213:INFO:Total runtime is 0.006193232536315918 minutes
+2020-09-04 11:48:31,220:INFO:Fitting Model
+2020-09-04 11:48:31,222:INFO:Evaluating Metrics
+2020-09-04 11:48:31,224:INFO:No inverse transformer found
+2020-09-04 11:48:31,224:INFO:Compiling Metrics
+2020-09-04 11:48:31,230:INFO:Initializing Fold 3
+2020-09-04 11:48:31,231:INFO:Total runtime is 0.006483983993530273 minutes
+2020-09-04 11:48:31,237:INFO:Fitting Model
+2020-09-04 11:48:31,239:INFO:Evaluating Metrics
+2020-09-04 11:48:31,242:INFO:No inverse transformer found
+2020-09-04 11:48:31,242:INFO:Compiling Metrics
+2020-09-04 11:48:31,248:INFO:Initializing Fold 4
+2020-09-04 11:48:31,249:INFO:Total runtime is 0.0067887465159098305 minutes
+2020-09-04 11:48:31,255:INFO:Fitting Model
+2020-09-04 11:48:31,258:INFO:Evaluating Metrics
+2020-09-04 11:48:31,260:INFO:No inverse transformer found
+2020-09-04 11:48:31,260:INFO:Compiling Metrics
+2020-09-04 11:48:31,267:INFO:Initializing Fold 5
+2020-09-04 11:48:31,268:INFO:Total runtime is 0.007103518644968668 minutes
+2020-09-04 11:48:31,275:INFO:Fitting Model
+2020-09-04 11:48:31,283:INFO:Evaluating Metrics
+2020-09-04 11:48:31,285:INFO:No inverse transformer found
+2020-09-04 11:48:31,285:INFO:Compiling Metrics
+2020-09-04 11:48:31,294:INFO:Calculating mean and std
+2020-09-04 11:48:31,295:INFO:Creating metrics dataframe
+2020-09-04 11:48:31,342:INFO:Creating MLFlow logs
+2020-09-04 11:48:31,422:INFO:Initializing Elastic Net
+2020-09-04 11:48:31,431:INFO:Initializing Fold 1
+2020-09-04 11:48:31,431:INFO:Total runtime is 0.009832700093587238 minutes
+2020-09-04 11:48:31,438:INFO:Fitting Model
+2020-09-04 11:48:31,443:INFO:Evaluating Metrics
+2020-09-04 11:48:31,445:INFO:No inverse transformer found
+2020-09-04 11:48:31,445:INFO:Compiling Metrics
+2020-09-04 11:48:31,453:INFO:Initializing Fold 2
+2020-09-04 11:48:31,454:INFO:Total runtime is 0.010215381781260172 minutes
+2020-09-04 11:48:31,462:INFO:Fitting Model
+2020-09-04 11:48:31,466:INFO:Evaluating Metrics
+2020-09-04 11:48:31,468:INFO:No inverse transformer found
+2020-09-04 11:48:31,468:INFO:Compiling Metrics
+2020-09-04 11:48:31,476:INFO:Initializing Fold 3
+2020-09-04 11:48:31,476:INFO:Total runtime is 0.010579101244608561 minutes
+2020-09-04 11:48:31,483:INFO:Fitting Model
+2020-09-04 11:48:31,486:INFO:Evaluating Metrics
+2020-09-04 11:48:31,488:INFO:No inverse transformer found
+2020-09-04 11:48:31,488:INFO:Compiling Metrics
+2020-09-04 11:48:31,495:INFO:Initializing Fold 4
+2020-09-04 11:48:31,496:INFO:Total runtime is 0.010901367664337159 minutes
+2020-09-04 11:48:31,501:INFO:Fitting Model
+2020-09-04 11:48:31,504:INFO:Evaluating Metrics
+2020-09-04 11:48:31,506:INFO:No inverse transformer found
+2020-09-04 11:48:31,506:INFO:Compiling Metrics
+2020-09-04 11:48:31,512:INFO:Initializing Fold 5
+2020-09-04 11:48:31,512:INFO:Total runtime is 0.011177949110666911 minutes
+2020-09-04 11:48:31,517:INFO:Fitting Model
+2020-09-04 11:48:31,520:INFO:Evaluating Metrics
+2020-09-04 11:48:31,522:INFO:No inverse transformer found
+2020-09-04 11:48:31,522:INFO:Compiling Metrics
+2020-09-04 11:48:31,527:INFO:Calculating mean and std
+2020-09-04 11:48:31,528:INFO:Creating metrics dataframe
+2020-09-04 11:48:31,538:INFO:Creating MLFlow logs
+2020-09-04 11:48:31,619:INFO:Initializing Least Angle Regression
+2020-09-04 11:48:31,632:INFO:Initializing Fold 1
+2020-09-04 11:48:31,633:INFO:Total runtime is 0.013192534446716309 minutes
+2020-09-04 11:48:31,639:INFO:Fitting Model
+2020-09-04 11:48:31,652:INFO:Evaluating Metrics
+2020-09-04 11:48:31,654:INFO:No inverse transformer found
+2020-09-04 11:48:31,654:INFO:Compiling Metrics
+2020-09-04 11:48:31,662:INFO:Initializing Fold 2
+2020-09-04 11:48:31,663:INFO:Total runtime is 0.013686315218607584 minutes
+2020-09-04 11:48:31,670:INFO:Fitting Model
+2020-09-04 11:48:31,682:INFO:Evaluating Metrics
+2020-09-04 11:48:31,684:INFO:No inverse transformer found
+2020-09-04 11:48:31,684:INFO:Compiling Metrics
+2020-09-04 11:48:31,692:INFO:Initializing Fold 3
+2020-09-04 11:48:31,693:INFO:Total runtime is 0.014189430077870687 minutes
+2020-09-04 11:48:31,701:INFO:Fitting Model
+2020-09-04 11:48:31,721:INFO:Evaluating Metrics
+2020-09-04 11:48:31,723:INFO:No inverse transformer found
+2020-09-04 11:48:31,723:INFO:Compiling Metrics
+2020-09-04 11:48:31,730:INFO:Initializing Fold 4
+2020-09-04 11:48:31,730:INFO:Total runtime is 0.014812783400217692 minutes
+2020-09-04 11:48:31,737:INFO:Fitting Model
+2020-09-04 11:48:31,745:INFO:Evaluating Metrics
+2020-09-04 11:48:31,747:INFO:No inverse transformer found
+2020-09-04 11:48:31,747:INFO:Compiling Metrics
+2020-09-04 11:48:31,753:INFO:Initializing Fold 5
+2020-09-04 11:48:31,754:INFO:Total runtime is 0.015201163291931151 minutes
+2020-09-04 11:48:31,760:INFO:Fitting Model
+2020-09-04 11:48:31,769:INFO:Evaluating Metrics
+2020-09-04 11:48:31,771:INFO:No inverse transformer found
+2020-09-04 11:48:31,771:INFO:Compiling Metrics
+2020-09-04 11:48:31,778:INFO:Calculating mean and std
+2020-09-04 11:48:31,778:INFO:Creating metrics dataframe
+2020-09-04 11:48:31,790:INFO:Creating MLFlow logs
+2020-09-04 11:48:31,855:INFO:Initializing Lasso Least Angle Regression
+2020-09-04 11:48:31,861:INFO:Initializing Fold 1
+2020-09-04 11:48:31,862:INFO:Total runtime is 0.01700268189112345 minutes
+2020-09-04 11:48:31,867:INFO:Fitting Model
+2020-09-04 11:48:31,870:INFO:Evaluating Metrics
+2020-09-04 11:48:31,872:INFO:No inverse transformer found
+2020-09-04 11:48:31,872:INFO:Compiling Metrics
+2020-09-04 11:48:31,880:INFO:Initializing Fold 2
+2020-09-04 11:48:31,880:INFO:Total runtime is 0.017314684391021726 minutes
+2020-09-04 11:48:31,888:INFO:Fitting Model
+2020-09-04 11:48:31,892:INFO:Evaluating Metrics
+2020-09-04 11:48:31,894:INFO:No inverse transformer found
+2020-09-04 11:48:31,894:INFO:Compiling Metrics
+2020-09-04 11:48:31,902:INFO:Initializing Fold 3
+2020-09-04 11:48:31,903:INFO:Total runtime is 0.01769656737645467 minutes
+2020-09-04 11:48:31,912:INFO:Fitting Model
+2020-09-04 11:48:31,916:INFO:Evaluating Metrics
+2020-09-04 11:48:31,921:INFO:No inverse transformer found
+2020-09-04 11:48:31,921:INFO:Compiling Metrics
+2020-09-04 11:48:31,932:INFO:Initializing Fold 4
+2020-09-04 11:48:31,933:INFO:Total runtime is 0.018188766638437905 minutes
+2020-09-04 11:48:31,942:INFO:Fitting Model
+2020-09-04 11:48:31,946:INFO:Evaluating Metrics
+2020-09-04 11:48:31,948:INFO:No inverse transformer found
+2020-09-04 11:48:31,948:INFO:Compiling Metrics
+2020-09-04 11:48:31,959:INFO:Initializing Fold 5
+2020-09-04 11:48:31,960:INFO:Total runtime is 0.018641547362009684 minutes
+2020-09-04 11:48:31,967:INFO:Fitting Model
+2020-09-04 11:48:31,970:INFO:Evaluating Metrics
+2020-09-04 11:48:31,972:INFO:No inverse transformer found
+2020-09-04 11:48:31,973:INFO:Compiling Metrics
+2020-09-04 11:48:31,980:INFO:Calculating mean and std
+2020-09-04 11:48:31,980:INFO:Creating metrics dataframe
+2020-09-04 11:48:31,995:INFO:Creating MLFlow logs
+2020-09-04 11:48:32,057:INFO:Initializing Orthogonal Matching Pursuit
+2020-09-04 11:48:32,066:INFO:Initializing Fold 1
+2020-09-04 11:48:32,067:INFO:Total runtime is 0.020425649483998616 minutes
+2020-09-04 11:48:32,075:INFO:Fitting Model
+2020-09-04 11:48:32,090:INFO:Evaluating Metrics
+2020-09-04 11:48:32,093:INFO:No inverse transformer found
+2020-09-04 11:48:32,093:INFO:Compiling Metrics
+2020-09-04 11:48:32,102:INFO:Initializing Fold 2
+2020-09-04 11:48:32,103:INFO:Total runtime is 0.021027000745137532 minutes
+2020-09-04 11:48:32,112:INFO:Fitting Model
+2020-09-04 11:48:32,122:INFO:Evaluating Metrics
+2020-09-04 11:48:32,125:INFO:No inverse transformer found
+2020-09-04 11:48:32,125:INFO:Compiling Metrics
+2020-09-04 11:48:32,134:INFO:Initializing Fold 3
+2020-09-04 11:48:32,135:INFO:Total runtime is 0.021553365389506023 minutes
+2020-09-04 11:48:32,144:INFO:Fitting Model
+2020-09-04 11:48:32,158:INFO:Evaluating Metrics
+2020-09-04 11:48:32,160:INFO:No inverse transformer found
+2020-09-04 11:48:32,160:INFO:Compiling Metrics
+2020-09-04 11:48:32,168:INFO:Initializing Fold 4
+2020-09-04 11:48:32,169:INFO:Total runtime is 0.022133068243662516 minutes
+2020-09-04 11:48:32,176:INFO:Fitting Model
+2020-09-04 11:48:32,179:INFO:Evaluating Metrics
+2020-09-04 11:48:32,181:INFO:No inverse transformer found
+2020-09-04 11:48:32,181:INFO:Compiling Metrics
+2020-09-04 11:48:32,189:INFO:Initializing Fold 5
+2020-09-04 11:48:32,189:INFO:Total runtime is 0.022461883227030435 minutes
+2020-09-04 11:48:32,195:INFO:Fitting Model
+2020-09-04 11:48:32,199:INFO:Evaluating Metrics
+2020-09-04 11:48:32,201:INFO:No inverse transformer found
+2020-09-04 11:48:32,201:INFO:Compiling Metrics
+2020-09-04 11:48:32,209:INFO:Calculating mean and std
+2020-09-04 11:48:32,209:INFO:Creating metrics dataframe
+2020-09-04 11:48:32,224:INFO:Creating MLFlow logs
+2020-09-04 11:48:32,291:INFO:Initializing Bayesian Ridge
+2020-09-04 11:48:32,298:INFO:Initializing Fold 1
+2020-09-04 11:48:32,300:INFO:Total runtime is 0.024301262696584065 minutes
+2020-09-04 11:48:32,307:INFO:Fitting Model
+2020-09-04 11:48:32,312:INFO:Evaluating Metrics
+2020-09-04 11:48:32,313:INFO:No inverse transformer found
+2020-09-04 11:48:32,313:INFO:Compiling Metrics
+2020-09-04 11:48:32,320:INFO:Initializing Fold 2
+2020-09-04 11:48:32,321:INFO:Total runtime is 0.024650049209594727 minutes
+2020-09-04 11:48:32,327:INFO:Fitting Model
+2020-09-04 11:48:32,331:INFO:Evaluating Metrics
+2020-09-04 11:48:32,333:INFO:No inverse transformer found
+2020-09-04 11:48:32,333:INFO:Compiling Metrics
+2020-09-04 11:48:32,341:INFO:Initializing Fold 3
+2020-09-04 11:48:32,341:INFO:Total runtime is 0.024995831648508708 minutes
+2020-09-04 11:48:32,348:INFO:Fitting Model
+2020-09-04 11:48:32,354:INFO:Evaluating Metrics
+2020-09-04 11:48:32,357:INFO:No inverse transformer found
+2020-09-04 11:48:32,357:INFO:Compiling Metrics
+2020-09-04 11:48:32,364:INFO:Initializing Fold 4
+2020-09-04 11:48:32,365:INFO:Total runtime is 0.02538659969965617 minutes
+2020-09-04 11:48:32,372:INFO:Fitting Model
+2020-09-04 11:48:32,376:INFO:Evaluating Metrics
+2020-09-04 11:48:32,378:INFO:No inverse transformer found
+2020-09-04 11:48:32,378:INFO:Compiling Metrics
+2020-09-04 11:48:32,385:INFO:Initializing Fold 5
+2020-09-04 11:48:32,386:INFO:Total runtime is 0.025734583536783855 minutes
+2020-09-04 11:48:32,391:INFO:Fitting Model
+2020-09-04 11:48:32,395:INFO:Evaluating Metrics
+2020-09-04 11:48:32,398:INFO:No inverse transformer found
+2020-09-04 11:48:32,398:INFO:Compiling Metrics
+2020-09-04 11:48:32,405:INFO:Calculating mean and std
+2020-09-04 11:48:32,406:INFO:Creating metrics dataframe
+2020-09-04 11:48:32,420:INFO:Creating MLFlow logs
+2020-09-04 11:48:32,484:INFO:Initializing Passive Aggressive Regressor
+2020-09-04 11:48:32,491:INFO:Initializing Fold 1
+2020-09-04 11:48:32,492:INFO:Total runtime is 0.027510881423950195 minutes
+2020-09-04 11:48:32,498:INFO:Fitting Model
+2020-09-04 11:48:32,503:INFO:Evaluating Metrics
+2020-09-04 11:48:32,543:INFO:No inverse transformer found
+2020-09-04 11:48:32,543:INFO:Compiling Metrics
+2020-09-04 11:48:32,550:INFO:Initializing Fold 2
+2020-09-04 11:48:32,551:INFO:Total runtime is 0.0284865140914917 minutes
+2020-09-04 11:48:32,558:INFO:Fitting Model
+2020-09-04 11:48:32,562:INFO:Evaluating Metrics
+2020-09-04 11:48:32,565:INFO:No inverse transformer found
+2020-09-04 11:48:32,565:INFO:Compiling Metrics
+2020-09-04 11:48:32,573:INFO:Initializing Fold 3
+2020-09-04 11:48:32,574:INFO:Total runtime is 0.028875299294789634 minutes
+2020-09-04 11:48:32,580:INFO:Fitting Model
+2020-09-04 11:48:32,583:INFO:Evaluating Metrics
+2020-09-04 11:48:32,585:INFO:No inverse transformer found
+2020-09-04 11:48:32,586:INFO:Compiling Metrics
+2020-09-04 11:48:32,593:INFO:Initializing Fold 4
+2020-09-04 11:48:32,594:INFO:Total runtime is 0.0292022983233134 minutes
+2020-09-04 11:48:32,599:INFO:Fitting Model
+2020-09-04 11:48:32,604:INFO:Evaluating Metrics
+2020-09-04 11:48:32,606:INFO:No inverse transformer found
+2020-09-04 11:48:32,606:INFO:Compiling Metrics
+2020-09-04 11:48:32,610:INFO:Initializing Fold 5
+2020-09-04 11:48:32,611:INFO:Total runtime is 0.02949238220850627 minutes
+2020-09-04 11:48:32,618:INFO:Fitting Model
+2020-09-04 11:48:32,622:INFO:Evaluating Metrics
+2020-09-04 11:48:32,624:INFO:No inverse transformer found
+2020-09-04 11:48:32,624:INFO:Compiling Metrics
+2020-09-04 11:48:32,631:INFO:Calculating mean and std
+2020-09-04 11:48:32,632:INFO:Creating metrics dataframe
+2020-09-04 11:48:32,647:INFO:Creating MLFlow logs
+2020-09-04 11:48:32,721:INFO:Initializing TheilSen Regressor
+2020-09-04 11:48:32,727:INFO:Initializing Fold 1
+2020-09-04 11:48:32,727:INFO:Total runtime is 0.03143151601155599 minutes
+2020-09-04 11:48:32,732:INFO:Fitting Model
+2020-09-04 11:48:34,569:INFO:Evaluating Metrics
+2020-09-04 11:48:34,572:INFO:No inverse transformer found
+2020-09-04 11:48:34,572:INFO:Compiling Metrics
+2020-09-04 11:48:34,579:INFO:Initializing Fold 2
+2020-09-04 11:48:34,580:INFO:Total runtime is 0.06230725049972534 minutes
+2020-09-04 11:48:34,586:INFO:Fitting Model
+2020-09-04 11:48:35,113:INFO:Evaluating Metrics
+2020-09-04 11:48:35,115:INFO:No inverse transformer found
+2020-09-04 11:48:35,115:INFO:Compiling Metrics
+2020-09-04 11:48:35,121:INFO:Initializing Fold 3
+2020-09-04 11:48:35,122:INFO:Total runtime is 0.07134390274683634 minutes
+2020-09-04 11:48:35,129:INFO:Fitting Model
+2020-09-04 11:48:35,623:INFO:Evaluating Metrics
+2020-09-04 11:48:35,624:INFO:No inverse transformer found
+2020-09-04 11:48:35,625:INFO:Compiling Metrics
+2020-09-04 11:48:35,630:INFO:Initializing Fold 4
+2020-09-04 11:48:35,630:INFO:Total runtime is 0.07980873187383015 minutes
+2020-09-04 11:48:35,634:INFO:Fitting Model
+2020-09-04 11:48:36,139:INFO:Evaluating Metrics
+2020-09-04 11:48:36,141:INFO:No inverse transformer found
+2020-09-04 11:48:36,141:INFO:Compiling Metrics
+2020-09-04 11:48:36,146:INFO:Initializing Fold 5
+2020-09-04 11:48:36,147:INFO:Total runtime is 0.08842118183771769 minutes
+2020-09-04 11:48:36,151:INFO:Fitting Model
+2020-09-04 11:48:36,706:INFO:Evaluating Metrics
+2020-09-04 11:48:36,708:INFO:No inverse transformer found
+2020-09-04 11:48:36,708:INFO:Compiling Metrics
+2020-09-04 11:48:36,714:INFO:Calculating mean and std
+2020-09-04 11:48:36,714:INFO:Creating metrics dataframe
+2020-09-04 11:48:36,729:INFO:Creating MLFlow logs
+2020-09-04 11:48:36,807:INFO:Initializing Huber Regressor
+2020-09-04 11:48:36,817:INFO:Initializing Fold 1
+2020-09-04 11:48:36,819:INFO:Total runtime is 0.09961673418680826 minutes
+2020-09-04 11:48:36,827:INFO:Fitting Model
+2020-09-04 11:48:36,854:INFO:Evaluating Metrics
+2020-09-04 11:48:36,856:INFO:No inverse transformer found
+2020-09-04 11:48:36,856:INFO:Compiling Metrics
+2020-09-04 11:48:36,862:INFO:Initializing Fold 2
+2020-09-04 11:48:36,863:INFO:Total runtime is 0.10035229921340942 minutes
+2020-09-04 11:48:36,868:INFO:Fitting Model
+2020-09-04 11:48:36,900:INFO:Evaluating Metrics
+2020-09-04 11:48:36,901:INFO:No inverse transformer found
+2020-09-04 11:48:36,901:INFO:Compiling Metrics
+2020-09-04 11:48:36,908:INFO:Initializing Fold 3
+2020-09-04 11:48:36,908:INFO:Total runtime is 0.10111465056737264 minutes
+2020-09-04 11:48:36,914:INFO:Fitting Model
+2020-09-04 11:48:36,938:INFO:Evaluating Metrics
+2020-09-04 11:48:36,940:INFO:No inverse transformer found
+2020-09-04 11:48:36,940:INFO:Compiling Metrics
+2020-09-04 11:48:36,947:INFO:Initializing Fold 4
+2020-09-04 11:48:36,947:INFO:Total runtime is 0.10176051457722982 minutes
+2020-09-04 11:48:36,952:INFO:Fitting Model
+2020-09-04 11:48:36,974:INFO:Evaluating Metrics
+2020-09-04 11:48:36,976:INFO:No inverse transformer found
+2020-09-04 11:48:36,976:INFO:Compiling Metrics
+2020-09-04 11:48:36,982:INFO:Initializing Fold 5
+2020-09-04 11:48:36,982:INFO:Total runtime is 0.10234691699345906 minutes
+2020-09-04 11:48:36,988:INFO:Fitting Model
+2020-09-04 11:48:37,010:INFO:Evaluating Metrics
+2020-09-04 11:48:37,012:INFO:No inverse transformer found
+2020-09-04 11:48:37,012:INFO:Compiling Metrics
+2020-09-04 11:48:37,018:INFO:Calculating mean and std
+2020-09-04 11:48:37,019:INFO:Creating metrics dataframe
+2020-09-04 11:48:37,033:INFO:Creating MLFlow logs
+2020-09-04 11:48:37,107:INFO:Initializing Support Vector Machine
+2020-09-04 11:48:37,115:INFO:Initializing Fold 1
+2020-09-04 11:48:37,116:INFO:Total runtime is 0.10457296768824259 minutes
+2020-09-04 11:48:37,123:INFO:Fitting Model
+2020-09-04 11:48:37,128:INFO:Evaluating Metrics
+2020-09-04 11:48:37,130:INFO:No inverse transformer found
+2020-09-04 11:48:37,130:INFO:Compiling Metrics
+2020-09-04 11:48:37,137:INFO:Initializing Fold 2
+2020-09-04 11:48:37,138:INFO:Total runtime is 0.10494190057118734 minutes
+2020-09-04 11:48:37,144:INFO:Fitting Model
+2020-09-04 11:48:37,147:INFO:Evaluating Metrics
+2020-09-04 11:48:37,149:INFO:No inverse transformer found
+2020-09-04 11:48:37,149:INFO:Compiling Metrics
+2020-09-04 11:48:37,156:INFO:Initializing Fold 3
+2020-09-04 11:48:37,156:INFO:Total runtime is 0.1052470326423645 minutes
+2020-09-04 11:48:37,163:INFO:Fitting Model
+2020-09-04 11:48:37,165:INFO:Evaluating Metrics
+2020-09-04 11:48:37,168:INFO:No inverse transformer found
+2020-09-04 11:48:37,168:INFO:Compiling Metrics
+2020-09-04 11:48:37,174:INFO:Initializing Fold 4
+2020-09-04 11:48:37,175:INFO:Total runtime is 0.10555670261383056 minutes
+2020-09-04 11:48:37,181:INFO:Fitting Model
+2020-09-04 11:48:37,184:INFO:Evaluating Metrics
+2020-09-04 11:48:37,186:INFO:No inverse transformer found
+2020-09-04 11:48:37,186:INFO:Compiling Metrics
+2020-09-04 11:48:37,193:INFO:Initializing Fold 5
+2020-09-04 11:48:37,194:INFO:Total runtime is 0.1058749477068583 minutes
+2020-09-04 11:48:37,199:INFO:Fitting Model
+2020-09-04 11:48:37,202:INFO:Evaluating Metrics
+2020-09-04 11:48:37,204:INFO:No inverse transformer found
+2020-09-04 11:48:37,204:INFO:Compiling Metrics
+2020-09-04 11:48:37,211:INFO:Calculating mean and std
+2020-09-04 11:48:37,212:INFO:Creating metrics dataframe
+2020-09-04 11:48:37,224:INFO:Creating MLFlow logs
+2020-09-04 11:48:37,307:INFO:Initializing Decision Tree
+2020-09-04 11:48:37,316:INFO:Initializing Fold 1
+2020-09-04 11:48:37,317:INFO:Total runtime is 0.10792419910430907 minutes
+2020-09-04 11:48:37,324:INFO:Fitting Model
+2020-09-04 11:48:37,329:INFO:Evaluating Metrics
+2020-09-04 11:48:37,331:INFO:No inverse transformer found
+2020-09-04 11:48:37,331:INFO:Compiling Metrics
+2020-09-04 11:48:37,337:INFO:Initializing Fold 2
+2020-09-04 11:48:37,338:INFO:Total runtime is 0.10827468236287434 minutes
+2020-09-04 11:48:37,346:INFO:Fitting Model
+2020-09-04 11:48:37,351:INFO:Evaluating Metrics
+2020-09-04 11:48:37,353:INFO:No inverse transformer found
+2020-09-04 11:48:37,353:INFO:Compiling Metrics
+2020-09-04 11:48:37,361:INFO:Initializing Fold 3
+2020-09-04 11:48:37,362:INFO:Total runtime is 0.10866803328196206 minutes
+2020-09-04 11:48:37,368:INFO:Fitting Model
+2020-09-04 11:48:37,372:INFO:Evaluating Metrics
+2020-09-04 11:48:37,374:INFO:No inverse transformer found
+2020-09-04 11:48:37,374:INFO:Compiling Metrics
+2020-09-04 11:48:37,380:INFO:Initializing Fold 4
+2020-09-04 11:48:37,381:INFO:Total runtime is 0.1089892824490865 minutes
+2020-09-04 11:48:37,386:INFO:Fitting Model
+2020-09-04 11:48:37,390:INFO:Evaluating Metrics
+2020-09-04 11:48:37,392:INFO:No inverse transformer found
+2020-09-04 11:48:37,392:INFO:Compiling Metrics
+2020-09-04 11:48:37,397:INFO:Initializing Fold 5
+2020-09-04 11:48:37,398:INFO:Total runtime is 0.10927779674530028 minutes
+2020-09-04 11:48:37,404:INFO:Fitting Model
+2020-09-04 11:48:37,408:INFO:Evaluating Metrics
+2020-09-04 11:48:37,410:INFO:No inverse transformer found
+2020-09-04 11:48:37,410:INFO:Compiling Metrics
+2020-09-04 11:48:37,416:INFO:Calculating mean and std
+2020-09-04 11:48:37,416:INFO:Creating metrics dataframe
+2020-09-04 11:48:37,429:INFO:Creating MLFlow logs
+2020-09-04 11:48:37,518:INFO:Initializing Random Forest
+2020-09-04 11:48:37,528:INFO:Initializing Fold 1
+2020-09-04 11:48:37,529:INFO:Total runtime is 0.11145341793696084 minutes
+2020-09-04 11:48:37,536:INFO:Fitting Model
+2020-09-04 11:48:37,683:INFO:Evaluating Metrics
+2020-09-04 11:48:37,693:INFO:No inverse transformer found
+2020-09-04 11:48:37,693:INFO:Compiling Metrics
+2020-09-04 11:48:37,699:INFO:Initializing Fold 2
+2020-09-04 11:48:37,699:INFO:Total runtime is 0.11429524819056192 minutes
+2020-09-04 11:48:37,704:INFO:Fitting Model
+2020-09-04 11:48:37,831:INFO:Evaluating Metrics
+2020-09-04 11:48:37,841:INFO:No inverse transformer found
+2020-09-04 11:48:37,841:INFO:Compiling Metrics
+2020-09-04 11:48:37,847:INFO:Initializing Fold 3
+2020-09-04 11:48:37,847:INFO:Total runtime is 0.11676098108291624 minutes
+2020-09-04 11:48:37,852:INFO:Fitting Model
+2020-09-04 11:48:37,980:INFO:Evaluating Metrics
+2020-09-04 11:48:37,990:INFO:No inverse transformer found
+2020-09-04 11:48:37,990:INFO:Compiling Metrics
+2020-09-04 11:48:37,996:INFO:Initializing Fold 4
+2020-09-04 11:48:37,996:INFO:Total runtime is 0.11924709876378375 minutes
+2020-09-04 11:48:38,001:INFO:Fitting Model
+2020-09-04 11:48:38,140:INFO:Evaluating Metrics
+2020-09-04 11:48:38,152:INFO:No inverse transformer found
+2020-09-04 11:48:38,152:INFO:Compiling Metrics
+2020-09-04 11:48:38,158:INFO:Initializing Fold 5
+2020-09-04 11:48:38,158:INFO:Total runtime is 0.12194868326187132 minutes
+2020-09-04 11:48:38,164:INFO:Fitting Model
+2020-09-04 11:48:38,302:INFO:Evaluating Metrics
+2020-09-04 11:48:38,313:INFO:No inverse transformer found
+2020-09-04 11:48:38,313:INFO:Compiling Metrics
+2020-09-04 11:48:38,319:INFO:Calculating mean and std
+2020-09-04 11:48:38,319:INFO:Creating metrics dataframe
+2020-09-04 11:48:38,332:INFO:Creating MLFlow logs
+2020-09-04 11:48:38,422:INFO:Initializing Extra Trees Regressor
+2020-09-04 11:48:38,432:INFO:Initializing Fold 1
+2020-09-04 11:48:38,433:INFO:Total runtime is 0.12652048269907631 minutes
+2020-09-04 11:48:38,439:INFO:Fitting Model
+2020-09-04 11:48:38,540:INFO:Evaluating Metrics
+2020-09-04 11:48:38,552:INFO:No inverse transformer found
+2020-09-04 11:48:38,552:INFO:Compiling Metrics
+2020-09-04 11:48:38,558:INFO:Initializing Fold 2
+2020-09-04 11:48:38,559:INFO:Total runtime is 0.1286231954892476 minutes
+2020-09-04 11:48:38,564:INFO:Fitting Model
+2020-09-04 11:48:38,658:INFO:Evaluating Metrics
+2020-09-04 11:48:38,669:INFO:No inverse transformer found
+2020-09-04 11:48:38,669:INFO:Compiling Metrics
+2020-09-04 11:48:38,677:INFO:Initializing Fold 3
+2020-09-04 11:48:38,677:INFO:Total runtime is 0.13059680064519244 minutes
+2020-09-04 11:48:38,684:INFO:Fitting Model
+2020-09-04 11:48:38,793:INFO:Evaluating Metrics
+2020-09-04 11:48:38,804:INFO:No inverse transformer found
+2020-09-04 11:48:38,804:INFO:Compiling Metrics
+2020-09-04 11:48:38,810:INFO:Initializing Fold 4
+2020-09-04 11:48:38,811:INFO:Total runtime is 0.13281963268915808 minutes
+2020-09-04 11:48:38,817:INFO:Fitting Model
+2020-09-04 11:48:38,913:INFO:Evaluating Metrics
+2020-09-04 11:48:38,924:INFO:No inverse transformer found
+2020-09-04 11:48:38,924:INFO:Compiling Metrics
+2020-09-04 11:48:38,931:INFO:Initializing Fold 5
+2020-09-04 11:48:38,932:INFO:Total runtime is 0.13483821551005043 minutes
+2020-09-04 11:48:38,937:INFO:Fitting Model
+2020-09-04 11:48:39,032:INFO:Evaluating Metrics
+2020-09-04 11:48:39,043:INFO:No inverse transformer found
+2020-09-04 11:48:39,043:INFO:Compiling Metrics
+2020-09-04 11:48:39,049:INFO:Calculating mean and std
+2020-09-04 11:48:39,049:INFO:Creating metrics dataframe
+2020-09-04 11:48:39,061:INFO:Creating MLFlow logs
+2020-09-04 11:48:39,147:INFO:Initializing AdaBoost Regressor
+2020-09-04 11:48:39,155:INFO:Initializing Fold 1
+2020-09-04 11:48:39,156:INFO:Total runtime is 0.13856995105743405 minutes
+2020-09-04 11:48:39,161:INFO:Fitting Model
+2020-09-04 11:48:39,222:INFO:Evaluating Metrics
+2020-09-04 11:48:39,227:INFO:No inverse transformer found
+2020-09-04 11:48:39,227:INFO:Compiling Metrics
+2020-09-04 11:48:39,232:INFO:Initializing Fold 2
+2020-09-04 11:48:39,232:INFO:Total runtime is 0.1398476998011271 minutes
+2020-09-04 11:48:39,236:INFO:Fitting Model
+2020-09-04 11:48:39,295:INFO:Evaluating Metrics
+2020-09-04 11:48:39,299:INFO:No inverse transformer found
+2020-09-04 11:48:39,299:INFO:Compiling Metrics
+2020-09-04 11:48:39,304:INFO:Initializing Fold 3
+2020-09-04 11:48:39,305:INFO:Total runtime is 0.1410520315170288 minutes
+2020-09-04 11:48:39,309:INFO:Fitting Model
+2020-09-04 11:48:39,374:INFO:Evaluating Metrics
+2020-09-04 11:48:39,379:INFO:No inverse transformer found
+2020-09-04 11:48:39,379:INFO:Compiling Metrics
+2020-09-04 11:48:39,384:INFO:Initializing Fold 4
+2020-09-04 11:48:39,385:INFO:Total runtime is 0.14239310026168822 minutes
+2020-09-04 11:48:39,390:INFO:Fitting Model
+2020-09-04 11:48:39,453:INFO:Evaluating Metrics
+2020-09-04 11:48:39,458:INFO:No inverse transformer found
+2020-09-04 11:48:39,458:INFO:Compiling Metrics
+2020-09-04 11:48:39,463:INFO:Initializing Fold 5
+2020-09-04 11:48:39,464:INFO:Total runtime is 0.14370161294937134 minutes
+2020-09-04 11:48:39,468:INFO:Fitting Model
+2020-09-04 11:48:39,525:INFO:Evaluating Metrics
+2020-09-04 11:48:39,529:INFO:No inverse transformer found
+2020-09-04 11:48:39,529:INFO:Compiling Metrics
+2020-09-04 11:48:39,534:INFO:Calculating mean and std
+2020-09-04 11:48:39,535:INFO:Creating metrics dataframe
+2020-09-04 11:48:39,546:INFO:Creating MLFlow logs
+2020-09-04 11:48:39,613:INFO:Initializing Gradient Boosting Regressor
+2020-09-04 11:48:39,622:INFO:Initializing Fold 1
+2020-09-04 11:48:39,623:INFO:Total runtime is 0.14635318120320637 minutes
+2020-09-04 11:48:39,628:INFO:Fitting Model
+2020-09-04 11:48:39,677:INFO:Evaluating Metrics
+2020-09-04 11:48:39,679:INFO:No inverse transformer found
+2020-09-04 11:48:39,679:INFO:Compiling Metrics
+2020-09-04 11:48:39,684:INFO:Initializing Fold 2
+2020-09-04 11:48:39,684:INFO:Total runtime is 0.14738138516743976 minutes
+2020-09-04 11:48:39,689:INFO:Fitting Model
+2020-09-04 11:48:39,738:INFO:Evaluating Metrics
+2020-09-04 11:48:39,739:INFO:No inverse transformer found
+2020-09-04 11:48:39,739:INFO:Compiling Metrics
+2020-09-04 11:48:39,744:INFO:Initializing Fold 3
+2020-09-04 11:48:39,744:INFO:Total runtime is 0.14838050206502276 minutes
+2020-09-04 11:48:39,749:INFO:Fitting Model
+2020-09-04 11:48:39,796:INFO:Evaluating Metrics
+2020-09-04 11:48:39,798:INFO:No inverse transformer found
+2020-09-04 11:48:39,798:INFO:Compiling Metrics
+2020-09-04 11:48:39,803:INFO:Initializing Fold 4
+2020-09-04 11:48:39,803:INFO:Total runtime is 0.14935801426569617 minutes
+2020-09-04 11:48:39,807:INFO:Fitting Model
+2020-09-04 11:48:39,856:INFO:Evaluating Metrics
+2020-09-04 11:48:39,857:INFO:No inverse transformer found
+2020-09-04 11:48:39,857:INFO:Compiling Metrics
+2020-09-04 11:48:39,862:INFO:Initializing Fold 5
+2020-09-04 11:48:39,863:INFO:Total runtime is 0.15035016536712642 minutes
+2020-09-04 11:48:39,867:INFO:Fitting Model
+2020-09-04 11:48:39,926:INFO:Evaluating Metrics
+2020-09-04 11:48:39,927:INFO:No inverse transformer found
+2020-09-04 11:48:39,928:INFO:Compiling Metrics
+2020-09-04 11:48:39,933:INFO:Calculating mean and std
+2020-09-04 11:48:39,933:INFO:Creating metrics dataframe
+2020-09-04 11:48:39,946:INFO:Creating MLFlow logs
+2020-09-04 11:48:40,031:INFO:Initializing Extreme Gradient Boosting
+2020-09-04 11:48:40,039:INFO:Initializing Fold 1
+2020-09-04 11:48:40,040:INFO:Total runtime is 0.1533083359400431 minutes
+2020-09-04 11:48:40,048:INFO:Fitting Model
+2020-09-04 11:48:40,089:INFO:Evaluating Metrics
+2020-09-04 11:48:40,091:INFO:No inverse transformer found
+2020-09-04 11:48:40,091:INFO:Compiling Metrics
+2020-09-04 11:48:40,098:INFO:Initializing Fold 2
+2020-09-04 11:48:40,098:INFO:Total runtime is 0.15428061882654823 minutes
+2020-09-04 11:48:40,104:INFO:Fitting Model
+2020-09-04 11:48:40,135:INFO:Evaluating Metrics
+2020-09-04 11:48:40,137:INFO:No inverse transformer found
+2020-09-04 11:48:40,137:INFO:Compiling Metrics
+2020-09-04 11:48:40,144:INFO:Initializing Fold 3
+2020-09-04 11:48:40,145:INFO:Total runtime is 0.15505183140436804 minutes
+2020-09-04 11:48:40,152:INFO:Fitting Model
+2020-09-04 11:48:40,183:INFO:Evaluating Metrics
+2020-09-04 11:48:40,184:INFO:No inverse transformer found
+2020-09-04 11:48:40,184:INFO:Compiling Metrics
+2020-09-04 11:48:40,191:INFO:Initializing Fold 4
+2020-09-04 11:48:40,191:INFO:Total runtime is 0.15583099921544388 minutes
+2020-09-04 11:48:40,197:INFO:Fitting Model
+2020-09-04 11:48:40,228:INFO:Evaluating Metrics
+2020-09-04 11:48:40,229:INFO:No inverse transformer found
+2020-09-04 11:48:40,229:INFO:Compiling Metrics
+2020-09-04 11:48:40,235:INFO:Initializing Fold 5
+2020-09-04 11:48:40,236:INFO:Total runtime is 0.15657506386439002 minutes
+2020-09-04 11:48:40,242:INFO:Fitting Model
+2020-09-04 11:48:40,266:INFO:Evaluating Metrics
+2020-09-04 11:48:40,267:INFO:No inverse transformer found
+2020-09-04 11:48:40,267:INFO:Compiling Metrics
+2020-09-04 11:48:40,273:INFO:Calculating mean and std
+2020-09-04 11:48:40,273:INFO:Creating metrics dataframe
+2020-09-04 11:48:40,286:INFO:Creating MLFlow logs
+2020-09-04 11:48:40,361:INFO:Initializing Light Gradient Boosting Machine
+2020-09-04 11:48:40,366:INFO:Initializing Fold 1
+2020-09-04 11:48:40,367:INFO:Total runtime is 0.15875753164291379 minutes
+2020-09-04 11:48:40,372:INFO:Fitting Model
+2020-09-04 11:48:40,382:INFO:Evaluating Metrics
+2020-09-04 11:48:40,384:INFO:No inverse transformer found
+2020-09-04 11:48:40,384:INFO:Compiling Metrics
+2020-09-04 11:48:40,390:INFO:Initializing Fold 2
+2020-09-04 11:48:40,390:INFO:Total runtime is 0.15914111534754433 minutes
+2020-09-04 11:48:40,398:INFO:Fitting Model
+2020-09-04 11:48:40,408:INFO:Evaluating Metrics
+2020-09-04 11:48:40,410:INFO:No inverse transformer found
+2020-09-04 11:48:40,411:INFO:Compiling Metrics
+2020-09-04 11:48:40,416:INFO:Initializing Fold 3
+2020-09-04 11:48:40,417:INFO:Total runtime is 0.1595884323120117 minutes
+2020-09-04 11:48:40,423:INFO:Fitting Model
+2020-09-04 11:48:40,434:INFO:Evaluating Metrics
+2020-09-04 11:48:40,437:INFO:No inverse transformer found
+2020-09-04 11:48:40,437:INFO:Compiling Metrics
+2020-09-04 11:48:40,445:INFO:Initializing Fold 4
+2020-09-04 11:48:40,445:INFO:Total runtime is 0.16006568670272825 minutes
+2020-09-04 11:48:40,449:INFO:Fitting Model
+2020-09-04 11:48:40,460:INFO:Evaluating Metrics
+2020-09-04 11:48:40,461:INFO:No inverse transformer found
+2020-09-04 11:48:40,461:INFO:Compiling Metrics
+2020-09-04 11:48:40,468:INFO:Initializing Fold 5
+2020-09-04 11:48:40,469:INFO:Total runtime is 0.16046121915181474 minutes
+2020-09-04 11:48:40,474:INFO:Fitting Model
+2020-09-04 11:48:40,485:INFO:Evaluating Metrics
+2020-09-04 11:48:40,487:INFO:No inverse transformer found
+2020-09-04 11:48:40,487:INFO:Compiling Metrics
+2020-09-04 11:48:40,492:INFO:Calculating mean and std
+2020-09-04 11:48:40,493:INFO:Creating metrics dataframe
+2020-09-04 11:48:40,507:INFO:Creating MLFlow logs
+2020-09-04 11:48:40,585:INFO:Initializing CatBoost Regressor
+2020-09-04 11:48:40,593:INFO:Initializing Fold 1
+2020-09-04 11:48:40,594:INFO:Total runtime is 0.16253494819005326 minutes
+2020-09-04 11:48:40,598:INFO:Fitting Model
+2020-09-04 11:48:42,066:INFO:Evaluating Metrics
+2020-09-04 11:48:42,071:INFO:No inverse transformer found
+2020-09-04 11:48:42,071:INFO:Compiling Metrics
+2020-09-04 11:48:42,076:INFO:Initializing Fold 2
+2020-09-04 11:48:42,077:INFO:Total runtime is 0.18726376295089717 minutes
+2020-09-04 11:48:42,083:INFO:Fitting Model
+2020-09-04 11:48:43,403:INFO:Evaluating Metrics
+2020-09-04 11:48:43,406:INFO:No inverse transformer found
+2020-09-04 11:48:43,406:INFO:Compiling Metrics
+2020-09-04 11:48:43,411:INFO:Initializing Fold 3
+2020-09-04 11:48:43,411:INFO:Total runtime is 0.20949971675872797 minutes
+2020-09-04 11:48:43,416:INFO:Fitting Model
+2020-09-04 11:48:44,678:INFO:Evaluating Metrics
+2020-09-04 11:48:44,680:INFO:No inverse transformer found
+2020-09-04 11:48:44,680:INFO:Compiling Metrics
+2020-09-04 11:48:44,685:INFO:Initializing Fold 4
+2020-09-04 11:48:44,686:INFO:Total runtime is 0.2307403167088826 minutes
+2020-09-04 11:48:44,691:INFO:Fitting Model
+2020-09-04 11:48:46,171:INFO:Evaluating Metrics
+2020-09-04 11:48:46,174:INFO:No inverse transformer found
+2020-09-04 11:48:46,174:INFO:Compiling Metrics
+2020-09-04 11:48:46,179:INFO:Initializing Fold 5
+2020-09-04 11:48:46,180:INFO:Total runtime is 0.25563938220342 minutes
+2020-09-04 11:48:46,184:INFO:Fitting Model
+2020-09-04 11:48:47,378:INFO:Evaluating Metrics
+2020-09-04 11:48:47,381:INFO:No inverse transformer found
+2020-09-04 11:48:47,381:INFO:Compiling Metrics
+2020-09-04 11:48:47,386:INFO:Calculating mean and std
+2020-09-04 11:48:47,386:INFO:Creating metrics dataframe
+2020-09-04 11:48:47,398:INFO:Creating MLFlow logs
+2020-09-04 11:48:47,470:INFO:Finalizing top_n models
+2020-09-04 11:48:47,470:INFO:SubProcess create_model() called ==================================
+2020-09-04 11:48:47,479:INFO:Initializing create_model()
+2020-09-04 11:48:47,479:INFO:create_model(estimator=lasso, ensemble=False, method=None, fold=10, round=4, cross_validation=True, verbose=False, system=False)
+2020-09-04 11:48:47,479:INFO:Checking exceptions
+2020-09-04 11:48:47,479:INFO:Preloading libraries
+2020-09-04 11:48:47,479:INFO:Preparing display monitor
+2020-09-04 11:48:47,494:INFO:Copying training dataset
+2020-09-04 11:48:47,495:INFO:Importing libraries
+2020-09-04 11:48:47,497:INFO:Defining folds
+2020-09-04 11:48:47,497:INFO:Declaring metric variables
+2020-09-04 11:48:47,497:INFO:Lasso Regression Imported succesfully
+2020-09-04 11:48:47,498:INFO:Checking ensemble method
+2020-09-04 11:48:47,500:INFO:Initializing Fold 1
+2020-09-04 11:48:47,502:INFO:Fitting Model
+2020-09-04 11:48:47,504:INFO:Evaluating Metrics
+2020-09-04 11:48:47,506:INFO:No inverse transformation
+2020-09-04 11:48:47,506:INFO:Compiling Metrics
+2020-09-04 11:48:47,512:INFO:Initializing Fold 2
+2020-09-04 11:48:47,513:INFO:Fitting Model
+2020-09-04 11:48:47,516:INFO:Evaluating Metrics
+2020-09-04 11:48:47,517:INFO:No inverse transformation
+2020-09-04 11:48:47,517:INFO:Compiling Metrics
+2020-09-04 11:48:47,522:INFO:Initializing Fold 3
+2020-09-04 11:48:47,523:INFO:Fitting Model
+2020-09-04 11:48:47,525:INFO:Evaluating Metrics
+2020-09-04 11:48:47,527:INFO:No inverse transformation
+2020-09-04 11:48:47,527:INFO:Compiling Metrics
+2020-09-04 11:48:47,531:INFO:Initializing Fold 4
+2020-09-04 11:48:47,532:INFO:Fitting Model
+2020-09-04 11:48:47,535:INFO:Evaluating Metrics
+2020-09-04 11:48:47,536:INFO:No inverse transformation
+2020-09-04 11:48:47,536:INFO:Compiling Metrics
+2020-09-04 11:48:47,541:INFO:Initializing Fold 5
+2020-09-04 11:48:47,542:INFO:Fitting Model
+2020-09-04 11:48:47,544:INFO:Evaluating Metrics
+2020-09-04 11:48:47,545:INFO:No inverse transformation
+2020-09-04 11:48:47,545:INFO:Compiling Metrics
+2020-09-04 11:48:47,550:INFO:Initializing Fold 6
+2020-09-04 11:48:47,551:INFO:Fitting Model
+2020-09-04 11:48:47,553:INFO:Evaluating Metrics
+2020-09-04 11:48:47,555:INFO:No inverse transformation
+2020-09-04 11:48:47,555:INFO:Compiling Metrics
+2020-09-04 11:48:47,559:INFO:Initializing Fold 7
+2020-09-04 11:48:47,560:INFO:Fitting Model
+2020-09-04 11:48:47,562:INFO:Evaluating Metrics
+2020-09-04 11:48:47,563:INFO:No inverse transformation
+2020-09-04 11:48:47,563:INFO:Compiling Metrics
+2020-09-04 11:48:47,569:INFO:Initializing Fold 8
+2020-09-04 11:48:47,570:INFO:Fitting Model
+2020-09-04 11:48:47,572:INFO:Evaluating Metrics
+2020-09-04 11:48:47,573:INFO:No inverse transformation
+2020-09-04 11:48:47,573:INFO:Compiling Metrics
+2020-09-04 11:48:47,577:INFO:Initializing Fold 9
+2020-09-04 11:48:47,578:INFO:Fitting Model
+2020-09-04 11:48:47,580:INFO:Evaluating Metrics
+2020-09-04 11:48:47,582:INFO:No inverse transformation
+2020-09-04 11:48:47,582:INFO:Compiling Metrics
+2020-09-04 11:48:47,587:INFO:Initializing Fold 10
+2020-09-04 11:48:47,589:INFO:Fitting Model
+2020-09-04 11:48:47,591:INFO:Evaluating Metrics
+2020-09-04 11:48:47,592:INFO:No inverse transformation
+2020-09-04 11:48:47,592:INFO:Compiling Metrics
+2020-09-04 11:48:47,597:INFO:Calculating mean and std
+2020-09-04 11:48:47,599:INFO:Creating metrics dataframe
+2020-09-04 11:48:47,602:INFO:Finalizing model
+2020-09-04 11:48:47,605:INFO:Uploading results into container
+2020-09-04 11:48:47,605:INFO:Uploading model into container
+2020-09-04 11:48:47,605:INFO:create_model_container: 1
+2020-09-04 11:48:47,605:INFO:master_model_container: 1
+2020-09-04 11:48:47,605:INFO:display_container: 1
+2020-09-04 11:48:47,606:INFO:Lasso(alpha=1.0, copy_X=True, fit_intercept=True, max_iter=1000,
+      normalize=False, positive=False, precompute=False, random_state=786,
+      selection='cyclic', tol=0.0001, warm_start=False)
+2020-09-04 11:48:47,606:INFO:create_model() succesfully completed......................................
+2020-09-04 11:48:47,611:INFO:Initializing create_model()
+2020-09-04 11:48:47,611:INFO:create_model(estimator=en, ensemble=False, method=None, fold=10, round=4, cross_validation=True, verbose=False, system=False)
+2020-09-04 11:48:47,612:INFO:Checking exceptions
+2020-09-04 11:48:47,612:INFO:Preloading libraries
+2020-09-04 11:48:47,612:INFO:Preparing display monitor
+2020-09-04 11:48:47,619:INFO:Copying training dataset
+2020-09-04 11:48:47,620:INFO:Importing libraries
+2020-09-04 11:48:47,620:INFO:Defining folds
+2020-09-04 11:48:47,620:INFO:Declaring metric variables
+2020-09-04 11:48:47,621:INFO:Elastic Net Imported succesfully
+2020-09-04 11:48:47,621:INFO:Checking ensemble method
+2020-09-04 11:48:47,622:INFO:Initializing Fold 1
+2020-09-04 11:48:47,623:INFO:Fitting Model
+2020-09-04 11:48:47,626:INFO:Evaluating Metrics
+2020-09-04 11:48:47,627:INFO:No inverse transformation
+2020-09-04 11:48:47,627:INFO:Compiling Metrics
+2020-09-04 11:48:47,632:INFO:Initializing Fold 2
+2020-09-04 11:48:47,633:INFO:Fitting Model
+2020-09-04 11:48:47,635:INFO:Evaluating Metrics
+2020-09-04 11:48:47,637:INFO:No inverse transformation
+2020-09-04 11:48:47,637:INFO:Compiling Metrics
+2020-09-04 11:48:47,643:INFO:Initializing Fold 3
+2020-09-04 11:48:47,644:INFO:Fitting Model
+2020-09-04 11:48:47,646:INFO:Evaluating Metrics
+2020-09-04 11:48:47,647:INFO:No inverse transformation
+2020-09-04 11:48:47,647:INFO:Compiling Metrics
+2020-09-04 11:48:47,652:INFO:Initializing Fold 4
+2020-09-04 11:48:47,652:INFO:Fitting Model
+2020-09-04 11:48:47,654:INFO:Evaluating Metrics
+2020-09-04 11:48:47,656:INFO:No inverse transformation
+2020-09-04 11:48:47,656:INFO:Compiling Metrics
+2020-09-04 11:48:47,660:INFO:Initializing Fold 5
+2020-09-04 11:48:47,661:INFO:Fitting Model
+2020-09-04 11:48:47,663:INFO:Evaluating Metrics
+2020-09-04 11:48:47,665:INFO:No inverse transformation
+2020-09-04 11:48:47,665:INFO:Compiling Metrics
+2020-09-04 11:48:47,669:INFO:Initializing Fold 6
+2020-09-04 11:48:47,670:INFO:Fitting Model
+2020-09-04 11:48:47,672:INFO:Evaluating Metrics
+2020-09-04 11:48:47,673:INFO:No inverse transformation
+2020-09-04 11:48:47,673:INFO:Compiling Metrics
+2020-09-04 11:48:47,678:INFO:Initializing Fold 7
+2020-09-04 11:48:47,679:INFO:Fitting Model
+2020-09-04 11:48:47,682:INFO:Evaluating Metrics
+2020-09-04 11:48:47,683:INFO:No inverse transformation
+2020-09-04 11:48:47,683:INFO:Compiling Metrics
+2020-09-04 11:48:47,688:INFO:Initializing Fold 8
+2020-09-04 11:48:47,689:INFO:Fitting Model
+2020-09-04 11:48:47,691:INFO:Evaluating Metrics
+2020-09-04 11:48:47,693:INFO:No inverse transformation
+2020-09-04 11:48:47,693:INFO:Compiling Metrics
+2020-09-04 11:48:47,697:INFO:Initializing Fold 9
+2020-09-04 11:48:47,699:INFO:Fitting Model
+2020-09-04 11:48:47,701:INFO:Evaluating Metrics
+2020-09-04 11:48:47,702:INFO:No inverse transformation
+2020-09-04 11:48:47,702:INFO:Compiling Metrics
+2020-09-04 11:48:47,707:INFO:Initializing Fold 10
+2020-09-04 11:48:47,708:INFO:Fitting Model
+2020-09-04 11:48:47,710:INFO:Evaluating Metrics
+2020-09-04 11:48:47,711:INFO:No inverse transformation
+2020-09-04 11:48:47,711:INFO:Compiling Metrics
+2020-09-04 11:48:47,716:INFO:Calculating mean and std
+2020-09-04 11:48:47,717:INFO:Creating metrics dataframe
+2020-09-04 11:48:47,720:INFO:Finalizing model
+2020-09-04 11:48:47,723:INFO:Uploading results into container
+2020-09-04 11:48:47,723:INFO:Uploading model into container
+2020-09-04 11:48:47,723:INFO:create_model_container: 2
+2020-09-04 11:48:47,723:INFO:master_model_container: 2
+2020-09-04 11:48:47,723:INFO:display_container: 2
+2020-09-04 11:48:47,724:INFO:ElasticNet(alpha=1.0, copy_X=True, fit_intercept=True, l1_ratio=0.5,
+           max_iter=1000, normalize=False, positive=False, precompute=False,
+           random_state=786, selection='cyclic', tol=0.0001, warm_start=False)
+2020-09-04 11:48:47,724:INFO:create_model() succesfully completed......................................
+2020-09-04 11:48:47,728:INFO:Initializing create_model()
+2020-09-04 11:48:47,728:INFO:create_model(estimator=omp, ensemble=False, method=None, fold=10, round=4, cross_validation=True, verbose=False, system=False)
+2020-09-04 11:48:47,728:INFO:Checking exceptions
+2020-09-04 11:48:47,728:INFO:Preloading libraries
+2020-09-04 11:48:47,728:INFO:Preparing display monitor
+2020-09-04 11:48:47,736:INFO:Copying training dataset
+2020-09-04 11:48:47,736:INFO:Importing libraries
+2020-09-04 11:48:47,737:INFO:Defining folds
+2020-09-04 11:48:47,737:INFO:Declaring metric variables
+2020-09-04 11:48:47,737:INFO:Orthogonal Matching Pursuit Imported succesfully
+2020-09-04 11:48:47,738:INFO:Checking ensemble method
+2020-09-04 11:48:47,739:INFO:Initializing Fold 1
+2020-09-04 11:48:47,740:INFO:Fitting Model
+2020-09-04 11:48:47,742:INFO:Evaluating Metrics
+2020-09-04 11:48:47,745:INFO:No inverse transformation
+2020-09-04 11:48:47,745:INFO:Compiling Metrics
+2020-09-04 11:48:47,752:INFO:Initializing Fold 2
+2020-09-04 11:48:47,752:INFO:Fitting Model
+2020-09-04 11:48:47,754:INFO:Evaluating Metrics
+2020-09-04 11:48:47,756:INFO:No inverse transformation
+2020-09-04 11:48:47,756:INFO:Compiling Metrics
+2020-09-04 11:48:47,761:INFO:Initializing Fold 3
+2020-09-04 11:48:47,762:INFO:Fitting Model
+2020-09-04 11:48:47,764:INFO:Evaluating Metrics
+2020-09-04 11:48:47,765:INFO:No inverse transformation
+2020-09-04 11:48:47,765:INFO:Compiling Metrics
+2020-09-04 11:48:47,771:INFO:Initializing Fold 4
+2020-09-04 11:48:47,772:INFO:Fitting Model
+2020-09-04 11:48:47,774:INFO:Evaluating Metrics
+2020-09-04 11:48:47,776:INFO:No inverse transformation
+2020-09-04 11:48:47,776:INFO:Compiling Metrics
+2020-09-04 11:48:47,781:INFO:Initializing Fold 5
+2020-09-04 11:48:47,782:INFO:Fitting Model
+2020-09-04 11:48:47,784:INFO:Evaluating Metrics
+2020-09-04 11:48:47,786:INFO:No inverse transformation
+2020-09-04 11:48:47,786:INFO:Compiling Metrics
+2020-09-04 11:48:47,791:INFO:Initializing Fold 6
+2020-09-04 11:48:47,792:INFO:Fitting Model
+2020-09-04 11:48:47,793:INFO:Evaluating Metrics
+2020-09-04 11:48:47,795:INFO:No inverse transformation
+2020-09-04 11:48:47,795:INFO:Compiling Metrics
+2020-09-04 11:48:47,801:INFO:Initializing Fold 7
+2020-09-04 11:48:47,802:INFO:Fitting Model
+2020-09-04 11:48:47,805:INFO:Evaluating Metrics
+2020-09-04 11:48:47,806:INFO:No inverse transformation
+2020-09-04 11:48:47,806:INFO:Compiling Metrics
+2020-09-04 11:48:47,811:INFO:Initializing Fold 8
+2020-09-04 11:48:47,812:INFO:Fitting Model
+2020-09-04 11:48:47,815:INFO:Evaluating Metrics
+2020-09-04 11:48:47,816:INFO:No inverse transformation
+2020-09-04 11:48:47,816:INFO:Compiling Metrics
+2020-09-04 11:48:47,821:INFO:Initializing Fold 9
+2020-09-04 11:48:47,823:INFO:Fitting Model
+2020-09-04 11:48:47,825:INFO:Evaluating Metrics
+2020-09-04 11:48:47,827:INFO:No inverse transformation
+2020-09-04 11:48:47,827:INFO:Compiling Metrics
+2020-09-04 11:48:47,832:INFO:Initializing Fold 10
+2020-09-04 11:48:47,833:INFO:Fitting Model
+2020-09-04 11:48:47,835:INFO:Evaluating Metrics
+2020-09-04 11:48:47,837:INFO:No inverse transformation
+2020-09-04 11:48:47,837:INFO:Compiling Metrics
+2020-09-04 11:48:47,841:INFO:Calculating mean and std
+2020-09-04 11:48:47,842:INFO:Creating metrics dataframe
+2020-09-04 11:48:47,846:INFO:Finalizing model
+2020-09-04 11:48:47,849:INFO:Uploading results into container
+2020-09-04 11:48:47,849:INFO:Uploading model into container
+2020-09-04 11:48:47,849:INFO:create_model_container: 3
+2020-09-04 11:48:47,849:INFO:master_model_container: 3
+2020-09-04 11:48:47,849:INFO:display_container: 3
+2020-09-04 11:48:47,850:INFO:OrthogonalMatchingPursuit(fit_intercept=True, n_nonzero_coefs=None,
+                          normalize=True, precompute='auto', tol=None)
+2020-09-04 11:48:47,850:INFO:create_model() succesfully completed......................................
+2020-09-04 11:48:47,855:INFO:Initializing create_model()
+2020-09-04 11:48:47,855:INFO:create_model(estimator=catboost, ensemble=False, method=None, fold=10, round=4, cross_validation=True, verbose=False, system=False)
+2020-09-04 11:48:47,855:INFO:Checking exceptions
+2020-09-04 11:48:47,855:INFO:Preloading libraries
+2020-09-04 11:48:47,855:INFO:Preparing display monitor
+2020-09-04 11:48:47,863:INFO:Copying training dataset
+2020-09-04 11:48:47,863:INFO:Importing libraries
+2020-09-04 11:48:47,864:INFO:Defining folds
+2020-09-04 11:48:47,864:INFO:Declaring metric variables
+2020-09-04 11:48:47,865:INFO:CatBoost Regressor Imported succesfully
+2020-09-04 11:48:47,865:INFO:Checking ensemble method
+2020-09-04 11:48:47,867:INFO:Initializing Fold 1
+2020-09-04 11:48:47,868:INFO:Fitting Model
+2020-09-04 11:48:48,985:INFO:Evaluating Metrics
+2020-09-04 11:48:48,987:INFO:No inverse transformation
+2020-09-04 11:48:48,987:INFO:Compiling Metrics
+2020-09-04 11:48:48,992:INFO:Initializing Fold 2
+2020-09-04 11:48:48,993:INFO:Fitting Model
+2020-09-04 11:48:50,180:INFO:Evaluating Metrics
+2020-09-04 11:48:50,183:INFO:No inverse transformation
+2020-09-04 11:48:50,183:INFO:Compiling Metrics
+2020-09-04 11:48:50,188:INFO:Initializing Fold 3
+2020-09-04 11:48:50,189:INFO:Fitting Model
+2020-09-04 11:48:51,254:INFO:Evaluating Metrics
+2020-09-04 11:48:51,257:INFO:No inverse transformation
+2020-09-04 11:48:51,257:INFO:Compiling Metrics
+2020-09-04 11:48:51,262:INFO:Initializing Fold 4
+2020-09-04 11:48:51,263:INFO:Fitting Model
+2020-09-04 11:48:52,268:INFO:Evaluating Metrics
+2020-09-04 11:48:52,271:INFO:No inverse transformation
+2020-09-04 11:48:52,271:INFO:Compiling Metrics
+2020-09-04 11:48:52,275:INFO:Initializing Fold 5
+2020-09-04 11:48:52,276:INFO:Fitting Model
+2020-09-04 11:48:53,398:INFO:Evaluating Metrics
+2020-09-04 11:48:53,401:INFO:No inverse transformation
+2020-09-04 11:48:53,401:INFO:Compiling Metrics
+2020-09-04 11:48:53,407:INFO:Initializing Fold 6
+2020-09-04 11:48:53,408:INFO:Fitting Model
+2020-09-04 11:48:54,495:INFO:Evaluating Metrics
+2020-09-04 11:48:54,498:INFO:No inverse transformation
+2020-09-04 11:48:54,498:INFO:Compiling Metrics
+2020-09-04 11:48:54,502:INFO:Initializing Fold 7
+2020-09-04 11:48:54,503:INFO:Fitting Model
+2020-09-04 11:48:55,537:INFO:Evaluating Metrics
+2020-09-04 11:48:55,540:INFO:No inverse transformation
+2020-09-04 11:48:55,540:INFO:Compiling Metrics
+2020-09-04 11:48:55,544:INFO:Initializing Fold 8
+2020-09-04 11:48:55,545:INFO:Fitting Model
+2020-09-04 11:48:56,516:INFO:Evaluating Metrics
+2020-09-04 11:48:56,519:INFO:No inverse transformation
+2020-09-04 11:48:56,519:INFO:Compiling Metrics
+2020-09-04 11:48:56,523:INFO:Initializing Fold 9
+2020-09-04 11:48:56,524:INFO:Fitting Model
+2020-09-04 11:48:57,475:INFO:Evaluating Metrics
+2020-09-04 11:48:57,477:INFO:No inverse transformation
+2020-09-04 11:48:57,477:INFO:Compiling Metrics
+2020-09-04 11:48:57,482:INFO:Initializing Fold 10
+2020-09-04 11:48:57,483:INFO:Fitting Model
+2020-09-04 11:48:58,423:INFO:Evaluating Metrics
+2020-09-04 11:48:58,426:INFO:No inverse transformation
+2020-09-04 11:48:58,426:INFO:Compiling Metrics
+2020-09-04 11:48:58,430:INFO:Calculating mean and std
+2020-09-04 11:48:58,432:INFO:Creating metrics dataframe
+2020-09-04 11:48:58,435:INFO:Finalizing model
+2020-09-04 11:48:59,416:INFO:Uploading results into container
+2020-09-04 11:48:59,417:INFO:Uploading model into container
+2020-09-04 11:48:59,417:INFO:create_model_container: 4
+2020-09-04 11:48:59,417:INFO:master_model_container: 4
+2020-09-04 11:48:59,417:INFO:display_container: 4
+2020-09-04 11:48:59,417:INFO:<catboost.core.CatBoostRegressor object at 0x7f9aff396dc0>
+2020-09-04 11:48:59,417:INFO:create_model() succesfully completed......................................
+2020-09-04 11:48:59,422:INFO:Initializing create_model()
+2020-09-04 11:48:59,422:INFO:create_model(estimator=br, ensemble=False, method=None, fold=10, round=4, cross_validation=True, verbose=False, system=False)
+2020-09-04 11:48:59,422:INFO:Checking exceptions
+2020-09-04 11:48:59,422:INFO:Preloading libraries
+2020-09-04 11:48:59,422:INFO:Preparing display monitor
+2020-09-04 11:48:59,429:INFO:Copying training dataset
+2020-09-04 11:48:59,430:INFO:Importing libraries
+2020-09-04 11:48:59,430:INFO:Defining folds
+2020-09-04 11:48:59,430:INFO:Declaring metric variables
+2020-09-04 11:48:59,430:INFO:Bayesian Ridge Regression Imported succesfully
+2020-09-04 11:48:59,431:INFO:Checking ensemble method
+2020-09-04 11:48:59,432:INFO:Initializing Fold 1
+2020-09-04 11:48:59,434:INFO:Fitting Model
+2020-09-04 11:48:59,438:INFO:Evaluating Metrics
+2020-09-04 11:48:59,439:INFO:No inverse transformation
+2020-09-04 11:48:59,439:INFO:Compiling Metrics
+2020-09-04 11:48:59,445:INFO:Initializing Fold 2
+2020-09-04 11:48:59,447:INFO:Fitting Model
+2020-09-04 11:48:59,449:INFO:Evaluating Metrics
+2020-09-04 11:48:59,450:INFO:No inverse transformation
+2020-09-04 11:48:59,450:INFO:Compiling Metrics
+2020-09-04 11:48:59,456:INFO:Initializing Fold 3
+2020-09-04 11:48:59,457:INFO:Fitting Model
+2020-09-04 11:48:59,459:INFO:Evaluating Metrics
+2020-09-04 11:48:59,460:INFO:No inverse transformation
+2020-09-04 11:48:59,460:INFO:Compiling Metrics
+2020-09-04 11:48:59,466:INFO:Initializing Fold 4
+2020-09-04 11:48:59,467:INFO:Fitting Model
+2020-09-04 11:48:59,470:INFO:Evaluating Metrics
+2020-09-04 11:48:59,471:INFO:No inverse transformation
+2020-09-04 11:48:59,471:INFO:Compiling Metrics
+2020-09-04 11:48:59,476:INFO:Initializing Fold 5
+2020-09-04 11:48:59,477:INFO:Fitting Model
+2020-09-04 11:48:59,480:INFO:Evaluating Metrics
+2020-09-04 11:48:59,481:INFO:No inverse transformation
+2020-09-04 11:48:59,481:INFO:Compiling Metrics
+2020-09-04 11:48:59,487:INFO:Initializing Fold 6
+2020-09-04 11:48:59,488:INFO:Fitting Model
+2020-09-04 11:48:59,490:INFO:Evaluating Metrics
+2020-09-04 11:48:59,492:INFO:No inverse transformation
+2020-09-04 11:48:59,492:INFO:Compiling Metrics
+2020-09-04 11:48:59,497:INFO:Initializing Fold 7
+2020-09-04 11:48:59,498:INFO:Fitting Model
+2020-09-04 11:48:59,500:INFO:Evaluating Metrics
+2020-09-04 11:48:59,501:INFO:No inverse transformation
+2020-09-04 11:48:59,501:INFO:Compiling Metrics
+2020-09-04 11:48:59,506:INFO:Initializing Fold 8
+2020-09-04 11:48:59,507:INFO:Fitting Model
+2020-09-04 11:48:59,509:INFO:Evaluating Metrics
+2020-09-04 11:48:59,511:INFO:No inverse transformation
+2020-09-04 11:48:59,511:INFO:Compiling Metrics
+2020-09-04 11:48:59,516:INFO:Initializing Fold 9
+2020-09-04 11:48:59,517:INFO:Fitting Model
+2020-09-04 11:48:59,520:INFO:Evaluating Metrics
+2020-09-04 11:48:59,521:INFO:No inverse transformation
+2020-09-04 11:48:59,522:INFO:Compiling Metrics
+2020-09-04 11:48:59,527:INFO:Initializing Fold 10
+2020-09-04 11:48:59,528:INFO:Fitting Model
+2020-09-04 11:48:59,530:INFO:Evaluating Metrics
+2020-09-04 11:48:59,532:INFO:No inverse transformation
+2020-09-04 11:48:59,532:INFO:Compiling Metrics
+2020-09-04 11:48:59,537:INFO:Calculating mean and std
+2020-09-04 11:48:59,538:INFO:Creating metrics dataframe
+2020-09-04 11:48:59,542:INFO:Finalizing model
+2020-09-04 11:48:59,545:INFO:Uploading results into container
+2020-09-04 11:48:59,545:INFO:Uploading model into container
+2020-09-04 11:48:59,545:INFO:create_model_container: 5
+2020-09-04 11:48:59,545:INFO:master_model_container: 5
+2020-09-04 11:48:59,545:INFO:display_container: 5
+2020-09-04 11:48:59,546:INFO:BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=1e-06, lambda_2=1e-06, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False)
+2020-09-04 11:48:59,546:INFO:create_model() succesfully completed......................................
+2020-09-04 11:48:59,546:INFO:SubProcess create_model() end ==================================
+2020-09-04 11:48:59,624:INFO:create_model_container: 5
+2020-09-04 11:48:59,624:INFO:master_model_container: 5
+2020-09-04 11:48:59,624:INFO:display_container: 6
+2020-09-04 11:48:59,625:INFO:[Lasso(alpha=1.0, copy_X=True, fit_intercept=True, max_iter=1000,
+      normalize=False, positive=False, precompute=False, random_state=786,
+      selection='cyclic', tol=0.0001, warm_start=False), ElasticNet(alpha=1.0, copy_X=True, fit_intercept=True, l1_ratio=0.5,
+           max_iter=1000, normalize=False, positive=False, precompute=False,
+           random_state=786, selection='cyclic', tol=0.0001, warm_start=False), OrthogonalMatchingPursuit(fit_intercept=True, n_nonzero_coefs=None,
+                          normalize=True, precompute='auto', tol=None), <catboost.core.CatBoostRegressor object at 0x7f9aff396dc0>, BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=1e-06, lambda_2=1e-06, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False)]
+2020-09-04 11:48:59,625:INFO:compare_models() succesfully completed......................................
+2020-09-04 11:48:59,661:INFO:Initializing tune_model()
+2020-09-04 11:48:59,662:INFO:tune_model(estimator=Lasso(alpha=1.0, copy_X=True, fit_intercept=True, max_iter=1000,
+      normalize=False, positive=False, precompute=False, random_state=786,
+      selection='cyclic', tol=0.0001, warm_start=False), fold=5, round=4, n_iter=120, custom_grid=None, optimize=RMSE, choose_better=False, verbose=True)
+2020-09-04 11:48:59,662:INFO:Checking exceptions
+2020-09-04 11:48:59,662:INFO:Preloading libraries
+2020-09-04 11:48:59,662:INFO:Preparing display monitor
+2020-09-04 11:48:59,684:INFO:Copying training dataset
+2020-09-04 11:48:59,684:INFO:Creating estimator clone to inherit model parameters
+2020-09-04 11:48:59,685:INFO:Importing libraries
+2020-09-04 11:48:59,685:INFO:Checking base model
+2020-09-04 11:48:59,686:INFO:Base model : Lasso Regression
+2020-09-04 11:48:59,687:INFO:Defining folds
+2020-09-04 11:48:59,687:INFO:Declaring metric variables
+2020-09-04 11:48:59,691:INFO:Defining Hyperparameters
+2020-09-04 11:48:59,692:INFO:Initializing RandomizedSearchCV
+2020-09-04 11:49:00,668:INFO:Random search completed
+2020-09-04 11:49:00,672:INFO:Initializing Fold 1
+2020-09-04 11:49:00,677:INFO:Fitting Model
+2020-09-04 11:49:00,679:INFO:Evaluating Metrics
+2020-09-04 11:49:00,680:INFO:Compiling Metrics
+2020-09-04 11:49:00,696:INFO:Initializing Fold 2
+2020-09-04 11:49:00,701:INFO:Fitting Model
+2020-09-04 11:49:00,703:INFO:Evaluating Metrics
+2020-09-04 11:49:00,706:INFO:Compiling Metrics
+2020-09-04 11:49:00,724:INFO:Initializing Fold 3
+2020-09-04 11:49:00,732:INFO:Fitting Model
+2020-09-04 11:49:00,734:INFO:Evaluating Metrics
+2020-09-04 11:49:00,736:INFO:Compiling Metrics
+2020-09-04 11:49:00,758:INFO:Initializing Fold 4
+2020-09-04 11:49:00,767:INFO:Fitting Model
+2020-09-04 11:49:00,770:INFO:Evaluating Metrics
+2020-09-04 11:49:00,772:INFO:Compiling Metrics
+2020-09-04 11:49:00,792:INFO:Initializing Fold 5
+2020-09-04 11:49:00,802:INFO:Fitting Model
+2020-09-04 11:49:00,807:INFO:Evaluating Metrics
+2020-09-04 11:49:00,812:INFO:Compiling Metrics
+2020-09-04 11:49:00,834:INFO:Calculating mean and std
+2020-09-04 11:49:00,836:INFO:Creating metrics dataframe
+2020-09-04 11:49:00,847:INFO:Finalizing model
+2020-09-04 11:49:00,852:INFO:Uploading results into container
+2020-09-04 11:49:00,852:INFO:Uploading model into container
+2020-09-04 11:49:00,852:INFO:Creating MLFlow logs
+2020-09-04 11:49:00,918:INFO:SubProcess plot_model() called ==================================
+2020-09-04 11:49:00,919:INFO:Initializing plot_model()
+2020-09-04 11:49:00,919:INFO:plot_model(estimator=Lasso(alpha=0.777, copy_X=True, fit_intercept=True, max_iter=1000,
+      normalize=False, positive=False, precompute=False, random_state=786,
+      selection='cyclic', tol=0.0001, warm_start=False), plot=residuals, save=True, verbose=False, system=False)
+2020-09-04 11:49:00,919:INFO:Checking exceptions
+2020-09-04 11:49:00,919:INFO:Preloading libraries
+2020-09-04 11:49:00,919:INFO:Preparing display monitor
+2020-09-04 11:49:00,923:INFO:Importing libraries
+2020-09-04 11:49:00,924:INFO:plot type: residuals
+2020-09-04 11:49:00,995:INFO:Fitting Model
+2020-09-04 11:49:01,024:INFO:Scoring test/hold-out set
+2020-09-04 11:49:01,054:INFO:Saving 'Residuals.png' in current active directory
+2020-09-04 11:49:01,516:INFO:Visual Rendered Successfully
+2020-09-04 11:49:01,516:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:49:01,520:INFO:Initializing plot_model()
+2020-09-04 11:49:01,520:INFO:plot_model(estimator=Lasso(alpha=0.777, copy_X=True, fit_intercept=True, max_iter=1000,
+      normalize=False, positive=False, precompute=False, random_state=786,
+      selection='cyclic', tol=0.0001, warm_start=False), plot=error, save=True, verbose=False, system=False)
+2020-09-04 11:49:01,520:INFO:Checking exceptions
+2020-09-04 11:49:01,520:INFO:Preloading libraries
+2020-09-04 11:49:01,520:INFO:Preparing display monitor
+2020-09-04 11:49:01,524:INFO:Importing libraries
+2020-09-04 11:49:01,524:INFO:plot type: error
+2020-09-04 11:49:01,525:INFO:Fitting Model
+2020-09-04 11:49:01,526:INFO:Scoring test/hold-out set
+2020-09-04 11:49:01,546:INFO:Saving 'Prediction Error.png' in current active directory
+2020-09-04 11:49:01,784:INFO:Visual Rendered Successfully
+2020-09-04 11:49:01,784:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:49:01,788:INFO:Initializing plot_model()
+2020-09-04 11:49:01,788:INFO:plot_model(estimator=Lasso(alpha=0.777, copy_X=True, fit_intercept=True, max_iter=1000,
+      normalize=False, positive=False, precompute=False, random_state=786,
+      selection='cyclic', tol=0.0001, warm_start=False), plot=feature, save=True, verbose=False, system=False)
+2020-09-04 11:49:01,789:INFO:Checking exceptions
+2020-09-04 11:49:01,789:INFO:Preloading libraries
+2020-09-04 11:49:01,789:INFO:Preparing display monitor
+2020-09-04 11:49:01,792:INFO:Importing libraries
+2020-09-04 11:49:01,793:INFO:plot type: feature
+2020-09-04 11:49:01,814:INFO:Saving 'Feature Importance.png' in current active directory
+2020-09-04 11:49:01,881:INFO:Visual Rendered Successfully
+2020-09-04 11:49:01,881:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:49:01,885:INFO:SubProcess plot_model() end ==================================
+2020-09-04 11:49:01,939:INFO:create_model_container: 6
+2020-09-04 11:49:01,939:INFO:master_model_container: 6
+2020-09-04 11:49:01,939:INFO:display_container: 7
+2020-09-04 11:49:01,940:INFO:Lasso(alpha=0.777, copy_X=True, fit_intercept=True, max_iter=1000,
+      normalize=False, positive=False, precompute=False, random_state=786,
+      selection='cyclic', tol=0.0001, warm_start=False)
+2020-09-04 11:49:01,940:INFO:tune_model() succesfully completed......................................
+2020-09-04 11:49:01,941:INFO:Initializing tune_model()
+2020-09-04 11:49:01,941:INFO:tune_model(estimator=ElasticNet(alpha=1.0, copy_X=True, fit_intercept=True, l1_ratio=0.5,
+           max_iter=1000, normalize=False, positive=False, precompute=False,
+           random_state=786, selection='cyclic', tol=0.0001, warm_start=False), fold=5, round=4, n_iter=120, custom_grid=None, optimize=RMSE, choose_better=False, verbose=True)
+2020-09-04 11:49:01,941:INFO:Checking exceptions
+2020-09-04 11:49:01,941:INFO:Preloading libraries
+2020-09-04 11:49:01,941:INFO:Preparing display monitor
+2020-09-04 11:49:01,958:INFO:Copying training dataset
+2020-09-04 11:49:01,959:INFO:Creating estimator clone to inherit model parameters
+2020-09-04 11:49:01,959:INFO:Importing libraries
+2020-09-04 11:49:01,960:INFO:Checking base model
+2020-09-04 11:49:01,960:INFO:Base model : Elastic Net
+2020-09-04 11:49:01,961:INFO:Defining folds
+2020-09-04 11:49:01,961:INFO:Declaring metric variables
+2020-09-04 11:49:01,965:INFO:Defining Hyperparameters
+2020-09-04 11:49:01,965:INFO:Initializing RandomizedSearchCV
+2020-09-04 11:49:02,429:INFO:Random search completed
+2020-09-04 11:49:02,433:INFO:Initializing Fold 1
+2020-09-04 11:49:02,438:INFO:Fitting Model
+2020-09-04 11:49:02,440:INFO:Evaluating Metrics
+2020-09-04 11:49:02,442:INFO:Compiling Metrics
+2020-09-04 11:49:02,456:INFO:Initializing Fold 2
+2020-09-04 11:49:02,461:INFO:Fitting Model
+2020-09-04 11:49:02,463:INFO:Evaluating Metrics
+2020-09-04 11:49:02,465:INFO:Compiling Metrics
+2020-09-04 11:49:02,480:INFO:Initializing Fold 3
+2020-09-04 11:49:02,484:INFO:Fitting Model
+2020-09-04 11:49:02,487:INFO:Evaluating Metrics
+2020-09-04 11:49:02,489:INFO:Compiling Metrics
+2020-09-04 11:49:02,510:INFO:Initializing Fold 4
+2020-09-04 11:49:02,515:INFO:Fitting Model
+2020-09-04 11:49:02,517:INFO:Evaluating Metrics
+2020-09-04 11:49:02,518:INFO:Compiling Metrics
+2020-09-04 11:49:02,532:INFO:Initializing Fold 5
+2020-09-04 11:49:02,537:INFO:Fitting Model
+2020-09-04 11:49:02,542:INFO:Evaluating Metrics
+2020-09-04 11:49:02,544:INFO:Compiling Metrics
+2020-09-04 11:49:02,561:INFO:Calculating mean and std
+2020-09-04 11:49:02,562:INFO:Creating metrics dataframe
+2020-09-04 11:49:02,569:INFO:Finalizing model
+2020-09-04 11:49:02,571:INFO:Uploading results into container
+2020-09-04 11:49:02,572:INFO:Uploading model into container
+2020-09-04 11:49:02,572:INFO:Creating MLFlow logs
+2020-09-04 11:49:02,629:INFO:SubProcess plot_model() called ==================================
+2020-09-04 11:49:02,629:INFO:Initializing plot_model()
+2020-09-04 11:49:02,630:INFO:plot_model(estimator=ElasticNet(alpha=0.8300000000000001, copy_X=True, fit_intercept=True,
+           l1_ratio=0.26, max_iter=1000, normalize=False, positive=False,
+           precompute=False, random_state=786, selection='cyclic', tol=0.0001,
+           warm_start=False), plot=residuals, save=True, verbose=False, system=False)
+2020-09-04 11:49:02,630:INFO:Checking exceptions
+2020-09-04 11:49:02,630:INFO:Preloading libraries
+2020-09-04 11:49:02,630:INFO:Preparing display monitor
+2020-09-04 11:49:02,635:INFO:Importing libraries
+2020-09-04 11:49:02,636:INFO:plot type: residuals
+2020-09-04 11:49:02,662:INFO:Fitting Model
+2020-09-04 11:49:02,692:INFO:Scoring test/hold-out set
+2020-09-04 11:49:02,717:INFO:Saving 'Residuals.png' in current active directory
+2020-09-04 11:49:02,902:INFO:Visual Rendered Successfully
+2020-09-04 11:49:02,902:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:49:02,906:INFO:Initializing plot_model()
+2020-09-04 11:49:02,907:INFO:plot_model(estimator=ElasticNet(alpha=0.8300000000000001, copy_X=True, fit_intercept=True,
+           l1_ratio=0.26, max_iter=1000, normalize=False, positive=False,
+           precompute=False, random_state=786, selection='cyclic', tol=0.0001,
+           warm_start=False), plot=error, save=True, verbose=False, system=False)
+2020-09-04 11:49:02,907:INFO:Checking exceptions
+2020-09-04 11:49:02,907:INFO:Preloading libraries
+2020-09-04 11:49:02,907:INFO:Preparing display monitor
+2020-09-04 11:49:02,911:INFO:Importing libraries
+2020-09-04 11:49:02,911:INFO:plot type: error
+2020-09-04 11:49:02,912:INFO:Fitting Model
+2020-09-04 11:49:02,912:INFO:Scoring test/hold-out set
+2020-09-04 11:49:02,932:INFO:Saving 'Prediction Error.png' in current active directory
+2020-09-04 11:49:03,032:INFO:Visual Rendered Successfully
+2020-09-04 11:49:03,032:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:49:03,036:INFO:Initializing plot_model()
+2020-09-04 11:49:03,036:INFO:plot_model(estimator=ElasticNet(alpha=0.8300000000000001, copy_X=True, fit_intercept=True,
+           l1_ratio=0.26, max_iter=1000, normalize=False, positive=False,
+           precompute=False, random_state=786, selection='cyclic', tol=0.0001,
+           warm_start=False), plot=feature, save=True, verbose=False, system=False)
+2020-09-04 11:49:03,036:INFO:Checking exceptions
+2020-09-04 11:49:03,036:INFO:Preloading libraries
+2020-09-04 11:49:03,036:INFO:Preparing display monitor
+2020-09-04 11:49:03,040:INFO:Importing libraries
+2020-09-04 11:49:03,040:INFO:plot type: feature
+2020-09-04 11:49:03,061:INFO:Saving 'Feature Importance.png' in current active directory
+2020-09-04 11:49:03,128:INFO:Visual Rendered Successfully
+2020-09-04 11:49:03,128:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:49:03,132:INFO:SubProcess plot_model() end ==================================
+2020-09-04 11:49:03,191:INFO:create_model_container: 7
+2020-09-04 11:49:03,192:INFO:master_model_container: 7
+2020-09-04 11:49:03,192:INFO:display_container: 8
+2020-09-04 11:49:03,192:INFO:ElasticNet(alpha=0.8300000000000001, copy_X=True, fit_intercept=True,
+           l1_ratio=0.26, max_iter=1000, normalize=False, positive=False,
+           precompute=False, random_state=786, selection='cyclic', tol=0.0001,
+           warm_start=False)
+2020-09-04 11:49:03,193:INFO:tune_model() succesfully completed......................................
+2020-09-04 11:49:03,193:INFO:Initializing tune_model()
+2020-09-04 11:49:03,194:INFO:tune_model(estimator=OrthogonalMatchingPursuit(fit_intercept=True, n_nonzero_coefs=None,
+                          normalize=True, precompute='auto', tol=None), fold=5, round=4, n_iter=120, custom_grid=None, optimize=RMSE, choose_better=False, verbose=True)
+2020-09-04 11:49:03,194:INFO:Checking exceptions
+2020-09-04 11:49:03,194:INFO:Preloading libraries
+2020-09-04 11:49:03,194:INFO:Preparing display monitor
+2020-09-04 11:49:03,212:INFO:Copying training dataset
+2020-09-04 11:49:03,212:INFO:Creating estimator clone to inherit model parameters
+2020-09-04 11:49:03,213:INFO:Importing libraries
+2020-09-04 11:49:03,213:INFO:Checking base model
+2020-09-04 11:49:03,214:INFO:Base model : Orthogonal Matching Pursuit
+2020-09-04 11:49:03,214:INFO:Defining folds
+2020-09-04 11:49:03,215:INFO:Declaring metric variables
+2020-09-04 11:49:03,218:INFO:Defining Hyperparameters
+2020-09-04 11:49:03,224:INFO:Initializing RandomizedSearchCV
+2020-09-04 11:49:03,697:INFO:Random search completed
+2020-09-04 11:49:03,701:INFO:Initializing Fold 1
+2020-09-04 11:49:03,707:INFO:Fitting Model
+2020-09-04 11:49:03,709:INFO:Evaluating Metrics
+2020-09-04 11:49:03,711:INFO:Compiling Metrics
+2020-09-04 11:49:03,725:INFO:Initializing Fold 2
+2020-09-04 11:49:03,731:INFO:Fitting Model
+2020-09-04 11:49:03,734:INFO:Evaluating Metrics
+2020-09-04 11:49:03,736:INFO:Compiling Metrics
+2020-09-04 11:49:03,756:INFO:Initializing Fold 3
+2020-09-04 11:49:03,762:INFO:Fitting Model
+2020-09-04 11:49:03,767:INFO:Evaluating Metrics
+2020-09-04 11:49:03,769:INFO:Compiling Metrics
+2020-09-04 11:49:03,787:INFO:Initializing Fold 4
+2020-09-04 11:49:03,792:INFO:Fitting Model
+2020-09-04 11:49:03,796:INFO:Evaluating Metrics
+2020-09-04 11:49:03,798:INFO:Compiling Metrics
+2020-09-04 11:49:03,818:INFO:Initializing Fold 5
+2020-09-04 11:49:03,823:INFO:Fitting Model
+2020-09-04 11:49:03,827:INFO:Evaluating Metrics
+2020-09-04 11:49:03,830:INFO:Compiling Metrics
+2020-09-04 11:49:03,847:INFO:Calculating mean and std
+2020-09-04 11:49:03,849:INFO:Creating metrics dataframe
+2020-09-04 11:49:03,857:INFO:Finalizing model
+2020-09-04 11:49:03,862:INFO:Uploading results into container
+2020-09-04 11:49:03,862:INFO:Uploading model into container
+2020-09-04 11:49:03,862:INFO:Creating MLFlow logs
+2020-09-04 11:49:03,923:INFO:SubProcess plot_model() called ==================================
+2020-09-04 11:49:03,923:INFO:Initializing plot_model()
+2020-09-04 11:49:03,923:INFO:plot_model(estimator=OrthogonalMatchingPursuit(fit_intercept=True, n_nonzero_coefs=2, normalize=True,
+                          precompute='auto', tol=None), plot=residuals, save=True, verbose=False, system=False)
+2020-09-04 11:49:03,923:INFO:Checking exceptions
+2020-09-04 11:49:03,923:INFO:Preloading libraries
+2020-09-04 11:49:03,923:INFO:Preparing display monitor
+2020-09-04 11:49:03,929:INFO:Importing libraries
+2020-09-04 11:49:03,930:INFO:plot type: residuals
+2020-09-04 11:49:03,955:INFO:Fitting Model
+2020-09-04 11:49:03,983:INFO:Scoring test/hold-out set
+2020-09-04 11:49:04,012:INFO:Saving 'Residuals.png' in current active directory
+2020-09-04 11:49:04,205:INFO:Visual Rendered Successfully
+2020-09-04 11:49:04,205:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:49:04,209:INFO:Initializing plot_model()
+2020-09-04 11:49:04,209:INFO:plot_model(estimator=OrthogonalMatchingPursuit(fit_intercept=True, n_nonzero_coefs=2, normalize=True,
+                          precompute='auto', tol=None), plot=error, save=True, verbose=False, system=False)
+2020-09-04 11:49:04,209:INFO:Checking exceptions
+2020-09-04 11:49:04,209:INFO:Preloading libraries
+2020-09-04 11:49:04,209:INFO:Preparing display monitor
+2020-09-04 11:49:04,213:INFO:Importing libraries
+2020-09-04 11:49:04,213:INFO:plot type: error
+2020-09-04 11:49:04,214:INFO:Fitting Model
+2020-09-04 11:49:04,214:INFO:Scoring test/hold-out set
+2020-09-04 11:49:04,235:INFO:Saving 'Prediction Error.png' in current active directory
+2020-09-04 11:49:04,335:INFO:Visual Rendered Successfully
+2020-09-04 11:49:04,335:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:49:04,339:INFO:Initializing plot_model()
+2020-09-04 11:49:04,339:INFO:plot_model(estimator=OrthogonalMatchingPursuit(fit_intercept=True, n_nonzero_coefs=2, normalize=True,
+                          precompute='auto', tol=None), plot=feature, save=True, verbose=False, system=False)
+2020-09-04 11:49:04,339:INFO:Checking exceptions
+2020-09-04 11:49:04,339:INFO:Preloading libraries
+2020-09-04 11:49:04,339:INFO:Preparing display monitor
+2020-09-04 11:49:04,343:INFO:Importing libraries
+2020-09-04 11:49:04,343:INFO:plot type: feature
+2020-09-04 11:49:04,363:INFO:Saving 'Feature Importance.png' in current active directory
+2020-09-04 11:49:04,442:INFO:Visual Rendered Successfully
+2020-09-04 11:49:04,442:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:49:04,445:INFO:SubProcess plot_model() end ==================================
+2020-09-04 11:49:04,505:INFO:create_model_container: 8
+2020-09-04 11:49:04,505:INFO:master_model_container: 8
+2020-09-04 11:49:04,505:INFO:display_container: 9
+2020-09-04 11:49:04,506:INFO:OrthogonalMatchingPursuit(fit_intercept=True, n_nonzero_coefs=2, normalize=True,
+                          precompute='auto', tol=None)
+2020-09-04 11:49:04,506:INFO:tune_model() succesfully completed......................................
+2020-09-04 11:49:04,507:INFO:Initializing tune_model()
+2020-09-04 11:49:04,507:INFO:tune_model(estimator=<catboost.core.CatBoostRegressor object at 0x7f9aff396dc0>, fold=5, round=4, n_iter=120, custom_grid=None, optimize=RMSE, choose_better=False, verbose=True)
+2020-09-04 11:49:04,507:INFO:Checking exceptions
+2020-09-04 11:49:04,508:INFO:Preloading libraries
+2020-09-04 11:49:04,508:INFO:Preparing display monitor
+2020-09-04 11:49:04,525:INFO:Copying training dataset
+2020-09-04 11:49:04,525:INFO:Creating estimator clone to inherit model parameters
+2020-09-04 11:49:04,525:INFO:Importing libraries
+2020-09-04 11:49:04,526:INFO:Checking base model
+2020-09-04 11:49:04,526:INFO:Base model : CatBoost Regressor
+2020-09-04 11:49:04,527:INFO:Defining folds
+2020-09-04 11:49:04,527:INFO:Declaring metric variables
+2020-09-04 11:49:04,530:INFO:Defining Hyperparameters
+2020-09-04 11:49:04,530:INFO:Initializing RandomizedSearchCV
+2020-09-04 11:51:34,430:INFO:Random search completed
+2020-09-04 11:51:34,443:INFO:Initializing Fold 1
+2020-09-04 11:51:34,448:INFO:Fitting Model
+2020-09-04 11:51:57,679:INFO:Evaluating Metrics
+2020-09-04 11:51:57,687:INFO:Compiling Metrics
+2020-09-04 11:51:57,759:INFO:Initializing Fold 2
+2020-09-04 11:51:57,786:INFO:Fitting Model
+2020-09-04 11:51:59,221:INFO:Evaluating Metrics
+2020-09-04 11:51:59,224:INFO:Compiling Metrics
+2020-09-04 11:51:59,245:INFO:Initializing Fold 3
+2020-09-04 11:51:59,251:INFO:Fitting Model
+2020-09-04 11:52:00,490:INFO:Evaluating Metrics
+2020-09-04 11:52:00,494:INFO:Compiling Metrics
+2020-09-04 11:52:00,520:INFO:Initializing Fold 4
+2020-09-04 11:52:00,529:INFO:Fitting Model
+2020-09-04 11:52:01,343:INFO:Evaluating Metrics
+2020-09-04 11:52:01,346:INFO:Compiling Metrics
+2020-09-04 11:52:01,361:INFO:Initializing Fold 5
+2020-09-04 11:52:01,365:INFO:Fitting Model
+2020-09-04 11:52:02,029:INFO:Evaluating Metrics
+2020-09-04 11:52:02,032:INFO:Compiling Metrics
+2020-09-04 11:52:02,050:INFO:Calculating mean and std
+2020-09-04 11:52:02,052:INFO:Creating metrics dataframe
+2020-09-04 11:52:02,059:INFO:Finalizing model
+2020-09-04 11:52:02,842:INFO:Uploading results into container
+2020-09-04 11:52:02,842:INFO:Uploading model into container
+2020-09-04 11:52:02,842:INFO:Creating MLFlow logs
+2020-09-04 11:52:02,899:INFO:SubProcess plot_model() called ==================================
+2020-09-04 11:52:02,903:INFO:Initializing plot_model()
+2020-09-04 11:52:02,903:INFO:plot_model(estimator=<catboost.core.CatBoostRegressor object at 0x7f9aff702d60>, plot=residuals, save=True, verbose=False, system=False)
+2020-09-04 11:52:02,903:INFO:Checking exceptions
+2020-09-04 11:52:02,904:INFO:Initializing plot_model()
+2020-09-04 11:52:02,904:INFO:plot_model(estimator=<catboost.core.CatBoostRegressor object at 0x7f9aff702d60>, plot=error, save=True, verbose=False, system=False)
+2020-09-04 11:52:02,904:INFO:Checking exceptions
+2020-09-04 11:52:02,904:INFO:Initializing plot_model()
+2020-09-04 11:52:02,904:INFO:plot_model(estimator=<catboost.core.CatBoostRegressor object at 0x7f9aff702d60>, plot=feature, save=True, verbose=False, system=False)
+2020-09-04 11:52:02,904:INFO:Checking exceptions
+2020-09-04 11:52:02,904:INFO:SubProcess plot_model() end ==================================
+2020-09-04 11:52:03,017:INFO:create_model_container: 9
+2020-09-04 11:52:03,017:INFO:master_model_container: 9
+2020-09-04 11:52:03,017:INFO:display_container: 10
+2020-09-04 11:52:03,017:INFO:<catboost.core.CatBoostRegressor object at 0x7f9aff702d60>
+2020-09-04 11:52:03,017:INFO:tune_model() succesfully completed......................................
+2020-09-04 11:52:03,019:INFO:Initializing tune_model()
+2020-09-04 11:52:03,020:INFO:tune_model(estimator=BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=1e-06, lambda_2=1e-06, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False), fold=5, round=4, n_iter=120, custom_grid=None, optimize=RMSE, choose_better=False, verbose=True)
+2020-09-04 11:52:03,020:INFO:Checking exceptions
+2020-09-04 11:52:03,020:INFO:Preloading libraries
+2020-09-04 11:52:03,020:INFO:Preparing display monitor
+2020-09-04 11:52:03,041:INFO:Copying training dataset
+2020-09-04 11:52:03,041:INFO:Creating estimator clone to inherit model parameters
+2020-09-04 11:52:03,042:INFO:Importing libraries
+2020-09-04 11:52:03,043:INFO:Checking base model
+2020-09-04 11:52:03,043:INFO:Base model : Bayesian Ridge
+2020-09-04 11:52:03,044:INFO:Defining folds
+2020-09-04 11:52:03,045:INFO:Declaring metric variables
+2020-09-04 11:52:03,050:INFO:Defining Hyperparameters
+2020-09-04 11:52:03,050:INFO:Initializing RandomizedSearchCV
+2020-09-04 11:52:03,585:INFO:Random search completed
+2020-09-04 11:52:03,593:INFO:Initializing Fold 1
+2020-09-04 11:52:03,601:INFO:Fitting Model
+2020-09-04 11:52:03,605:INFO:Evaluating Metrics
+2020-09-04 11:52:03,608:INFO:Compiling Metrics
+2020-09-04 11:52:03,629:INFO:Initializing Fold 2
+2020-09-04 11:52:03,636:INFO:Fitting Model
+2020-09-04 11:52:03,642:INFO:Evaluating Metrics
+2020-09-04 11:52:03,644:INFO:Compiling Metrics
+2020-09-04 11:52:03,663:INFO:Initializing Fold 3
+2020-09-04 11:52:03,670:INFO:Fitting Model
+2020-09-04 11:52:03,675:INFO:Evaluating Metrics
+2020-09-04 11:52:03,677:INFO:Compiling Metrics
+2020-09-04 11:52:03,695:INFO:Initializing Fold 4
+2020-09-04 11:52:03,701:INFO:Fitting Model
+2020-09-04 11:52:03,704:INFO:Evaluating Metrics
+2020-09-04 11:52:03,706:INFO:Compiling Metrics
+2020-09-04 11:52:03,723:INFO:Initializing Fold 5
+2020-09-04 11:52:03,729:INFO:Fitting Model
+2020-09-04 11:52:03,733:INFO:Evaluating Metrics
+2020-09-04 11:52:03,735:INFO:Compiling Metrics
+2020-09-04 11:52:03,752:INFO:Calculating mean and std
+2020-09-04 11:52:03,753:INFO:Creating metrics dataframe
+2020-09-04 11:52:03,762:INFO:Finalizing model
+2020-09-04 11:52:03,766:INFO:Uploading results into container
+2020-09-04 11:52:03,766:INFO:Uploading model into container
+2020-09-04 11:52:03,766:INFO:Creating MLFlow logs
+2020-09-04 11:52:03,831:INFO:SubProcess plot_model() called ==================================
+2020-09-04 11:52:03,832:INFO:Initializing plot_model()
+2020-09-04 11:52:03,832:INFO:plot_model(estimator=BayesianRidge(alpha_1=0.001, alpha_2=0.0001, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=0.3, lambda_2=0.3, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False), plot=residuals, save=True, verbose=False, system=False)
+2020-09-04 11:52:03,832:INFO:Checking exceptions
+2020-09-04 11:52:03,833:INFO:Preloading libraries
+2020-09-04 11:52:03,833:INFO:Preparing display monitor
+2020-09-04 11:52:03,839:INFO:Importing libraries
+2020-09-04 11:52:03,839:INFO:plot type: residuals
+2020-09-04 11:52:03,873:INFO:Fitting Model
+2020-09-04 11:52:03,910:INFO:Scoring test/hold-out set
+2020-09-04 11:52:03,942:INFO:Saving 'Residuals.png' in current active directory
+2020-09-04 11:52:04,170:INFO:Visual Rendered Successfully
+2020-09-04 11:52:04,170:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:52:04,175:INFO:Initializing plot_model()
+2020-09-04 11:52:04,175:INFO:plot_model(estimator=BayesianRidge(alpha_1=0.001, alpha_2=0.0001, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=0.3, lambda_2=0.3, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False), plot=error, save=True, verbose=False, system=False)
+2020-09-04 11:52:04,175:INFO:Checking exceptions
+2020-09-04 11:52:04,175:INFO:Preloading libraries
+2020-09-04 11:52:04,175:INFO:Preparing display monitor
+2020-09-04 11:52:04,179:INFO:Importing libraries
+2020-09-04 11:52:04,180:INFO:plot type: error
+2020-09-04 11:52:04,182:INFO:Fitting Model
+2020-09-04 11:52:04,183:INFO:Scoring test/hold-out set
+2020-09-04 11:52:04,207:INFO:Saving 'Prediction Error.png' in current active directory
+2020-09-04 11:52:04,328:INFO:Visual Rendered Successfully
+2020-09-04 11:52:04,328:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:52:04,333:INFO:Initializing plot_model()
+2020-09-04 11:52:04,333:INFO:plot_model(estimator=BayesianRidge(alpha_1=0.001, alpha_2=0.0001, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=0.3, lambda_2=0.3, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False), plot=feature, save=True, verbose=False, system=False)
+2020-09-04 11:52:04,333:INFO:Checking exceptions
+2020-09-04 11:52:04,333:INFO:Preloading libraries
+2020-09-04 11:52:04,333:INFO:Preparing display monitor
+2020-09-04 11:52:04,337:INFO:Importing libraries
+2020-09-04 11:52:04,337:INFO:plot type: feature
+2020-09-04 11:52:04,361:INFO:Saving 'Feature Importance.png' in current active directory
+2020-09-04 11:52:04,482:INFO:Visual Rendered Successfully
+2020-09-04 11:52:04,482:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:52:04,486:INFO:SubProcess plot_model() end ==================================
+2020-09-04 11:52:04,899:INFO:create_model_container: 10
+2020-09-04 11:52:04,899:INFO:master_model_container: 10
+2020-09-04 11:52:04,899:INFO:display_container: 11
+2020-09-04 11:52:04,900:INFO:BayesianRidge(alpha_1=0.001, alpha_2=0.0001, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=0.3, lambda_2=0.3, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False)
+2020-09-04 11:52:04,900:INFO:tune_model() succesfully completed......................................
+2020-09-04 11:52:04,908:INFO:Initializing blend_models()
+2020-09-04 11:52:04,909:INFO:blend_models(estimator_list=[Lasso(alpha=0.777, copy_X=True, fit_intercept=True, max_iter=1000,
+      normalize=False, positive=False, precompute=False, random_state=786,
+      selection='cyclic', tol=0.0001, warm_start=False), ElasticNet(alpha=0.8300000000000001, copy_X=True, fit_intercept=True,
+           l1_ratio=0.26, max_iter=1000, normalize=False, positive=False,
+           precompute=False, random_state=786, selection='cyclic', tol=0.0001,
+           warm_start=False), OrthogonalMatchingPursuit(fit_intercept=True, n_nonzero_coefs=2, normalize=True,
+                          precompute='auto', tol=None), <catboost.core.CatBoostRegressor object at 0x7f9aff702d60>, BayesianRidge(alpha_1=0.001, alpha_2=0.0001, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=0.3, lambda_2=0.3, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False)], fold=5, round=4, choose_better=False, optimize=RMSE, turbo=True, verbose=True)
+2020-09-04 11:52:04,909:INFO:Checking exceptions
+2020-09-04 11:52:04,909:INFO:Preloading libraries
+2020-09-04 11:52:04,910:INFO:Preparing display monitor
+2020-09-04 11:52:04,925:INFO:Importing libraries
+2020-09-04 11:52:04,926:INFO:Copying training dataset
+2020-09-04 11:52:04,927:INFO:Declaring metric variables
+2020-09-04 11:52:04,927:INFO:Defining folds
+2020-09-04 11:52:04,931:INFO:Defining model names in estimator_list
+2020-09-04 11:52:05,774:INFO:n_jobs multiple passed
+2020-09-04 11:52:05,779:INFO:Initializing Fold 1
+2020-09-04 11:52:05,784:INFO:Fitting Model
+2020-09-04 11:52:06,737:INFO:Evaluating Metrics
+2020-09-04 11:52:06,745:INFO:Compiling Metrics
+2020-09-04 11:52:06,756:INFO:Initializing Fold 2
+2020-09-04 11:52:06,761:INFO:Fitting Model
+2020-09-04 11:52:07,459:INFO:Evaluating Metrics
+2020-09-04 11:52:07,466:INFO:Compiling Metrics
+2020-09-04 11:52:07,478:INFO:Initializing Fold 3
+2020-09-04 11:52:07,482:INFO:Fitting Model
+2020-09-04 11:52:08,200:INFO:Evaluating Metrics
+2020-09-04 11:52:08,207:INFO:Compiling Metrics
+2020-09-04 11:52:08,220:INFO:Initializing Fold 4
+2020-09-04 11:52:08,225:INFO:Fitting Model
+2020-09-04 11:52:08,849:INFO:Evaluating Metrics
+2020-09-04 11:52:08,856:INFO:Compiling Metrics
+2020-09-04 11:52:08,869:INFO:Initializing Fold 5
+2020-09-04 11:52:08,873:INFO:Fitting Model
+2020-09-04 11:52:09,533:INFO:Evaluating Metrics
+2020-09-04 11:52:09,541:INFO:Compiling Metrics
+2020-09-04 11:52:09,554:INFO:Calculating mean and std
+2020-09-04 11:52:09,555:INFO:Creating metrics dataframe
+2020-09-04 11:52:09,562:INFO:Finalizing model
+2020-09-04 11:52:10,455:INFO:Uploading results into container
+2020-09-04 11:52:10,455:INFO:Uploading model into container
+2020-09-04 11:52:10,455:INFO:Creating MLFlow logs
+2020-09-04 11:52:10,503:INFO:SubProcess plot_model() called ==================================
+2020-09-04 11:52:10,504:INFO:Initializing plot_model()
+2020-09-04 11:52:10,507:INFO:plot_model(estimator=VotingRegressor(estimators=[('Lasso_0',
+                             Lasso(alpha=0.777, copy_X=True, fit_intercept=True,
+                                   max_iter=1000, normalize=False,
+                                   positive=False, precompute=False,
+                                   random_state=786, selection='cyclic',
+                                   tol=0.0001, warm_start=False)),
+                            ('Elastic Net_1',
+                             ElasticNet(alpha=0.8300000000000001, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.26,
+                                        max_iter=1000, normalize=False,
+                                        positiv...
+                                                       tol=None)),
+                            ('CatBoost Regressor_3',
+                             <catboost.core.CatBoostRegressor object at 0x7f9aff702d60>),
+                            ('Bayesian Ridge_4',
+                             BayesianRidge(alpha_1=0.001, alpha_2=0.0001,
+                                           alpha_init=None, compute_score=False,
+                                           copy_X=True, fit_intercept=True,
+                                           lambda_1=0.3, lambda_2=0.3,
+                                           lambda_init=None, n_iter=300,
+                                           normalize=False, tol=0.001,
+                                           verbose=False))],
+                n_jobs=-1, verbose=False, weights=None), plot=residuals, save=True, verbose=False, system=False)
+2020-09-04 11:52:10,507:INFO:Checking exceptions
+2020-09-04 11:52:10,507:INFO:Preloading libraries
+2020-09-04 11:52:10,507:INFO:Preparing display monitor
+2020-09-04 11:52:10,511:INFO:Importing libraries
+2020-09-04 11:52:10,511:INFO:plot type: residuals
+2020-09-04 11:52:10,542:INFO:Fitting Model
+2020-09-04 11:52:10,588:INFO:Scoring test/hold-out set
+2020-09-04 11:52:10,642:INFO:Saving 'Residuals.png' in current active directory
+2020-09-04 11:52:10,842:INFO:Visual Rendered Successfully
+2020-09-04 11:52:10,842:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:52:10,845:INFO:Initializing plot_model()
+2020-09-04 11:52:10,849:INFO:plot_model(estimator=VotingRegressor(estimators=[('Lasso_0',
+                             Lasso(alpha=0.777, copy_X=True, fit_intercept=True,
+                                   max_iter=1000, normalize=False,
+                                   positive=False, precompute=False,
+                                   random_state=786, selection='cyclic',
+                                   tol=0.0001, warm_start=False)),
+                            ('Elastic Net_1',
+                             ElasticNet(alpha=0.8300000000000001, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.26,
+                                        max_iter=1000, normalize=False,
+                                        positiv...
+                                                       tol=None)),
+                            ('CatBoost Regressor_3',
+                             <catboost.core.CatBoostRegressor object at 0x7f9aff702d60>),
+                            ('Bayesian Ridge_4',
+                             BayesianRidge(alpha_1=0.001, alpha_2=0.0001,
+                                           alpha_init=None, compute_score=False,
+                                           copy_X=True, fit_intercept=True,
+                                           lambda_1=0.3, lambda_2=0.3,
+                                           lambda_init=None, n_iter=300,
+                                           normalize=False, tol=0.001,
+                                           verbose=False))],
+                n_jobs=-1, verbose=False, weights=None), plot=error, save=True, verbose=False, system=False)
+2020-09-04 11:52:10,849:INFO:Checking exceptions
+2020-09-04 11:52:10,849:INFO:Preloading libraries
+2020-09-04 11:52:10,849:INFO:Preparing display monitor
+2020-09-04 11:52:10,852:INFO:Importing libraries
+2020-09-04 11:52:10,853:INFO:plot type: error
+2020-09-04 11:52:10,854:INFO:Fitting Model
+2020-09-04 11:52:10,854:INFO:Scoring test/hold-out set
+2020-09-04 11:52:10,880:INFO:Saving 'Prediction Error.png' in current active directory
+2020-09-04 11:52:10,990:INFO:Visual Rendered Successfully
+2020-09-04 11:52:10,990:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:52:10,994:INFO:Initializing plot_model()
+2020-09-04 11:52:10,997:INFO:plot_model(estimator=VotingRegressor(estimators=[('Lasso_0',
+                             Lasso(alpha=0.777, copy_X=True, fit_intercept=True,
+                                   max_iter=1000, normalize=False,
+                                   positive=False, precompute=False,
+                                   random_state=786, selection='cyclic',
+                                   tol=0.0001, warm_start=False)),
+                            ('Elastic Net_1',
+                             ElasticNet(alpha=0.8300000000000001, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.26,
+                                        max_iter=1000, normalize=False,
+                                        positiv...
+                                                       tol=None)),
+                            ('CatBoost Regressor_3',
+                             <catboost.core.CatBoostRegressor object at 0x7f9aff702d60>),
+                            ('Bayesian Ridge_4',
+                             BayesianRidge(alpha_1=0.001, alpha_2=0.0001,
+                                           alpha_init=None, compute_score=False,
+                                           copy_X=True, fit_intercept=True,
+                                           lambda_1=0.3, lambda_2=0.3,
+                                           lambda_init=None, n_iter=300,
+                                           normalize=False, tol=0.001,
+                                           verbose=False))],
+                n_jobs=-1, verbose=False, weights=None), plot=feature, save=True, verbose=False, system=False)
+2020-09-04 11:52:10,997:INFO:Checking exceptions
+2020-09-04 11:52:10,997:INFO:SubProcess plot_model() end ==================================
+2020-09-04 11:52:11,044:INFO:create_model_container: 11
+2020-09-04 11:52:11,044:INFO:master_model_container: 11
+2020-09-04 11:52:11,044:INFO:display_container: 12
+2020-09-04 11:52:11,048:INFO:VotingRegressor(estimators=[('Lasso_0',
+                             Lasso(alpha=0.777, copy_X=True, fit_intercept=True,
+                                   max_iter=1000, normalize=False,
+                                   positive=False, precompute=False,
+                                   random_state=786, selection='cyclic',
+                                   tol=0.0001, warm_start=False)),
+                            ('Elastic Net_1',
+                             ElasticNet(alpha=0.8300000000000001, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.26,
+                                        max_iter=1000, normalize=False,
+                                        positiv...
+                                                       tol=None)),
+                            ('CatBoost Regressor_3',
+                             <catboost.core.CatBoostRegressor object at 0x7f9aff702d60>),
+                            ('Bayesian Ridge_4',
+                             BayesianRidge(alpha_1=0.001, alpha_2=0.0001,
+                                           alpha_init=None, compute_score=False,
+                                           copy_X=True, fit_intercept=True,
+                                           lambda_1=0.3, lambda_2=0.3,
+                                           lambda_init=None, n_iter=300,
+                                           normalize=False, tol=0.001,
+                                           verbose=False))],
+                n_jobs=-1, verbose=False, weights=None)
+2020-09-04 11:52:11,048:INFO:blend_models() succesfully completed......................................
+2020-09-04 11:52:11,065:INFO:Initializing stack_models()
+2020-09-04 11:52:11,067:INFO:stack_models(estimator_list=[ElasticNet(alpha=0.8300000000000001, copy_X=True, fit_intercept=True,
+           l1_ratio=0.26, max_iter=1000, normalize=False, positive=False,
+           precompute=False, random_state=786, selection='cyclic', tol=0.0001,
+           warm_start=False), OrthogonalMatchingPursuit(fit_intercept=True, n_nonzero_coefs=2, normalize=True,
+                          precompute='auto', tol=None), <catboost.core.CatBoostRegressor object at 0x7f9aff702d60>, BayesianRidge(alpha_1=0.001, alpha_2=0.0001, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=0.3, lambda_2=0.3, lambda_init=None, n_iter=300,
+              normalize=False, tol=0.001, verbose=False)], meta_model=Lasso(alpha=0.777, copy_X=True, fit_intercept=True, max_iter=1000,
+      normalize=False, positive=False, precompute=False, random_state=786,
+      selection='cyclic', tol=0.0001, warm_start=False), fold=5, round=4, restack=True, choose_better=False, optimize=RMSE, verbose=True)
+2020-09-04 11:52:11,067:INFO:Checking exceptions
+2020-09-04 11:52:11,067:INFO:Preloading libraries
+2020-09-04 11:52:11,067:INFO:Defining meta model
+2020-09-04 11:52:11,068:INFO:Preparing display monitor
+2020-09-04 11:52:11,088:INFO:Importing libraries
+2020-09-04 11:52:11,088:INFO:Copying training dataset
+2020-09-04 11:52:11,089:INFO:Defining folds
+2020-09-04 11:52:11,089:INFO:Declaring metric variables
+2020-09-04 11:52:11,089:INFO:Getting model names
+2020-09-04 11:52:11,090:INFO:Compiling estimator_list parameter
+2020-09-04 11:52:11,090:INFO:Creating StackingRegressor()
+2020-09-04 11:52:11,091:INFO:Initializing Fold 1
+2020-09-04 11:52:11,095:INFO:Fitting Model
+2020-09-04 11:52:14,302:INFO:Evaluating Metrics
+2020-09-04 11:52:14,309:INFO:No inverse transformation
+2020-09-04 11:52:14,309:INFO:Compiling Metrics
+2020-09-04 11:52:14,322:INFO:Initializing Fold 2
+2020-09-04 11:52:14,328:INFO:Fitting Model
+2020-09-04 11:52:17,868:INFO:Evaluating Metrics
+2020-09-04 11:52:17,875:INFO:No inverse transformation
+2020-09-04 11:52:17,875:INFO:Compiling Metrics
+2020-09-04 11:52:17,896:INFO:Initializing Fold 3
+2020-09-04 11:52:17,902:INFO:Fitting Model
+2020-09-04 11:52:21,729:INFO:Evaluating Metrics
+2020-09-04 11:52:21,735:INFO:No inverse transformation
+2020-09-04 11:52:21,735:INFO:Compiling Metrics
+2020-09-04 11:52:21,749:INFO:Initializing Fold 4
+2020-09-04 11:52:21,754:INFO:Fitting Model
+2020-09-04 11:52:24,911:INFO:Evaluating Metrics
+2020-09-04 11:52:24,918:INFO:No inverse transformation
+2020-09-04 11:52:24,918:INFO:Compiling Metrics
+2020-09-04 11:52:24,932:INFO:Initializing Fold 5
+2020-09-04 11:52:24,937:INFO:Fitting Model
+2020-09-04 11:52:28,051:INFO:Evaluating Metrics
+2020-09-04 11:52:28,058:INFO:No inverse transformation
+2020-09-04 11:52:28,058:INFO:Compiling Metrics
+2020-09-04 11:52:28,072:INFO:Calculating mean and std
+2020-09-04 11:52:28,073:INFO:Creating metrics dataframe
+2020-09-04 11:52:28,080:INFO:Finalizing model
+2020-09-04 11:52:31,585:INFO:Creating MLFlow logs
+2020-09-04 11:52:31,662:INFO:SubProcess plot_model() called ==================================
+2020-09-04 11:52:31,662:INFO:Initializing plot_model()
+2020-09-04 11:52:31,666:INFO:plot_model(estimator=StackingRegressor(cv=5,
+                  estimators=[('ElasticNet_0',
+                               ElasticNet(alpha=0.8300000000000001, copy_X=True,
+                                          fit_intercept=True, l1_ratio=0.26,
+                                          max_iter=1000, normalize=False,
+                                          positive=False, precompute=False,
+                                          random_state=786, selection='cyclic',
+                                          tol=0.0001, warm_start=False)),
+                              ('OrthogonalMatchingPursuit_1',
+                               OrthogonalMatchingPursuit(fit_intercept=True,
+                                                         n_nonzero_coef...
+                                             compute_score=False, copy_X=True,
+                                             fit_intercept=True, lambda_1=0.3,
+                                             lambda_2=0.3, lambda_init=None,
+                                             n_iter=300, normalize=False,
+                                             tol=0.001, verbose=False))],
+                  final_estimator=Lasso(alpha=0.777, copy_X=True,
+                                        fit_intercept=True, max_iter=1000,
+                                        normalize=False, positive=False,
+                                        precompute=False, random_state=786,
+                                        selection='cyclic', tol=0.0001,
+                                        warm_start=False),
+                  n_jobs=-1, passthrough=True, verbose=0), plot=residuals, save=True, verbose=False, system=False)
+2020-09-04 11:52:31,666:INFO:Checking exceptions
+2020-09-04 11:52:31,666:INFO:Preloading libraries
+2020-09-04 11:52:31,666:INFO:Preparing display monitor
+2020-09-04 11:52:31,670:INFO:Importing libraries
+2020-09-04 11:52:31,671:INFO:plot type: residuals
+2020-09-04 11:52:31,694:INFO:Fitting Model
+2020-09-04 11:52:31,734:INFO:Scoring test/hold-out set
+2020-09-04 11:52:31,775:INFO:Saving 'Residuals.png' in current active directory
+2020-09-04 11:52:31,992:INFO:Visual Rendered Successfully
+2020-09-04 11:52:31,992:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:52:31,999:INFO:Initializing plot_model()
+2020-09-04 11:52:32,003:INFO:plot_model(estimator=StackingRegressor(cv=5,
+                  estimators=[('ElasticNet_0',
+                               ElasticNet(alpha=0.8300000000000001, copy_X=True,
+                                          fit_intercept=True, l1_ratio=0.26,
+                                          max_iter=1000, normalize=False,
+                                          positive=False, precompute=False,
+                                          random_state=786, selection='cyclic',
+                                          tol=0.0001, warm_start=False)),
+                              ('OrthogonalMatchingPursuit_1',
+                               OrthogonalMatchingPursuit(fit_intercept=True,
+                                                         n_nonzero_coef...
+                                             compute_score=False, copy_X=True,
+                                             fit_intercept=True, lambda_1=0.3,
+                                             lambda_2=0.3, lambda_init=None,
+                                             n_iter=300, normalize=False,
+                                             tol=0.001, verbose=False))],
+                  final_estimator=Lasso(alpha=0.777, copy_X=True,
+                                        fit_intercept=True, max_iter=1000,
+                                        normalize=False, positive=False,
+                                        precompute=False, random_state=786,
+                                        selection='cyclic', tol=0.0001,
+                                        warm_start=False),
+                  n_jobs=-1, passthrough=True, verbose=0), plot=error, save=True, verbose=False, system=False)
+2020-09-04 11:52:32,003:INFO:Checking exceptions
+2020-09-04 11:52:32,003:INFO:Preloading libraries
+2020-09-04 11:52:32,003:INFO:Preparing display monitor
+2020-09-04 11:52:32,007:INFO:Importing libraries
+2020-09-04 11:52:32,007:INFO:plot type: error
+2020-09-04 11:52:32,008:INFO:Fitting Model
+2020-09-04 11:52:32,008:INFO:Scoring test/hold-out set
+2020-09-04 11:52:32,035:INFO:Saving 'Prediction Error.png' in current active directory
+2020-09-04 11:52:32,149:INFO:Visual Rendered Successfully
+2020-09-04 11:52:32,150:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:52:32,156:INFO:Initializing plot_model()
+2020-09-04 11:52:32,160:INFO:plot_model(estimator=StackingRegressor(cv=5,
+                  estimators=[('ElasticNet_0',
+                               ElasticNet(alpha=0.8300000000000001, copy_X=True,
+                                          fit_intercept=True, l1_ratio=0.26,
+                                          max_iter=1000, normalize=False,
+                                          positive=False, precompute=False,
+                                          random_state=786, selection='cyclic',
+                                          tol=0.0001, warm_start=False)),
+                              ('OrthogonalMatchingPursuit_1',
+                               OrthogonalMatchingPursuit(fit_intercept=True,
+                                                         n_nonzero_coef...
+                                             compute_score=False, copy_X=True,
+                                             fit_intercept=True, lambda_1=0.3,
+                                             lambda_2=0.3, lambda_init=None,
+                                             n_iter=300, normalize=False,
+                                             tol=0.001, verbose=False))],
+                  final_estimator=Lasso(alpha=0.777, copy_X=True,
+                                        fit_intercept=True, max_iter=1000,
+                                        normalize=False, positive=False,
+                                        precompute=False, random_state=786,
+                                        selection='cyclic', tol=0.0001,
+                                        warm_start=False),
+                  n_jobs=-1, passthrough=True, verbose=0), plot=feature, save=True, verbose=False, system=False)
+2020-09-04 11:52:32,160:INFO:Checking exceptions
+2020-09-04 11:52:32,160:INFO:SubProcess plot_model() end ==================================
+2020-09-04 11:52:32,207:INFO:create_model_container: 11
+2020-09-04 11:52:32,207:INFO:master_model_container: 11
+2020-09-04 11:52:32,207:INFO:display_container: 12
+2020-09-04 11:52:32,210:INFO:StackingRegressor(cv=5,
+                  estimators=[('ElasticNet_0',
+                               ElasticNet(alpha=0.8300000000000001, copy_X=True,
+                                          fit_intercept=True, l1_ratio=0.26,
+                                          max_iter=1000, normalize=False,
+                                          positive=False, precompute=False,
+                                          random_state=786, selection='cyclic',
+                                          tol=0.0001, warm_start=False)),
+                              ('OrthogonalMatchingPursuit_1',
+                               OrthogonalMatchingPursuit(fit_intercept=True,
+                                                         n_nonzero_coef...
+                                             compute_score=False, copy_X=True,
+                                             fit_intercept=True, lambda_1=0.3,
+                                             lambda_2=0.3, lambda_init=None,
+                                             n_iter=300, normalize=False,
+                                             tol=0.001, verbose=False))],
+                  final_estimator=Lasso(alpha=0.777, copy_X=True,
+                                        fit_intercept=True, max_iter=1000,
+                                        normalize=False, positive=False,
+                                        precompute=False, random_state=786,
+                                        selection='cyclic', tol=0.0001,
+                                        warm_start=False),
+                  n_jobs=-1, passthrough=True, verbose=0)
+2020-09-04 11:52:32,210:INFO:stack_models() succesfully completed......................................
+2020-09-04 11:52:32,237:INFO:Initializing plot_model()
+2020-09-04 11:52:32,241:INFO:plot_model(estimator=VotingRegressor(estimators=[('Lasso_0',
+                             Lasso(alpha=0.777, copy_X=True, fit_intercept=True,
+                                   max_iter=1000, normalize=False,
+                                   positive=False, precompute=False,
+                                   random_state=786, selection='cyclic',
+                                   tol=0.0001, warm_start=False)),
+                            ('Elastic Net_1',
+                             ElasticNet(alpha=0.8300000000000001, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.26,
+                                        max_iter=1000, normalize=False,
+                                        positiv...
+                                                       tol=None)),
+                            ('CatBoost Regressor_3',
+                             <catboost.core.CatBoostRegressor object at 0x7f9aff702d60>),
+                            ('Bayesian Ridge_4',
+                             BayesianRidge(alpha_1=0.001, alpha_2=0.0001,
+                                           alpha_init=None, compute_score=False,
+                                           copy_X=True, fit_intercept=True,
+                                           lambda_1=0.3, lambda_2=0.3,
+                                           lambda_init=None, n_iter=300,
+                                           normalize=False, tol=0.001,
+                                           verbose=False))],
+                n_jobs=-1, verbose=False, weights=None), plot=cooks, save=True, verbose=False, system=True)
+2020-09-04 11:52:32,241:INFO:Checking exceptions
+2020-09-04 11:52:32,241:INFO:Preloading libraries
+2020-09-04 11:52:32,241:INFO:Preparing display monitor
+2020-09-04 11:52:32,244:INFO:Importing libraries
+2020-09-04 11:52:32,245:INFO:plot type: cooks
+2020-09-04 11:52:32,246:INFO:Fitting Model
+2020-09-04 11:52:32,301:INFO:Saving 'Cooks Distance.png' in current active directory
+2020-09-04 11:52:32,574:INFO:Visual Rendered Successfully
+2020-09-04 11:52:32,574:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:52:32,583:INFO:Initializing plot_model()
+2020-09-04 11:52:32,588:INFO:plot_model(estimator=VotingRegressor(estimators=[('Lasso_0',
+                             Lasso(alpha=0.777, copy_X=True, fit_intercept=True,
+                                   max_iter=1000, normalize=False,
+                                   positive=False, precompute=False,
+                                   random_state=786, selection='cyclic',
+                                   tol=0.0001, warm_start=False)),
+                            ('Elastic Net_1',
+                             ElasticNet(alpha=0.8300000000000001, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.26,
+                                        max_iter=1000, normalize=False,
+                                        positiv...
+                                                       tol=None)),
+                            ('CatBoost Regressor_3',
+                             <catboost.core.CatBoostRegressor object at 0x7f9aff702d60>),
+                            ('Bayesian Ridge_4',
+                             BayesianRidge(alpha_1=0.001, alpha_2=0.0001,
+                                           alpha_init=None, compute_score=False,
+                                           copy_X=True, fit_intercept=True,
+                                           lambda_1=0.3, lambda_2=0.3,
+                                           lambda_init=None, n_iter=300,
+                                           normalize=False, tol=0.001,
+                                           verbose=False))],
+                n_jobs=-1, verbose=False, weights=None), plot=manifold, save=True, verbose=False, system=True)
+2020-09-04 11:52:32,588:INFO:Checking exceptions
+2020-09-04 11:52:32,588:INFO:Preloading libraries
+2020-09-04 11:52:32,588:INFO:Preparing display monitor
+2020-09-04 11:52:32,591:INFO:Importing libraries
+2020-09-04 11:52:32,592:INFO:plot type: manifold
+2020-09-04 11:52:32,618:INFO:Fitting Model
+2020-09-04 11:52:33,019:INFO:Saving 'Manifold.png' in current active directory
+2020-09-04 11:52:33,413:INFO:Visual Rendered Successfully
+2020-09-04 11:52:33,413:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:52:39,563:INFO:Initializing plot_model()
+2020-09-04 11:52:39,566:INFO:plot_model(estimator=VotingRegressor(estimators=[('Lasso_0',
+                             Lasso(alpha=0.777, copy_X=True, fit_intercept=True,
+                                   max_iter=1000, normalize=False,
+                                   positive=False, precompute=False,
+                                   random_state=786, selection='cyclic',
+                                   tol=0.0001, warm_start=False)),
+                            ('Elastic Net_1',
+                             ElasticNet(alpha=0.8300000000000001, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.26,
+                                        max_iter=1000, normalize=False,
+                                        positiv...
+                                                       tol=None)),
+                            ('CatBoost Regressor_3',
+                             <catboost.core.CatBoostRegressor object at 0x7f9aff702d60>),
+                            ('Bayesian Ridge_4',
+                             BayesianRidge(alpha_1=0.001, alpha_2=0.0001,
+                                           alpha_init=None, compute_score=False,
+                                           copy_X=True, fit_intercept=True,
+                                           lambda_1=0.3, lambda_2=0.3,
+                                           lambda_init=None, n_iter=300,
+                                           normalize=False, tol=0.001,
+                                           verbose=False))],
+                n_jobs=-1, verbose=False, weights=None), plot=residuals, save=True, verbose=False, system=True)
+2020-09-04 11:52:39,566:INFO:Checking exceptions
+2020-09-04 11:52:39,566:INFO:Preloading libraries
+2020-09-04 11:52:39,566:INFO:Preparing display monitor
+2020-09-04 11:52:39,570:INFO:Importing libraries
+2020-09-04 11:52:39,570:INFO:plot type: residuals
+2020-09-04 11:52:39,581:INFO:Fitting Model
+2020-09-04 11:52:39,621:INFO:Scoring test/hold-out set
+2020-09-04 11:52:41,096:INFO:Saving 'Residuals.png' in current active directory
+2020-09-04 11:52:41,534:INFO:Visual Rendered Successfully
+2020-09-04 11:52:41,535:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:52:41,544:INFO:Initializing plot_model()
+2020-09-04 11:52:41,548:INFO:plot_model(estimator=StackingRegressor(cv=5,
+                  estimators=[('ElasticNet_0',
+                               ElasticNet(alpha=0.8300000000000001, copy_X=True,
+                                          fit_intercept=True, l1_ratio=0.26,
+                                          max_iter=1000, normalize=False,
+                                          positive=False, precompute=False,
+                                          random_state=786, selection='cyclic',
+                                          tol=0.0001, warm_start=False)),
+                              ('OrthogonalMatchingPursuit_1',
+                               OrthogonalMatchingPursuit(fit_intercept=True,
+                                                         n_nonzero_coef...
+                                             compute_score=False, copy_X=True,
+                                             fit_intercept=True, lambda_1=0.3,
+                                             lambda_2=0.3, lambda_init=None,
+                                             n_iter=300, normalize=False,
+                                             tol=0.001, verbose=False))],
+                  final_estimator=Lasso(alpha=0.777, copy_X=True,
+                                        fit_intercept=True, max_iter=1000,
+                                        normalize=False, positive=False,
+                                        precompute=False, random_state=786,
+                                        selection='cyclic', tol=0.0001,
+                                        warm_start=False),
+                  n_jobs=-1, passthrough=True, verbose=0), plot=residuals, save=True, verbose=False, system=True)
+2020-09-04 11:52:41,548:INFO:Checking exceptions
+2020-09-04 11:52:41,548:INFO:Preloading libraries
+2020-09-04 11:52:41,548:INFO:Preparing display monitor
+2020-09-04 11:52:41,552:INFO:Importing libraries
+2020-09-04 11:52:41,553:INFO:plot type: residuals
+2020-09-04 11:52:41,566:INFO:Fitting Model
+2020-09-04 11:52:41,606:INFO:Scoring test/hold-out set
+2020-09-04 11:52:41,658:INFO:Saving 'Residuals.png' in current active directory
+2020-09-04 11:52:42,113:INFO:Visual Rendered Successfully
+2020-09-04 11:52:42,114:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:52:42,124:INFO:Initializing plot_model()
+2020-09-04 11:52:42,127:INFO:plot_model(estimator=VotingRegressor(estimators=[('Lasso_0',
+                             Lasso(alpha=0.777, copy_X=True, fit_intercept=True,
+                                   max_iter=1000, normalize=False,
+                                   positive=False, precompute=False,
+                                   random_state=786, selection='cyclic',
+                                   tol=0.0001, warm_start=False)),
+                            ('Elastic Net_1',
+                             ElasticNet(alpha=0.8300000000000001, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.26,
+                                        max_iter=1000, normalize=False,
+                                        positiv...
+                                                       tol=None)),
+                            ('CatBoost Regressor_3',
+                             <catboost.core.CatBoostRegressor object at 0x7f9aff702d60>),
+                            ('Bayesian Ridge_4',
+                             BayesianRidge(alpha_1=0.001, alpha_2=0.0001,
+                                           alpha_init=None, compute_score=False,
+                                           copy_X=True, fit_intercept=True,
+                                           lambda_1=0.3, lambda_2=0.3,
+                                           lambda_init=None, n_iter=300,
+                                           normalize=False, tol=0.001,
+                                           verbose=False))],
+                n_jobs=-1, verbose=False, weights=None), plot=error, save=True, verbose=False, system=True)
+2020-09-04 11:52:42,127:INFO:Checking exceptions
+2020-09-04 11:52:42,127:INFO:Preloading libraries
+2020-09-04 11:52:42,127:INFO:Preparing display monitor
+2020-09-04 11:52:42,132:INFO:Importing libraries
+2020-09-04 11:52:42,132:INFO:plot type: error
+2020-09-04 11:52:42,134:INFO:Fitting Model
+2020-09-04 11:52:42,135:INFO:Scoring test/hold-out set
+2020-09-04 11:52:42,152:INFO:Saving 'Prediction Error.png' in current active directory
+2020-09-04 11:52:42,985:INFO:Visual Rendered Successfully
+2020-09-04 11:52:42,986:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:52:42,996:INFO:Initializing plot_model()
+2020-09-04 11:52:43,000:INFO:plot_model(estimator=StackingRegressor(cv=5,
+                  estimators=[('ElasticNet_0',
+                               ElasticNet(alpha=0.8300000000000001, copy_X=True,
+                                          fit_intercept=True, l1_ratio=0.26,
+                                          max_iter=1000, normalize=False,
+                                          positive=False, precompute=False,
+                                          random_state=786, selection='cyclic',
+                                          tol=0.0001, warm_start=False)),
+                              ('OrthogonalMatchingPursuit_1',
+                               OrthogonalMatchingPursuit(fit_intercept=True,
+                                                         n_nonzero_coef...
+                                             compute_score=False, copy_X=True,
+                                             fit_intercept=True, lambda_1=0.3,
+                                             lambda_2=0.3, lambda_init=None,
+                                             n_iter=300, normalize=False,
+                                             tol=0.001, verbose=False))],
+                  final_estimator=Lasso(alpha=0.777, copy_X=True,
+                                        fit_intercept=True, max_iter=1000,
+                                        normalize=False, positive=False,
+                                        precompute=False, random_state=786,
+                                        selection='cyclic', tol=0.0001,
+                                        warm_start=False),
+                  n_jobs=-1, passthrough=True, verbose=0), plot=error, save=True, verbose=False, system=True)
+2020-09-04 11:52:43,000:INFO:Checking exceptions
+2020-09-04 11:52:43,000:INFO:Preloading libraries
+2020-09-04 11:52:43,000:INFO:Preparing display monitor
+2020-09-04 11:52:43,006:INFO:Importing libraries
+2020-09-04 11:52:43,007:INFO:plot type: error
+2020-09-04 11:52:43,010:INFO:Fitting Model
+2020-09-04 11:52:43,011:INFO:Scoring test/hold-out set
+2020-09-04 11:52:43,031:INFO:Saving 'Prediction Error.png' in current active directory
+2020-09-04 11:52:45,989:INFO:Visual Rendered Successfully
+2020-09-04 11:52:45,989:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:52:46,001:INFO:Initializing plot_model()
+2020-09-04 11:52:46,006:INFO:plot_model(estimator=VotingRegressor(estimators=[('Lasso_0',
+                             Lasso(alpha=0.777, copy_X=True, fit_intercept=True,
+                                   max_iter=1000, normalize=False,
+                                   positive=False, precompute=False,
+                                   random_state=786, selection='cyclic',
+                                   tol=0.0001, warm_start=False)),
+                            ('Elastic Net_1',
+                             ElasticNet(alpha=0.8300000000000001, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.26,
+                                        max_iter=1000, normalize=False,
+                                        positiv...
+                                                       tol=None)),
+                            ('CatBoost Regressor_3',
+                             <catboost.core.CatBoostRegressor object at 0x7f9aff702d60>),
+                            ('Bayesian Ridge_4',
+                             BayesianRidge(alpha_1=0.001, alpha_2=0.0001,
+                                           alpha_init=None, compute_score=False,
+                                           copy_X=True, fit_intercept=True,
+                                           lambda_1=0.3, lambda_2=0.3,
+                                           lambda_init=None, n_iter=300,
+                                           normalize=False, tol=0.001,
+                                           verbose=False))],
+                n_jobs=-1, verbose=False, weights=None), plot=learning, save=True, verbose=False, system=True)
+2020-09-04 11:52:46,006:INFO:Checking exceptions
+2020-09-04 11:52:46,006:INFO:Preloading libraries
+2020-09-04 11:52:46,007:INFO:Preparing display monitor
+2020-09-04 11:52:46,012:INFO:Importing libraries
+2020-09-04 11:52:46,012:INFO:plot type: learning
+2020-09-04 11:52:46,016:INFO:Fitting Model
+2020-09-04 11:54:15,819:INFO:Saving 'Learning Curve.png' in current active directory
+2020-09-04 11:54:16,668:INFO:Visual Rendered Successfully
+2020-09-04 11:54:16,668:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:54:17,089:INFO:Initializing plot_model()
+2020-09-04 11:54:17,095:INFO:plot_model(estimator=StackingRegressor(cv=5,
+                  estimators=[('ElasticNet_0',
+                               ElasticNet(alpha=0.8300000000000001, copy_X=True,
+                                          fit_intercept=True, l1_ratio=0.26,
+                                          max_iter=1000, normalize=False,
+                                          positive=False, precompute=False,
+                                          random_state=786, selection='cyclic',
+                                          tol=0.0001, warm_start=False)),
+                              ('OrthogonalMatchingPursuit_1',
+                               OrthogonalMatchingPursuit(fit_intercept=True,
+                                                         n_nonzero_coef...
+                                             compute_score=False, copy_X=True,
+                                             fit_intercept=True, lambda_1=0.3,
+                                             lambda_2=0.3, lambda_init=None,
+                                             n_iter=300, normalize=False,
+                                             tol=0.001, verbose=False))],
+                  final_estimator=Lasso(alpha=0.777, copy_X=True,
+                                        fit_intercept=True, max_iter=1000,
+                                        normalize=False, positive=False,
+                                        precompute=False, random_state=786,
+                                        selection='cyclic', tol=0.0001,
+                                        warm_start=False),
+                  n_jobs=-1, passthrough=True, verbose=0), plot=learning, save=True, verbose=False, system=True)
+2020-09-04 11:54:17,095:INFO:Checking exceptions
+2020-09-04 11:54:17,095:INFO:Preloading libraries
+2020-09-04 11:54:17,095:INFO:Preparing display monitor
+2020-09-04 11:54:17,101:INFO:Importing libraries
+2020-09-04 11:54:17,102:INFO:plot type: learning
+2020-09-04 11:54:17,105:INFO:Fitting Model
+2020-09-04 11:59:41,877:INFO:Saving 'Learning Curve.png' in current active directory
+2020-09-04 11:59:42,893:INFO:Visual Rendered Successfully
+2020-09-04 11:59:42,893:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:59:46,935:INFO:Initializing finalize_model()
+2020-09-04 11:59:46,940:INFO:finalize_model(estimator=VotingRegressor(estimators=[('Lasso_0',
+                             Lasso(alpha=0.777, copy_X=True, fit_intercept=True,
+                                   max_iter=1000, normalize=False,
+                                   positive=False, precompute=False,
+                                   random_state=786, selection='cyclic',
+                                   tol=0.0001, warm_start=False)),
+                            ('Elastic Net_1',
+                             ElasticNet(alpha=0.8300000000000001, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.26,
+                                        max_iter=1000, normalize=False,
+                                        positiv...
+                                                       tol=None)),
+                            ('CatBoost Regressor_3',
+                             <catboost.core.CatBoostRegressor object at 0x7f9aff702d60>),
+                            ('Bayesian Ridge_4',
+                             BayesianRidge(alpha_1=0.001, alpha_2=0.0001,
+                                           alpha_init=None, compute_score=False,
+                                           copy_X=True, fit_intercept=True,
+                                           lambda_1=0.3, lambda_2=0.3,
+                                           lambda_init=None, n_iter=300,
+                                           normalize=False, tol=0.001,
+                                           verbose=False))],
+                n_jobs=-1, verbose=False, weights=None))
+2020-09-04 11:59:46,940:INFO:Importing libraries
+2020-09-04 11:59:46,940:INFO:Getting model name
+2020-09-04 11:59:46,946:INFO:Finalizing Voting Regressor
+2020-09-04 11:59:47,799:INFO:Initializing create_model()
+2020-09-04 11:59:47,802:INFO:create_model(estimator=VotingRegressor(estimators=[('Lasso_0',
+                             Lasso(alpha=0.777, copy_X=True, fit_intercept=True,
+                                   max_iter=1000, normalize=False,
+                                   positive=False, precompute=False,
+                                   random_state=786, selection='cyclic',
+                                   tol=0.0001, warm_start=False)),
+                            ('Elastic Net_1',
+                             ElasticNet(alpha=0.8300000000000001, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.26,
+                                        max_iter=1000, normalize=False,
+                                        positiv...
+                                                       tol=None)),
+                            ('CatBoost Regressor_3',
+                             <catboost.core.CatBoostRegressor object at 0x7f9aff702d60>),
+                            ('Bayesian Ridge_4',
+                             BayesianRidge(alpha_1=0.001, alpha_2=0.0001,
+                                           alpha_init=None, compute_score=False,
+                                           copy_X=True, fit_intercept=True,
+                                           lambda_1=0.3, lambda_2=0.3,
+                                           lambda_init=None, n_iter=300,
+                                           normalize=False, tol=0.001,
+                                           verbose=False))],
+                n_jobs=-1, verbose=False, weights=None), ensemble=False, method=None, fold=10, round=4, cross_validation=True, verbose=False, system=False)
+2020-09-04 11:59:47,802:INFO:Checking exceptions
+2020-09-04 11:59:47,803:INFO:Preloading libraries
+2020-09-04 11:59:47,804:INFO:Preparing display monitor
+2020-09-04 11:59:47,819:INFO:Copying training dataset
+2020-09-04 11:59:47,820:INFO:Importing libraries
+2020-09-04 11:59:47,820:INFO:Defining folds
+2020-09-04 11:59:47,820:INFO:Declaring metric variables
+2020-09-04 11:59:47,822:INFO:Declaring custom model
+2020-09-04 11:59:47,825:INFO:VotingRegressor Imported succesfully
+2020-09-04 11:59:47,826:INFO:Checking ensemble method
+2020-09-04 11:59:47,828:INFO:Initializing Fold 1
+2020-09-04 11:59:47,830:INFO:Fitting Model
+2020-09-04 11:59:48,546:INFO:Evaluating Metrics
+2020-09-04 11:59:48,554:INFO:No inverse transformation
+2020-09-04 11:59:48,554:INFO:Compiling Metrics
+2020-09-04 11:59:48,560:INFO:Initializing Fold 2
+2020-09-04 11:59:48,561:INFO:Fitting Model
+2020-09-04 11:59:49,140:INFO:Evaluating Metrics
+2020-09-04 11:59:49,147:INFO:No inverse transformation
+2020-09-04 11:59:49,147:INFO:Compiling Metrics
+2020-09-04 11:59:49,151:INFO:Initializing Fold 3
+2020-09-04 11:59:49,152:INFO:Fitting Model
+2020-09-04 11:59:49,712:INFO:Evaluating Metrics
+2020-09-04 11:59:49,719:INFO:No inverse transformation
+2020-09-04 11:59:49,719:INFO:Compiling Metrics
+2020-09-04 11:59:49,723:INFO:Initializing Fold 4
+2020-09-04 11:59:49,724:INFO:Fitting Model
+2020-09-04 11:59:50,281:INFO:Evaluating Metrics
+2020-09-04 11:59:50,289:INFO:No inverse transformation
+2020-09-04 11:59:50,289:INFO:Compiling Metrics
+2020-09-04 11:59:50,294:INFO:Initializing Fold 5
+2020-09-04 11:59:50,294:INFO:Fitting Model
+2020-09-04 11:59:51,095:INFO:Evaluating Metrics
+2020-09-04 11:59:51,102:INFO:No inverse transformation
+2020-09-04 11:59:51,102:INFO:Compiling Metrics
+2020-09-04 11:59:51,106:INFO:Initializing Fold 6
+2020-09-04 11:59:51,107:INFO:Fitting Model
+2020-09-04 11:59:51,820:INFO:Evaluating Metrics
+2020-09-04 11:59:51,827:INFO:No inverse transformation
+2020-09-04 11:59:51,827:INFO:Compiling Metrics
+2020-09-04 11:59:51,832:INFO:Initializing Fold 7
+2020-09-04 11:59:51,832:INFO:Fitting Model
+2020-09-04 11:59:52,545:INFO:Evaluating Metrics
+2020-09-04 11:59:52,553:INFO:No inverse transformation
+2020-09-04 11:59:52,553:INFO:Compiling Metrics
+2020-09-04 11:59:52,558:INFO:Initializing Fold 8
+2020-09-04 11:59:52,559:INFO:Fitting Model
+2020-09-04 11:59:53,229:INFO:Evaluating Metrics
+2020-09-04 11:59:53,237:INFO:No inverse transformation
+2020-09-04 11:59:53,237:INFO:Compiling Metrics
+2020-09-04 11:59:53,243:INFO:Initializing Fold 9
+2020-09-04 11:59:53,244:INFO:Fitting Model
+2020-09-04 11:59:53,887:INFO:Evaluating Metrics
+2020-09-04 11:59:53,895:INFO:No inverse transformation
+2020-09-04 11:59:53,895:INFO:Compiling Metrics
+2020-09-04 11:59:53,900:INFO:Initializing Fold 10
+2020-09-04 11:59:53,900:INFO:Fitting Model
+2020-09-04 11:59:54,501:INFO:Evaluating Metrics
+2020-09-04 11:59:54,508:INFO:No inverse transformation
+2020-09-04 11:59:54,508:INFO:Compiling Metrics
+2020-09-04 11:59:54,513:INFO:Calculating mean and std
+2020-09-04 11:59:54,514:INFO:Creating metrics dataframe
+2020-09-04 11:59:54,517:INFO:Finalizing model
+2020-09-04 11:59:55,121:INFO:Uploading results into container
+2020-09-04 11:59:55,121:INFO:Uploading model into container
+2020-09-04 11:59:55,121:INFO:create_model_container: 12
+2020-09-04 11:59:55,121:INFO:master_model_container: 12
+2020-09-04 11:59:55,121:INFO:display_container: 15
+2020-09-04 11:59:55,125:INFO:VotingRegressor(estimators=[('Lasso_0',
+                             Lasso(alpha=0.777, copy_X=True, fit_intercept=True,
+                                   max_iter=1000, normalize=False,
+                                   positive=False, precompute=False,
+                                   random_state=786, selection='cyclic',
+                                   tol=0.0001, warm_start=False)),
+                            ('Elastic Net_1',
+                             ElasticNet(alpha=0.8300000000000001, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.26,
+                                        max_iter=1000, normalize=False,
+                                        positiv...
+                                                       tol=None)),
+                            ('CatBoost Regressor_3',
+                             <catboost.core.CatBoostRegressor object at 0x7f9aff702d60>),
+                            ('Bayesian Ridge_4',
+                             BayesianRidge(alpha_1=0.001, alpha_2=0.0001,
+                                           alpha_init=None, compute_score=False,
+                                           copy_X=True, fit_intercept=True,
+                                           lambda_1=0.3, lambda_2=0.3,
+                                           lambda_init=None, n_iter=300,
+                                           normalize=False, tol=0.001,
+                                           verbose=False))],
+                n_jobs=-1, verbose=False, weights=None)
+2020-09-04 11:59:55,126:INFO:create_model() succesfully completed......................................
+2020-09-04 11:59:55,126:INFO:Creating MLFlow logs
+2020-09-04 11:59:55,163:INFO:SubProcess plot_model() called ==================================
+2020-09-04 11:59:55,164:INFO:Initializing plot_model()
+2020-09-04 11:59:55,168:INFO:plot_model(estimator=VotingRegressor(estimators=[('Lasso_0',
+                             Lasso(alpha=0.777, copy_X=True, fit_intercept=True,
+                                   max_iter=1000, normalize=False,
+                                   positive=False, precompute=False,
+                                   random_state=786, selection='cyclic',
+                                   tol=0.0001, warm_start=False)),
+                            ('Elastic Net_1',
+                             ElasticNet(alpha=0.8300000000000001, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.26,
+                                        max_iter=1000, normalize=False,
+                                        positiv...
+                                                       tol=None)),
+                            ('CatBoost Regressor_3',
+                             <catboost.core.CatBoostRegressor object at 0x7f9b02cd9820>),
+                            ('Bayesian Ridge_4',
+                             BayesianRidge(alpha_1=0.001, alpha_2=0.0001,
+                                           alpha_init=None, compute_score=False,
+                                           copy_X=True, fit_intercept=True,
+                                           lambda_1=0.3, lambda_2=0.3,
+                                           lambda_init=None, n_iter=300,
+                                           normalize=False, tol=0.001,
+                                           verbose=False))],
+                n_jobs=-1, verbose=False, weights=None), plot=residuals, save=True, verbose=False, system=False)
+2020-09-04 11:59:55,168:INFO:Checking exceptions
+2020-09-04 11:59:55,168:INFO:Preloading libraries
+2020-09-04 11:59:55,168:INFO:Preparing display monitor
+2020-09-04 11:59:55,172:INFO:Importing libraries
+2020-09-04 11:59:55,173:INFO:plot type: residuals
+2020-09-04 11:59:55,198:INFO:Fitting Model
+2020-09-04 11:59:55,246:INFO:Scoring test/hold-out set
+2020-09-04 11:59:55,290:INFO:Saving 'Residuals.png' in current active directory
+2020-09-04 11:59:55,490:INFO:Visual Rendered Successfully
+2020-09-04 11:59:55,490:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:59:55,494:INFO:Initializing plot_model()
+2020-09-04 11:59:55,497:INFO:plot_model(estimator=VotingRegressor(estimators=[('Lasso_0',
+                             Lasso(alpha=0.777, copy_X=True, fit_intercept=True,
+                                   max_iter=1000, normalize=False,
+                                   positive=False, precompute=False,
+                                   random_state=786, selection='cyclic',
+                                   tol=0.0001, warm_start=False)),
+                            ('Elastic Net_1',
+                             ElasticNet(alpha=0.8300000000000001, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.26,
+                                        max_iter=1000, normalize=False,
+                                        positiv...
+                                                       tol=None)),
+                            ('CatBoost Regressor_3',
+                             <catboost.core.CatBoostRegressor object at 0x7f9b02cd9820>),
+                            ('Bayesian Ridge_4',
+                             BayesianRidge(alpha_1=0.001, alpha_2=0.0001,
+                                           alpha_init=None, compute_score=False,
+                                           copy_X=True, fit_intercept=True,
+                                           lambda_1=0.3, lambda_2=0.3,
+                                           lambda_init=None, n_iter=300,
+                                           normalize=False, tol=0.001,
+                                           verbose=False))],
+                n_jobs=-1, verbose=False, weights=None), plot=error, save=True, verbose=False, system=False)
+2020-09-04 11:59:55,497:INFO:Checking exceptions
+2020-09-04 11:59:55,497:INFO:Preloading libraries
+2020-09-04 11:59:55,497:INFO:Preparing display monitor
+2020-09-04 11:59:55,501:INFO:Importing libraries
+2020-09-04 11:59:55,501:INFO:plot type: error
+2020-09-04 11:59:55,504:INFO:Fitting Model
+2020-09-04 11:59:55,504:INFO:Scoring test/hold-out set
+2020-09-04 11:59:55,540:INFO:Saving 'Prediction Error.png' in current active directory
+2020-09-04 11:59:55,649:INFO:Visual Rendered Successfully
+2020-09-04 11:59:55,649:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:59:55,652:INFO:Initializing plot_model()
+2020-09-04 11:59:55,656:INFO:plot_model(estimator=VotingRegressor(estimators=[('Lasso_0',
+                             Lasso(alpha=0.777, copy_X=True, fit_intercept=True,
+                                   max_iter=1000, normalize=False,
+                                   positive=False, precompute=False,
+                                   random_state=786, selection='cyclic',
+                                   tol=0.0001, warm_start=False)),
+                            ('Elastic Net_1',
+                             ElasticNet(alpha=0.8300000000000001, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.26,
+                                        max_iter=1000, normalize=False,
+                                        positiv...
+                                                       tol=None)),
+                            ('CatBoost Regressor_3',
+                             <catboost.core.CatBoostRegressor object at 0x7f9b02cd9820>),
+                            ('Bayesian Ridge_4',
+                             BayesianRidge(alpha_1=0.001, alpha_2=0.0001,
+                                           alpha_init=None, compute_score=False,
+                                           copy_X=True, fit_intercept=True,
+                                           lambda_1=0.3, lambda_2=0.3,
+                                           lambda_init=None, n_iter=300,
+                                           normalize=False, tol=0.001,
+                                           verbose=False))],
+                n_jobs=-1, verbose=False, weights=None), plot=feature, save=True, verbose=False, system=False)
+2020-09-04 11:59:55,656:INFO:Checking exceptions
+2020-09-04 11:59:55,656:INFO:SubProcess plot_model() end ==================================
+2020-09-04 11:59:55,705:INFO:create_model_container: 12
+2020-09-04 11:59:55,705:INFO:master_model_container: 12
+2020-09-04 11:59:55,705:INFO:display_container: 15
+2020-09-04 11:59:55,709:INFO:VotingRegressor(estimators=[('Lasso_0',
+                             Lasso(alpha=0.777, copy_X=True, fit_intercept=True,
+                                   max_iter=1000, normalize=False,
+                                   positive=False, precompute=False,
+                                   random_state=786, selection='cyclic',
+                                   tol=0.0001, warm_start=False)),
+                            ('Elastic Net_1',
+                             ElasticNet(alpha=0.8300000000000001, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.26,
+                                        max_iter=1000, normalize=False,
+                                        positiv...
+                                                       tol=None)),
+                            ('CatBoost Regressor_3',
+                             <catboost.core.CatBoostRegressor object at 0x7f9b02cd9820>),
+                            ('Bayesian Ridge_4',
+                             BayesianRidge(alpha_1=0.001, alpha_2=0.0001,
+                                           alpha_init=None, compute_score=False,
+                                           copy_X=True, fit_intercept=True,
+                                           lambda_1=0.3, lambda_2=0.3,
+                                           lambda_init=None, n_iter=300,
+                                           normalize=False, tol=0.001,
+                                           verbose=False))],
+                n_jobs=-1, verbose=False, weights=None)
+2020-09-04 11:59:55,709:INFO:finalize_model() succesfully completed......................................
+2020-09-04 11:59:55,935:INFO:Initializing plot_model()
+2020-09-04 11:59:55,939:INFO:plot_model(estimator=VotingRegressor(estimators=[('Lasso_0',
+                             Lasso(alpha=0.777, copy_X=True, fit_intercept=True,
+                                   max_iter=1000, normalize=False,
+                                   positive=False, precompute=False,
+                                   random_state=786, selection='cyclic',
+                                   tol=0.0001, warm_start=False)),
+                            ('Elastic Net_1',
+                             ElasticNet(alpha=0.8300000000000001, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.26,
+                                        max_iter=1000, normalize=False,
+                                        positiv...
+                                                       tol=None)),
+                            ('CatBoost Regressor_3',
+                             <catboost.core.CatBoostRegressor object at 0x7f9b02cd9820>),
+                            ('Bayesian Ridge_4',
+                             BayesianRidge(alpha_1=0.001, alpha_2=0.0001,
+                                           alpha_init=None, compute_score=False,
+                                           copy_X=True, fit_intercept=True,
+                                           lambda_1=0.3, lambda_2=0.3,
+                                           lambda_init=None, n_iter=300,
+                                           normalize=False, tol=0.001,
+                                           verbose=False))],
+                n_jobs=-1, verbose=False, weights=None), plot=residuals, save=True, verbose=False, system=True)
+2020-09-04 11:59:55,939:INFO:Checking exceptions
+2020-09-04 11:59:55,939:INFO:Preloading libraries
+2020-09-04 11:59:55,939:INFO:Preparing display monitor
+2020-09-04 11:59:55,943:INFO:Importing libraries
+2020-09-04 11:59:55,944:INFO:plot type: residuals
+2020-09-04 11:59:55,958:INFO:Fitting Model
+2020-09-04 11:59:55,995:INFO:Scoring test/hold-out set
+2020-09-04 11:59:56,030:INFO:Saving 'Residuals.png' in current active directory
+2020-09-04 11:59:56,667:INFO:Visual Rendered Successfully
+2020-09-04 11:59:56,667:INFO:plot_model() succesfully completed......................................
+2020-09-04 11:59:56,677:INFO:Initializing plot_model()
+2020-09-04 11:59:56,680:INFO:plot_model(estimator=VotingRegressor(estimators=[('Lasso_0',
+                             Lasso(alpha=0.777, copy_X=True, fit_intercept=True,
+                                   max_iter=1000, normalize=False,
+                                   positive=False, precompute=False,
+                                   random_state=786, selection='cyclic',
+                                   tol=0.0001, warm_start=False)),
+                            ('Elastic Net_1',
+                             ElasticNet(alpha=0.8300000000000001, copy_X=True,
+                                        fit_intercept=True, l1_ratio=0.26,
+                                        max_iter=1000, normalize=False,
+                                        positiv...
+                                                       tol=None)),
+                            ('CatBoost Regressor_3',
+                             <catboost.core.CatBoostRegressor object at 0x7f9b02cd9820>),
+                            ('Bayesian Ridge_4',
+                             BayesianRidge(alpha_1=0.001, alpha_2=0.0001,
+                                           alpha_init=None, compute_score=False,
+                                           copy_X=True, fit_intercept=True,
+                                           lambda_1=0.3, lambda_2=0.3,
+                                           lambda_init=None, n_iter=300,
+                                           normalize=False, tol=0.001,
+                                           verbose=False))],
+                n_jobs=-1, verbose=False, weights=None), plot=error, save=True, verbose=False, system=True)
+2020-09-04 11:59:56,681:INFO:Checking exceptions
+2020-09-04 11:59:56,681:INFO:Preloading libraries
+2020-09-04 11:59:56,681:INFO:Preparing display monitor
+2020-09-04 11:59:56,684:INFO:Importing libraries
+2020-09-04 11:59:56,685:INFO:plot type: error
+2020-09-04 11:59:56,686:INFO:Fitting Model
+2020-09-04 11:59:56,687:INFO:Scoring test/hold-out set
+2020-09-04 11:59:56,706:INFO:Saving 'Prediction Error.png' in current active directory
+2020-09-04 11:59:56,942:INFO:Visual Rendered Successfully
+2020-09-04 11:59:56,942:INFO:plot_model() succesfully completed......................................
