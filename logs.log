@@ -5576,3 +5576,176 @@
 2020-10-13 12:59:48,720:INFO:Saving 'Prediction Error.png' in current active directory
 2020-10-13 12:59:48,859:INFO:Visual Rendered Successfully
 2020-10-13 12:59:48,972:INFO:plot_model() succesfully completed......................................
+2020-10-13 16:08:50,910:INFO:PyCaret Supervised Module
+2020-10-13 16:08:50,911:INFO:ML Usecase: regression
+2020-10-13 16:08:50,912:INFO:version 2.2
+2020-10-13 16:08:50,912:INFO:Initializing setup()
+2020-10-13 16:08:50,912:INFO:setup(target=Actual Value, ml_usecase=regression, available_plots={'parameter': 'Hyperparameters', 'residuals': 'Residuals', 'error': 'Prediction Error', 'cooks': 'Cooks Distance', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'vc': 'Validation Curve', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'tree': 'Decision Tree'}, train_size=0.75, test_data=None, preprocess=True, imputation_type=simple, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=('Sunday', 'Monday', 'Saturday', 'Thursday', 'Tuesday', 'Wednesday', 'Friday', 'Total number of calls', 'CSat', 'total coaching', 'total coaching improved', 'FCR Week before'), numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=['Agent_ID'], normalize=False, normalize_method=zscore, transformation=True, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=True, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=True, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=True, outliers_threshold=0.05, remove_multicollinearity=True, multicollinearity_threshold=0.9, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=True, polynomial_degree=2, trigonometry_features=True, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=True, feature_selection_threshold=0.4, feature_selection_method=classic, feature_interaction=True, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=False, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=False, fold_strategy=kfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=786, log_experiment=True, experiment_name=reg_fcr_experiments, log_plots=['residuals', 'error', 'feature'], log_profile=False, log_data=False, silent=False, verbose=True, profile=False, display=None)
+2020-10-13 16:08:50,912:INFO:Checking environment
+2020-10-13 16:08:50,912:INFO:python_version: 3.8.3
+2020-10-13 16:08:50,912:INFO:python_build: ('default', 'Jul  2 2020 11:26:31')
+2020-10-13 16:08:50,912:INFO:machine: x86_64
+2020-10-13 16:08:50,937:INFO:platform: macOS-10.15.7-x86_64-i386-64bit
+2020-10-13 16:08:50,937:INFO:Memory: svmem(total=8589934592, available=925995008, percent=89.2, used=3256365056, free=16236544, active=914169856, inactive=861863936, wired=2342195200)
+2020-10-13 16:08:50,937:INFO:Physical Core: 4
+2020-10-13 16:08:50,937:INFO:Logical Core: 8
+2020-10-13 16:08:50,937:INFO:Checking libraries
+2020-10-13 16:08:50,937:INFO:pd==1.0.5
+2020-10-13 16:08:50,938:INFO:numpy==1.18.5
+2020-10-13 16:08:50,938:INFO:sklearn==0.23.2
+2020-10-13 16:08:51,526:INFO:xgboost==1.2.0
+2020-10-13 16:08:51,526:INFO:lightgbm==2.3.1
+2020-10-13 16:08:51,609:INFO:catboost==0.24.1
+2020-10-13 16:08:52,311:INFO:mlflow==1.11.0
+2020-10-13 16:08:52,311:INFO:Checking Exceptions
+2020-10-13 16:08:52,312:INFO:Declaring global variables
+2020-10-13 16:08:52,312:INFO:USI: 9e4e
+2020-10-13 16:08:52,312:INFO:pycaret_globals: {'gpu_param', 'fold_generator', 'experiment__', '_gpu_n_jobs_param', 'y_test', 'USI', 'seed', 'n_jobs_param', '_all_models', 'X_test', 'transform_target_method_param', 'log_plots_param', 'imputation_regressor', 'y', 'pycaret_globals', '_ml_usecase', 'stratify_param', 'create_model_container', 'display_container', 'fix_imbalance_method_param', 'fold_shuffle_param', 'html_param', 'prep_pipe', 'X_train', 'exp_name_log', 'data_before_preprocess', 'imputation_classifier', 'X', 'master_model_container', 'fix_imbalance_param', 'y_train', 'fold_param', 'target_param', 'iterative_imputation_iters_param', 'fold_groups_param', 'transform_target_param', '_internal_pipeline', '_all_metrics', 'logging_param', '_all_models_internal'}
+2020-10-13 16:08:52,312:INFO:Preparing display monitor
+2020-10-13 16:08:52,312:INFO:Preparing display monitor
+2020-10-13 16:08:52,341:INFO:Importing libraries
+2020-10-13 16:08:52,341:INFO:Copying data for preprocessing
+2020-10-13 16:08:52,356:INFO:Declaring preprocessing parameters
+2020-10-13 16:08:52,360:INFO:Creating preprocessing pipeline
+2020-10-13 16:08:52,391:INFO:Preprocessing pipeline created successfully
+2020-10-13 16:08:52,391:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2020-10-13 16:08:52,391:INFO:Creating global containers
+2020-10-13 16:08:52,392:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2020-10-13 16:08:56,915:INFO:Creating grid variables
+2020-10-13 16:08:56,990:INFO:Logging experiment in MLFlow
+2020-10-13 16:08:57,159:INFO:SubProcess save_model() called ==================================
+2020-10-13 16:08:57,187:INFO:Initializing save_model()
+2020-10-13 16:08:57,187:INFO:save_model(model=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True,
+                                      features_todrop=['Agent_ID'],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=('Sunday', 'Monday',
+                                                          'Saturday',
+                                                          'Thursday', 'Tuesday',
+                                                          'Wednesday', 'Friday',
+                                                          'Total number of '
+                                                          'calls',
+                                                          'CSat',
+                                                          'total coaching',
+                                                          'total coaching '
+                                                          'improved',
+                                                          'FCR Week before'),
+                                      t...
+                                       target_variable='Actual Value',
+                                       threshold=0.9)),
+                ('dfs',
+                 DFS_Classic(interactions=['multiply'], ml_usecase='regression',
+                             random_state=786, subclass='binary',
+                             target='Actual Value',
+                             top_features_to_pick_percentage=None)),
+                ('pca',
+                 Reduce_Dimensions_For_Supervised_Path(method='pca_liner',
+                                                       random_state=786,
+                                                       target='Actual Value',
+                                                       variance_retained_or_number_of_components=None))],
+         verbose=False), model_name=Transformation Pipeline, prep_pipe_=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True,
+                                      features_todrop=['Agent_ID'],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=('Sunday', 'Monday',
+                                                          'Saturday',
+                                                          'Thursday', 'Tuesday',
+                                                          'Wednesday', 'Friday',
+                                                          'Total number of '
+                                                          'calls',
+                                                          'CSat',
+                                                          'total coaching',
+                                                          'total coaching '
+                                                          'improved',
+                                                          'FCR Week before'),
+                                      t...
+                                       target_variable='Actual Value',
+                                       threshold=0.9)),
+                ('dfs',
+                 DFS_Classic(interactions=['multiply'], ml_usecase='regression',
+                             random_state=786, subclass='binary',
+                             target='Actual Value',
+                             top_features_to_pick_percentage=None)),
+                ('pca',
+                 Reduce_Dimensions_For_Supervised_Path(method='pca_liner',
+                                                       random_state=786,
+                                                       target='Actual Value',
+                                                       variance_retained_or_number_of_components=None))],
+         verbose=False), verbose=False)
+2020-10-13 16:08:57,187:INFO:Adding model into prep_pipe
+2020-10-13 16:08:57,283:INFO:Transformation Pipeline.pkl saved in current working directory
+2020-10-13 16:08:57,344:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True,
+                                      features_todrop=['Agent_ID'],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=('Sunday', 'Monday',
+                                                          'Saturday',
+                                                          'Thursday', 'Tuesday',
+                                                          'Wednesday', 'Friday',
+                                                          'Total number of '
+                                                          'calls',
+                                                          'CSat',
+                                                          'total coaching',
+                                                          'total coaching '
+                                                          'improved',
+                                                          'FCR Week before'),
+                                      t...
+                                                        threshold=0.9)),
+                                 ('dfs',
+                                  DFS_Classic(interactions=['multiply'],
+                                              ml_usecase='regression',
+                                              random_state=786,
+                                              subclass='binary',
+                                              target='Actual Value',
+                                              top_features_to_pick_percentage=None)),
+                                 ('pca',
+                                  Reduce_Dimensions_For_Supervised_Path(method='pca_liner',
+                                                                        random_state=786,
+                                                                        target='Actual '
+                                                                               'Value',
+                                                                        variance_retained_or_number_of_components=None))],
+                          verbose=False)]],
+         verbose=False)
+2020-10-13 16:08:57,344:INFO:save_model() succesfully completed......................................
+2020-10-13 16:08:57,344:INFO:SubProcess save_model() end ==================================
+2020-10-13 16:08:57,366:INFO:create_model_container: 0
+2020-10-13 16:08:57,366:INFO:master_model_container: 0
+2020-10-13 16:08:57,366:INFO:display_container: 0
+2020-10-13 16:08:57,379:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True,
+                                      features_todrop=['Agent_ID'],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=('Sunday', 'Monday',
+                                                          'Saturday',
+                                                          'Thursday', 'Tuesday',
+                                                          'Wednesday', 'Friday',
+                                                          'Total number of '
+                                                          'calls',
+                                                          'CSat',
+                                                          'total coaching',
+                                                          'total coaching '
+                                                          'improved',
+                                                          'FCR Week before'),
+                                      t...
+                                       target_variable='Actual Value',
+                                       threshold=0.9)),
+                ('dfs',
+                 DFS_Classic(interactions=['multiply'], ml_usecase='regression',
+                             random_state=786, subclass='binary',
+                             target='Actual Value',
+                             top_features_to_pick_percentage=None)),
+                ('pca',
+                 Reduce_Dimensions_For_Supervised_Path(method='pca_liner',
+                                                       random_state=786,
+                                                       target='Actual Value',
+                                                       variance_retained_or_number_of_components=None))],
+         verbose=False)
+2020-10-13 16:08:57,379:INFO:setup() succesfully completed......................................
