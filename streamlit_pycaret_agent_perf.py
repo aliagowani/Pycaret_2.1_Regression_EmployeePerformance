@@ -49,60 +49,41 @@ st.write('This is a web app to classify the quality of your wine based on\
          value of each feature. After that, click on the Predict button at the bottom to\
          see the prediction of the classifier.')
 
-friday = st.sidebar.slider(label = 'Friday', min_value = 0.0,
-                          max_value = 100.0 ,
-                          value = 90.0,
-                          step = 0.1)
+friday = st.sidebar.slider(label = 'Friday', min_value = 50,
+                          max_value = 100 ,
+                          value = 90,
+                          step = 1)
 
-sunday = st.sidebar.slider(label = 'Sunday', min_value = 0.0,
-                          max_value = 100.0 ,
-                          value = 90.0,
-                          step = 0.1)
+sunday = st.sidebar.slider(label = 'Sunday', min_value = 50,
+                          max_value = 100 ,
+                          value = 90,
+                          step = 1)
                           
-thursday = st.sidebar.slider(label = 'Thursday', min_value = 0.0,
-                          max_value = 100.0 ,
-                          value = 90.0,
-                          step = 0.1)                    
+thursday = st.sidebar.slider(label = 'Thursday', min_value = 50,
+                          max_value = 100 ,
+                          value = 90,
+                          step = 1)                    
 
-tuesday = st.sidebar.slider(label = 'Tuesday', min_value = 0.0,
-                          max_value = 100.0 ,
-                          value = 90.0,
-                          step = 0.1)
+tuesday = st.sidebar.slider(label = 'Tuesday', min_value = 50,
+                          max_value = 100 ,
+                          value = 90,
+                          step = 1)
 
-wednesday = st.sidebar.slider(label = 'Wednesday', min_value = 0.0,
-                          max_value = 100.0 ,
-                          value = 90.0,
-                          step = 0.1)
+wednesday = st.sidebar.slider(label = 'Wednesday', min_value = 50,
+                          max_value = 100 ,
+                          value = 90,
+                          step = 1)
                           
-saturday = st.sidebar.slider(label = 'Saturday', min_value = 0.0,
-                          max_value = 100.0 ,
-                          value = 90.0,
-                          step = 0.1) 
+saturday = st.sidebar.slider(label = 'Saturday', min_value = 50,
+                          max_value = 100 ,
+                          value = 90,
+                          step = 1) 
 
-ncoachingid = st.sidebar.slider(label = 'ncoachingid', min_value = 0.0,
-                          max_value = 100.0 ,
-                          value = 90.0,
-                          step = 0.1) 
-
-total_coaching_improved = st.sidebar.slider(label = 'total coaching improved', min_value = 0.0,
-                          max_value = 100.0 ,
-                          value = 90.0,
-                          step = 0.1) 
-
-monday = st.sidebar.slider(label = 'Monday', min_value = 0.0,
-                          max_value = 100.0 ,
-                          value = 90.0,
-                          step = 0.1) 
-
-weekbefore = st.sidebar.slider(label = 'weekbefore', min_value = 0.0,
-                          max_value = 100.0 ,
-                          value = 90.0,
-                          step = 0.1)                          
-
-csat = st.sidebar.slider(label = 'csat', min_value = 0.0,
-                          max_value = 100.0 ,
-                          value = 90.0,
-                          step = 0.1) 
+ncoachingid = 0 
+total_coaching_improved = 0
+monday = 0
+weekbefore = 0                       
+csat = 0
 
 #actualvalue_class = st.sidebar.selectbox('Actual_Class', ['1', '0']) 
 
@@ -152,6 +133,3 @@ if st.button('Predict'):
 #     x='pH',
 #     y='quality'
 #     )
-
-
-# points
